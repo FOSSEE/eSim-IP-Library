@@ -1,9 +1,0 @@
-int foomux21(int,int);
-        int temp_i0[1024];
-        int port_i0;
-        int temp_i1[1024];
-        int port_i1;
-        int temp_sel[1024];
-        int port_sel;
-        int temp_y[1024];
-        int port_y;

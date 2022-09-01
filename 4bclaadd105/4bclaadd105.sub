@@ -1,0 +1,274 @@
+* /home/hemanth/esim-workspace/4bclaadd105/4bclaadd105.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 06/28/21 20:05:15
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+.subckt 4bclaadd105 C0 A0 A1 A2 A3 B0 B1 B2 B3 vdd S0_0 S1_1 S2_2 S3_3 C4_4
+* Sheet Name: /
+*U1  /vdd /C0 /A0 /A1 /A2 /A3 /B0 /B1 /B2 /B3 /S0_0 /S1_1 /S2_2 /S3_3 /C4_4 PORT		
+* Sheet Name: /C1A1B1/
+xM9  Net-_M14-Pad2_ B1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM7  Net-_M14-Pad2_ B1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15	
+xM2  Net-_M1-Pad1_ A1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM1  Net-_M1-Pad1_ A1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM13  Net-_M13-Pad1_ A1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM14  P1 Net-_M14-Pad2_ Net-_M13-Pad1_ Net-_M13-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM17  Net-_M17-Pad1_ B1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM18  P1 Net-_M1-Pad1_ Net-_M17-Pad1_ Net-_M17-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM11  P1 B1 Net-_M11-Pad3_ Net-_M11-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM15  P1 Net-_M14-Pad2_ Net-_M15-Pad3_ Net-_M15-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM16  Net-_M15-Pad3_ Net-_M1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM12  Net-_M11-Pad3_ A1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15	
+xM4  Net-_M10-Pad2_ B1 Net-_M4-Pad3_ Net-_M4-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM5  Net-_M4-Pad3_ A1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM8  G1 Net-_M10-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM3  Net-_M10-Pad2_ A1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM6  Net-_M10-Pad2_ B1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM10  G1 Net-_M10-Pad2_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+* Sheet Name: /C2A2B2/
+xM27  Net-_M25-Pad1_ B2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM25  Net-_M25-Pad1_ B2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM20  Net-_M19-Pad1_ A2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM19  Net-_M19-Pad1_ A2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM31  Net-_M31-Pad1_ A2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM32  P2 Net-_M25-Pad1_ Net-_M31-Pad1_ Net-_M31-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM35  Net-_M35-Pad1_ B2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM36  P2 Net-_M19-Pad1_ Net-_M35-Pad1_ Net-_M35-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM29  P2 B2 Net-_M29-Pad3_ Net-_M29-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM33  P2 Net-_M25-Pad1_ Net-_M33-Pad3_ Net-_M33-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM34  Net-_M33-Pad3_ Net-_M19-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM30  Net-_M29-Pad3_ A2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM22  Net-_M21-Pad1_ B2 Net-_M22-Pad3_ Net-_M22-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM23  Net-_M22-Pad3_ A2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM26  G2 Net-_M21-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM21  Net-_M21-Pad1_ A2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM24  Net-_M21-Pad1_ B2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM28  G2 Net-_M21-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+* Sheet Name: /C3A3B3/
+xM45  Net-_M43-Pad1_ B3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM43  Net-_M43-Pad1_ B3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM38  Net-_M37-Pad1_ A3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM37  Net-_M37-Pad1_ A3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM49  Net-_M49-Pad1_ A3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM50  P3 Net-_M43-Pad1_ Net-_M49-Pad1_ Net-_M49-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM53  Net-_M53-Pad1_ B3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM54  P3 Net-_M37-Pad1_ Net-_M53-Pad1_ Net-_M53-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM47  P3 B3 Net-_M47-Pad3_ Net-_M47-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM51  P3 Net-_M43-Pad1_ Net-_M51-Pad3_ Net-_M51-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM52  Net-_M51-Pad3_ Net-_M37-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM48  Net-_M47-Pad3_ A3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM40  Net-_M39-Pad1_ B3 Net-_M40-Pad3_ Net-_M40-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM41  Net-_M40-Pad3_ A3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM44  G3 Net-_M39-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM39  Net-_M39-Pad1_ A3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM42  Net-_M39-Pad1_ B3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM46  G3 Net-_M39-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+* Sheet Name: /C0A0B0/
+xM63  Net-_M61-Pad1_ B0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM61  Net-_M61-Pad1_ B0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM56  Net-_M55-Pad1_ A0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM55  Net-_M55-Pad1_ A0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM67  Net-_M67-Pad1_ A0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM68  P0 Net-_M61-Pad1_ Net-_M67-Pad1_ Net-_M67-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM71  Net-_M71-Pad1_ B0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM72  P0 Net-_M55-Pad1_ Net-_M71-Pad1_ Net-_M71-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM65  P0 B0 Net-_M65-Pad3_ Net-_M65-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM69  P0 Net-_M61-Pad1_ Net-_M69-Pad3_ Net-_M69-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM70  Net-_M69-Pad3_ Net-_M55-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM66  Net-_M65-Pad3_ A0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM58  Net-_M57-Pad1_ B0 Net-_M58-Pad3_ Net-_M58-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM59  Net-_M58-Pad3_ A0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM62  G0 Net-_M57-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM57  Net-_M57-Pad1_ A0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM60  Net-_M57-Pad1_ B0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM64  G0 Net-_M57-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+* Sheet Name: /C1_evalua/
+xM74  Net-_M73-Pad3_ C0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM76  Net-_M73-Pad1_ G0_0 Net-_M75-Pad1_ Net-_M75-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM73  Net-_M73-Pad1_ P0_0 Net-_M73-Pad3_ Net-_M73-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM79  C1 Net-_M73-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM77  Net-_M73-Pad1_ G0_0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM75  Net-_M75-Pad1_ C0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM78  Net-_M73-Pad1_ P0_0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM80  C1 Net-_M73-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+* Sheet Name: /C2_evalua/
+xM84  Net-_M84-Pad1_ C0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM85  Net-_M85-Pad1_ G0_0 Net-_M84-Pad1_ Net-_M84-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM86  Net-_M81-Pad1_ G1_1 Net-_M85-Pad1_ Net-_M85-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM87  Net-_M85-Pad1_ P0_0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM89  Net-_M81-Pad1_ P1_1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM92  C2 Net-_M81-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM81  Net-_M81-Pad1_ P1_1 Net-_M81-Pad3_ Net-_M81-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM82  Net-_M81-Pad3_ P0_0 Net-_M82-Pad3_ Net-_M82-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM83  Net-_M82-Pad3_ C0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM88  Net-_M81-Pad3_ G0_0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM90  Net-_M81-Pad1_ G1_1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM91  C2 Net-_M81-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /C3_evalua/
+xM96  Net-_M95-Pad3_ C0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM95  Net-_M102-Pad1_ P0_0 Net-_M95-Pad3_ Net-_M95-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM94  Net-_M104-Pad1_ P1_1 Net-_M102-Pad1_ Net-_M102-Pad1_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM93  Net-_M100-Pad1_ P2_2 Net-_M104-Pad1_ Net-_M104-Pad1_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM102  Net-_M102-Pad1_ G0_0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM104  Net-_M104-Pad1_ G1_1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM106  Net-_M100-Pad1_ G2_2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM107  C3 Net-_M100-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM100  Net-_M100-Pad1_ G2_2 Net-_M100-Pad3_ Net-_M100-Pad3_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM99  Net-_M100-Pad3_ G1_1 Net-_M101-Pad1_ Net-_M101-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM98  Net-_M101-Pad1_ G0_0 Net-_M97-Pad1_ Net-_M97-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM97  Net-_M97-Pad1_ C0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM101  Net-_M101-Pad1_ P0_0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM103  Net-_M100-Pad3_ P1_1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM105  Net-_M100-Pad1_ P2_2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM108  C3 Net-_M100-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+* Sheet Name: /C4_evalua/
+xM110  Net-_M109-Pad3_ P2_2 Net-_M110-Pad3_ Net-_M110-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM118  Net-_M109-Pad1_ G3_3 Net-_M117-Pad1_ Net-_M117-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM117  Net-_M117-Pad1_ G2_2 Net-_M116-Pad1_ Net-_M116-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM116  Net-_M116-Pad1_ G1_1 Net-_M115-Pad1_ Net-_M115-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM115  Net-_M115-Pad1_ G0_0 Net-_M114-Pad1_ Net-_M114-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM114  Net-_M114-Pad1_ C0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM119  Net-_M115-Pad1_ P0_0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM121  Net-_M116-Pad1_ P1_1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM123  Net-_M117-Pad1_ P2_2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM126  Net-_M109-Pad1_ P3_3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM128  C4 Net-_M109-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM109  Net-_M109-Pad1_ P3_3 Net-_M109-Pad3_ Net-_M109-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM111  Net-_M110-Pad3_ P1_1 Net-_M111-Pad3_ Net-_M111-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM112  Net-_M111-Pad3_ P0_0 Net-_M112-Pad3_ Net-_M112-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM113  Net-_M112-Pad3_ C0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM120  Net-_M111-Pad3_ G0_0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM122  Net-_M110-Pad3_ G1_1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM124  Net-_M109-Pad3_ G2_2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM125  Net-_M109-Pad1_ G3_3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM127  C4 Net-_M109-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /S1/
+xM132  Net-_M131-Pad1_ C1_1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM131  Net-_M131-Pad1_ C1_1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM130  Net-_M129-Pad1_ P1_1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM129  Net-_M129-Pad1_ P1_1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM135  Net-_M135-Pad1_ P1_1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM136  S1 Net-_M131-Pad1_ Net-_M135-Pad1_ Net-_M135-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM139  Net-_M139-Pad1_ C1_1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM140  S1 Net-_M129-Pad1_ Net-_M139-Pad1_ Net-_M139-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM133  S1 C1_1 Net-_M133-Pad3_ Net-_M133-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM137  S1 Net-_M131-Pad1_ Net-_M137-Pad3_ Net-_M137-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM138  Net-_M137-Pad3_ Net-_M129-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM134  Net-_M133-Pad3_ P1_1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /S2/
+xM144  Net-_M143-Pad1_ C2_2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM143  Net-_M143-Pad1_ C2_2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM142  Net-_M141-Pad1_ P2_2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM141  Net-_M141-Pad1_ P2_2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM147  Net-_M147-Pad1_ P2_2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM148  S2 Net-_M143-Pad1_ Net-_M147-Pad1_ Net-_M147-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM151  Net-_M151-Pad1_ C2_2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM152  S2 Net-_M141-Pad1_ Net-_M151-Pad1_ Net-_M151-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM145  S2 C2_2 Net-_M145-Pad3_ Net-_M145-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM149  S2 Net-_M143-Pad1_ Net-_M149-Pad3_ Net-_M149-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM150  Net-_M149-Pad3_ Net-_M141-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM146  Net-_M145-Pad3_ P2_2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /xxs3xx/
+xM156  Net-_M155-Pad1_ C3_3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM155  Net-_M155-Pad1_ C3_3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM154  Net-_M153-Pad1_ P3_3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM153  Net-_M153-Pad1_ P3_3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM159  Net-_M159-Pad1_ P3_3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM160  S3 Net-_M155-Pad1_ Net-_M159-Pad1_ Net-_M159-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM163  Net-_M163-Pad1_ C3_3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM164  S3 Net-_M153-Pad1_ Net-_M163-Pad1_ Net-_M163-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM157  S3 C3_3 Net-_M157-Pad3_ Net-_M157-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM161  S3 Net-_M155-Pad1_ Net-_M161-Pad3_ Net-_M161-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM162  Net-_M161-Pad3_ Net-_M153-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM158  Net-_M157-Pad3_ P3_3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /xs0x/
+xM168  Net-_M167-Pad1_ C0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM167  Net-_M167-Pad1_ C0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM166  Net-_M165-Pad1_ P0_0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM165  Net-_M165-Pad1_ P0_0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM171  Net-_M171-Pad1_ P0_0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM172  S0 Net-_M167-Pad1_ Net-_M171-Pad1_ Net-_M171-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM175  Net-_M175-Pad1_ C0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM176  S0 Net-_M165-Pad1_ Net-_M175-Pad1_ Net-_M175-Pad1_ sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM169  S0 C0 Net-_M169-Pad3_ Net-_M169-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM173  S0 Net-_M167-Pad1_ Net-_M173-Pad3_ Net-_M173-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM174  Net-_M173-Pad3_ Net-_M165-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM170  Net-_M169-Pad3_ P0_0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /buffer_s0/
+xM180  S0_0 Net-_M177-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM179  S0_0 Net-_M177-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM178  Net-_M177-Pad1_ S0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM177  Net-_M177-Pad1_ S0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15
+* Sheet Name: /buffer_c1/
+xM184  C1_1 Net-_M181-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM183  C1_1 Net-_M181-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM182  Net-_M181-Pad1_ C1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM181  Net-_M181-Pad1_ C1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /buffer_c2/
+xM188  C2_2 Net-_M185-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM187  C2_2 Net-_M185-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM186  Net-_M185-Pad1_ C2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM185  Net-_M185-Pad1_ C2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /buffer_c3/
+xM192  C3_3 Net-_M189-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM191  C3_3 Net-_M189-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM190  Net-_M189-Pad1_ C3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM189  Net-_M189-Pad1_ C3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /buffer_c4/
+xM196  C4_4 Net-_M193-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM195  C4_4 Net-_M193-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM194  Net-_M193-Pad1_ C4 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM193  Net-_M193-Pad1_ C4 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /buffer_s1/
+xM200  S1_1 Net-_M197-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM199  S1_1 Net-_M197-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM198  Net-_M197-Pad1_ S1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM197  Net-_M197-Pad1_ S1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /buffer_s2/
+xM204  S2_2 Net-_M201-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM203  S2_2 Net-_M201-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM202  Net-_M201-Pad1_ S2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM201  Net-_M201-Pad1_ S2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /buffer_s3/
+xM208  S3_3 Net-_M205-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM207  S3_3 Net-_M205-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM206  Net-_M205-Pad1_ S3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM205  Net-_M205-Pad1_ S3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+* Sheet Name: /buffer_pg/
+xM221  P0_0 Net-_M209-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM217  P0_0 Net-_M209-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM213  Net-_M209-Pad1_ P0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM209  Net-_M209-Pad1_ P0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM223  P2_2 Net-_M211-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM219  P2_2 Net-_M211-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM215  Net-_M211-Pad1_ P2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM211  Net-_M211-Pad1_ P2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM224  P3_3 Net-_M212-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM220  P3_3 Net-_M212-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM216  Net-_M212-Pad1_ P3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM212  Net-_M212-Pad1_ P3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM222  P1_1 Net-_M210-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM218  P1_1 Net-_M210-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM214  Net-_M210-Pad1_ P1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM210  Net-_M210-Pad1_ P1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM237  G0_0 Net-_M225-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM233  G0_0 Net-_M225-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM229  Net-_M225-Pad1_ G0 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM225  Net-_M225-Pad1_ G0 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM239  G2_2 Net-_M227-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM235  G2_2 Net-_M227-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM231  Net-_M227-Pad1_ G2 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM227  Net-_M227-Pad1_ G2 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM240  G3_3 Net-_M228-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM236  G3_3 Net-_M228-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM232  Net-_M228-Pad1_ G3 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM228  Net-_M228-Pad1_ G3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM238  G1_1 Net-_M226-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15
+xM234  G1_1 Net-_M226-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15		
+xM230  Net-_M226-Pad1_ G1 vdd vdd sky130_fd_pr__pfet_01v8 w=.55 l=.15		
+xM226  Net-_M226-Pad1_ G1 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.15	
+************************	
+
+.ends 4bclaadd105

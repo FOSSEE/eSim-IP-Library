@@ -1,0 +1,32 @@
+* C:\Users\mihir\eSim-Workspace\rropamp31\rropamp31.cir
+
+
+
+.subckt rropamp31 vdd gnd vin_1 vin_2 vout
+
+r1  net-_m17-pad1_ net-_c1-pad1_ 0.001
+c1  vout net-_c1-pad1_ 1p
+xm7  net-_m2-pad2_ net-_m2-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5 m=1
+xm9  net-_m19-pad1_ vin_2 net-_m3-pad3_ gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xm3  net-_m15-pad2_ vin_1 net-_m3-pad3_ gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xm11  net-_m10-pad1_ net-_m10-pad1_ net-_m11-pad3_ gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xm12  net-_m11-pad3_ net-_m11-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5 m=1
+xm13  net-_m13-pad1_ net-_m10-pad1_ net-_m13-pad3_ gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xm14  net-_m13-pad3_ net-_m11-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5 m=1
+xm18  net-_m17-pad3_ net-_m11-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5 m=1
+xm17  net-_m17-pad1_ net-_m10-pad1_ net-_m17-pad3_ gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xm5  net-_m3-pad3_ net-_m2-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5 m=1
+xm21  vout net-_m17-pad1_ gnd gnd sky130_fd_pr__nfet_01v8 w=.42 l=.5 m=1
+xm22  vout net-_m17-pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm19  net-_m19-pad1_ net-_m15-pad2_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm20  net-_m17-pad1_ net-_m13-pad1_ net-_m19-pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm10  net-_m10-pad1_ net-_m1-pad2_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1 
+xm6  net-_m4-pad3_ net-_m1-pad2_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm4  net-_m13-pad3_ vin_1 net-_m4-pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm8  net-_m4-pad3_ vin_2 net-_m17-pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm1  vdd net-_m1-pad2_ net-_m1-pad2_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm2  net-_m1-pad2_ net-_m2-pad2_ net-_m2-pad2_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm16  net-_m15-pad2_ net-_m13-pad1_ net-_m13-pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm15  vdd net-_m15-pad2_ net-_m15-pad2_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5
+
+.ends rropamp31

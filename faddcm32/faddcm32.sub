@@ -1,0 +1,35 @@
+* C:\Users\mihir\eSim-Workspace\faddcm32\faddcm32.cir
+
+
+.subckt faddcm32 vdd GND vin_a vin_b vin_c  sum carry
+
+xM1  vdd vin_a Net-_M1-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM7  Net-_M1-Pad3_ vin_b Net-_M14-Pad2_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM2  vdd vin_a Net-_M2-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM3  vdd vin_b Net-_M2-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM8  Net-_M2-Pad3_ vin_c Net-_M14-Pad2_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM4  vdd vin_c Net-_M4-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM5  vdd vin_a Net-_M4-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM6  vdd vin_b Net-_M4-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM9  Net-_M4-Pad3_ Net-_M14-Pad2_ Net-_M12-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM21  Net-_M14-Pad2_ vin_b Net-_M15-Pad1_ GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM15  Net-_M15-Pad1_ vin_a GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM22  Net-_M14-Pad2_ vin_c Net-_M16-Pad1_ GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM16  Net-_M16-Pad1_ vin_a GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM17  Net-_M16-Pad1_ vin_b GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM23  Net-_M12-Pad3_ Net-_M14-Pad2_ Net-_M18-Pad1_ GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM18  Net-_M18-Pad1_ vin_c GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM19  Net-_M18-Pad1_ vin_a GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM20  Net-_M18-Pad1_ vin_b GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM10  vdd vin_a Net-_M10-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM11  Net-_M10-Pad3_ vin_b Net-_M11-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM12  Net-_M11-Pad3_ vin_c Net-_M12-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM26  Net-_M12-Pad3_ vin_c Net-_M25-Pad1_ GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM25  Net-_M25-Pad1_ vin_b Net-_M24-Pad1_ GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM24  Net-_M24-Pad1_ vin_a GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM13  vdd Net-_M12-Pad3_ sum vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM28  sum Net-_M12-Pad3_ GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM14  vdd Net-_M14-Pad2_ carry vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5			
+xM27  carry Net-_M14-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+
+.ends faddcm32

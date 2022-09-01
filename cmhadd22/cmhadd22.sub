@@ -1,0 +1,21 @@
+* C:\Users\mihir\eSim-Workspace\cmhadd22\cmhadd22.cir
+
+
+
+.subckt cmhadd22 vdd GND a b sum carry
+
+xM1  Net-_M1-Pad1_ b vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM2  Net-_M1-Pad1_ b GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM3  Net-_M3-Pad1_ a vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM4  Net-_M3-Pad1_ a GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM5  sum Net-_M3-Pad1_ Net-_M1-Pad1_ Net-_M1-Pad1_ sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM6  Net-_M1-Pad1_ a sum sum sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM7  sum a b b sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM8  b Net-_M3-Pad1_ sum sum sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM9  carry a a a sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM10  a b carry carry sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM11  carry b b b sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM12  b a carry carry sky130_fd_pr__nfet_01v8 w=0.42 l=0.5	
+
+
+.ends cmhadd22

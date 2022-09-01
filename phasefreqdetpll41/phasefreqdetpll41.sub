@@ -1,0 +1,18 @@
+* /home/gummadi/esim-workspace/freqdetector/freqdetector.cir
+
+.include mydff.sub
+
+
+.subckt phasefreqdetpll41 ina inb vcc gnd up
+
+x1 vcc gnd ina vcc net-_m1-pad3_ up mydff
+x2 vcc gnd inb vcc net-_m1-pad3_ net-_m3-pad2_ mydff
+xm4  vcc up net-_m1-pad2_ vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm3  vcc net-_m3-pad2_ net-_m1-pad2_ vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm1  vcc net-_m1-pad2_ net-_m1-pad3_ vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm5  net-_m1-pad2_ up net-_m5-pad3_ gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm6  net-_m5-pad3_ net-_m3-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm2  net-_m1-pad3_ net-_m1-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+* u1  ina inb vcc gnd up port
+
+.ends phasefreqdetpll41

@@ -1,5 +1,0 @@
-	a                   input   1
-	b                   input   1
-	c_in                input   1
-	s                   output  1
-	c_out               output  1

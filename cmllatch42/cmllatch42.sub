@@ -1,0 +1,25 @@
+* C:\Users\mihir\eSim-Workspace\cmllatch42\cmllatch42.cir
+
+
+
+
+
+.subckt cmllatch42 gnd vin_plus vin_minus  clock clock_bar output output_n 
+*CMLlatchmarathon.cir
+
+xm2 vout_minus vin_plus v_s_latch gnd sky130_fd_pr__nfet_01v8 W=50 L=0.18
+r1  net-_r1-pad1_ vout_minus 250
+r2  net-_r1-pad1_ vout_plus 250
+e2  output gnd vout_plus vout_minus 1
+e3  output_n gnd vout_minus vout_plus 1
+v5  net-_r1-pad1_ gnd 1.8
+v6  vg gnd 1.8
+xm6 vout_minus vout_plus v_s_regen gnd sky130_fd_pr__nfet_01v8 W=40 L=0.18
+xm8 vout_plus vout_minus v_s_regen gnd sky130_fd_pr__nfet_01v8 W=40 L=0.18
+xm4 vout_plus vin_minus v_s_latch gnd sky130_fd_pr__nfet_01v8 W=40 L=0.18
+xm3 v_s_latch clock v_dd_cm gnd sky130_fd_pr__nfet_01v8 W=40 L=0.18
+xm7 v_s_regen clock_bar v_dd_cm gnd sky130_fd_pr__nfet_01v8 W=40 L=0.18
+xm1 gnd vg vg gnd sky130_fd_pr__nfet_01v8 W=50 L=0.18
+xm5 gnd vg v_dd_cm gnd sky130_fd_pr__nfet_01v8 W=50 L=0.18
+
+.ends cmllatch42

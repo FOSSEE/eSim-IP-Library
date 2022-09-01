@@ -1,0 +1,38 @@
+* C:\Users\Lenovo\eSim-Workspace\lowpowbio21\lowpowbio21.cir
+
+
+
+.subckt lowpowbio21 vdd GND vin1 vin2 o bc vout
+xM13  Net-_M13-Pad1_ Net-_M13-Pad2_ Net-_M13-Pad2_ vdd sky130_fd_pr__pfet_01v8 w=4 l=0.5
+xM6  Net-_M6-Pad1_ Net-_M11-Pad2_ Net-_Cc1-Pad2_ vdd sky130_fd_pr__pfet_01v8 w=8 l=0.5	
+xM11  GND Net-_M11-Pad2_ vout vdd sky130_fd_pr__pfet_01v8 w=4 l=0.5		
+xMa4  GND Net-_M11-Pad2_ Net-_M6-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=12 l=0.5
+xMb3  GND Net-_Mb3-Pad2_ Net-_M13-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=4 l=0.5	
+xM5  Net-_M5-Pad1_ Net-_M13-Pad2_ Net-_M10-Pad2_ vdd sky130_fd_pr__pfet_01v8 w=8 l=0.5 
+xM14  Net-_M14-Pad1_ Net-_M11-Pad2_ Net-_M11-Pad2_ vdd sky130_fd_pr__pfet_01v8 w=4 l=0.5
+xMb4  GND Net-_Mb4-Pad2_ Net-_M14-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=4 l=0.5 
+xMa3  GND Net-_M13-Pad2_ Net-_M5-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=12 l=0.5
+xMb2  o GND Net-_M13-Pad1_ GND sky130_fd_pr__nfet_01v8 w=32 l=0.5	
+xMa1  o vin1 Net-_M5-Pad1_ GND sky130_fd_pr__nfet_01v8 w=32 l=0.5		
+xM8  Net-_M10-Pad3_ Net-_M10-Pad2_ Net-_Cc1-Pad2_ GND sky130_fd_pr__nfet_01v8 w=32 l=0.5
+xM10  vdd Net-_M10-Pad2_ Net-_M10-Pad3_ GND sky130_fd_pr__nfet_01v8 w=32 l=0.5		
+xM12  vdd Net-_Cc1-Pad2_ vout GND sky130_fd_pr__nfet_01v8 w=32 l=0.5		
+xMc1  vdd GND Net-_M13-Pad2_ GND sky130_fd_pr__nfet_01v8 w=8 l=0.5		
+xMo1  vdd Net-_M10-Pad2_ o GND sky130_fd_pr__nfet_01v8 w=64 l=0.5		
+xMb1  o GND Net-_M14-Pad1_ GND sky130_fd_pr__nfet_01v8 w=32 l=0.5	
+xMa2  o vin2 Net-_M6-Pad1_ GND sky130_fd_pr__nfet_01v8 w=32 l=0.5	
+xM9  vdd Net-_M10-Pad2_ Net-_M7-Pad1_ GND sky130_fd_pr__nfet_01v8 w=32 l=0.5
+xM7  Net-_M7-Pad1_ Net-_M10-Pad2_ Net-_M10-Pad2_ GND sky130_fd_pr__nfet_01v8 w=32 l=0.5		
+xMb5  vdd GND GND GND sky130_fd_pr__nfet_01v8 w=32 l=0.5	
+Rc1 bc vout 50k		
+R2  Net-_Mb4-Pad2_ Net-_M11-Pad2_ 56k		
+R1  Net-_M13-Pad2_ Net-_Mb3-Pad2_ 56k		
+Cc1 bc Net-_Cc1-Pad2_ 60p		
+Cl1  vout GND 60p
+	
+xMc2 vdd GND Net-_M11-Pad2_ GND sky130_fd_pr__nfet_01v8 w=8 l=0.5		
+
+
+
+.ends lowpowbio21
+

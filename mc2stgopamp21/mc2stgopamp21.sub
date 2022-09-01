@@ -1,0 +1,26 @@
+* C:\Users\mihir\eSim-Workspace\mc2stgopamp21\mc2stgopamp21.cir
+
+
+
+
+.subckt mc2stgopamp21 GND v1 v2 output
+
+* Sheet Name: /
+C1  output Net-_C1-Pad2_ 2.3p		
+R1  Net-_M3-Pad3_ GND 519		
+XM10  Net-_M10-Pad1_ Net-_M10-Pad2_ v1 v1 sky130_fd_pr__pfet_01v8 	
+XM4  Net-_M2-Pad2_ Net-_M2-Pad2_ Net-_M13-Pad2_ GND sky130_fd_pr__nfet_01v8 	
+XM5  Net-_M13-Pad2_ Net-_M13-Pad2_ GND GND sky130_fd_pr__nfet_01v8 	
+XM9  Net-_M11-Pad3_ Net-_M13-Pad2_ GND GND sky130_fd_pr__nfet_01v8 
+XM7  Net-_M10-Pad2_ v2 Net-_M11-Pad3_ GND sky130_fd_pr__nfet_01v8 
+XM11  Net-_M10-Pad1_ v2 Net-_M11-Pad3_ GND sky130_fd_pr__nfet_01v8 
+XM2  Net-_M1-Pad1_ Net-_M2-Pad2_ Net-_M2-Pad3_ GND sky130_fd_pr__nfet_01v8 	
+XM3  Net-_M2-Pad3_ Net-_M13-Pad2_ Net-_M3-Pad3_ GND sky130_fd_pr__nfet_01v8 	
+XM12  Net-_C1-Pad2_ v1 Net-_M10-Pad1_ GND sky130_fd_pr__nfet_01v8 			
+XM6  Net-_M2-Pad2_ Net-_M1-Pad1_ v1 v1 sky130_fd_pr__pfet_01v8 	
+XM14  output Net-_M10-Pad1_ v1 v1 sky130_fd_pr__pfet_01v8 	
+XM1  Net-_M1-Pad1_ Net-_M1-Pad1_ v1 v1 sky130_fd_pr__pfet_01v8 	
+XM8  Net-_M10-Pad2_ Net-_M10-Pad2_ v1 v1 sky130_fd_pr__pfet_01v8 	
+XM13  output Net-_M13-Pad2_ GND GND sky130_fd_pr__nfet_01v8 		
+
+.ends mc2stgopamp21

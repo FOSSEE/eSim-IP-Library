@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 3phaseinv73
+#
+DEF 3phaseinv73 X 0 40 Y Y 1 F N
+F0 "X" -300 600 60 H V C CNN
+F1 "3phaseinv73" -50 -500 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -350 550 400 -450 0 1 0 N
+X vinn 1 -550 450 200 R 50 50 1 1 B
+X digi1 2 -550 300 200 R 50 50 1 1 B
+X digi2 3 -550 150 200 R 50 50 1 1 B
+X digi3 4 -550 0 200 R 50 50 1 1 B
+X digi4 5 -550 -150 200 R 50 50 1 1 B
+X digi5 6 -550 -300 200 R 50 50 1 1 B
+X digi6 7 600 450 200 L 50 50 1 1 B
+X outa 8 600 250 200 L 50 50 1 1 B
+X outb 9 600 0 200 L 50 50 1 1 B
+X outc 10 600 -250 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

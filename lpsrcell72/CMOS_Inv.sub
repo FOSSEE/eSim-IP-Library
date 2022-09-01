@@ -1,0 +1,7 @@
+
+.subckt CMOS_Inv VDD in out
+
+xM1  out in VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM2  out in GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+
+.ends

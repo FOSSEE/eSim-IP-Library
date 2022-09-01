@@ -1,0 +1,20 @@
+* C:\Users\mihir\eSim-Workspace\aprxcmprsr63\aprxcmprsr63.cir
+
+
+
+.subckt aprxcmprsr63 vdd p0 p1 p2 p3 p4 w1 w2 w3
+
+.include 2_or_gate.sub
+.include and_gate.sub
+.include 3_or.sub
+X4  vdd p0 p1 Net-_X2-Pad2_ and_gate		
+X5  vdd p2 p3 Net-_X3-Pad2_ and_gate		
+*U1  vdd p0 p1 p2 p3 p4 w3 w1 w2 PORT		
+X1  vdd p0 p1 w3 2_or_gate		
+X2  vdd Net-_X2-Pad2_ p2 p3 w1 3_or		
+X3  vdd Net-_X3-Pad2_ p4 w2 2_or_gate	
+
+.ends aprxcmprsr63
+
+
+

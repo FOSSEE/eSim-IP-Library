@@ -1,0 +1,49 @@
+* C:\Users\mihir\eSim-Workspace\fadymcm72\fadymcm72.cir
+
+
+
+.subckt fadymcm72 vdd gnd A B A1 B1 cin cin1 sum carry
+
+xM1  vdd cin Net-_M1-Pad3_ vdd sky130_fd_pr__pfet_01v8		
+xM2  vdd A Net-_M2-Pad3_ vdd sky130_fd_pr__pfet_01v8		
+xM3  Net-_M2-Pad3_ B Net-_M1-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM4  Net-_M1-Pad3_ A Net-_M31-Pad2_ vdd sky130_fd_pr__pfet_01v8 		
+xM5  Net-_M1-Pad3_ B Net-_M31-Pad2_ vdd sky130_fd_pr__pfet_01v8 		
+xM6  Net-_M31-Pad2_ cin Net-_M10-Pad1_ gnd sky130_fd_pr__nfet_01v8 		
+xM7  Net-_M31-Pad2_ A Net-_M7-Pad3_ gnd sky130_fd_pr__nfet_01v8 		
+xM9  Net-_M10-Pad1_ A gnd gnd sky130_fd_pr__nfet_01v8 		
+xM10  Net-_M10-Pad1_ B gnd gnd sky130_fd_pr__nfet_01v8 		
+xM8  Net-_M7-Pad3_ B gnd gnd sky130_fd_pr__nfet_01v8 			
+xM11  vdd A1 Net-_M11-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM12  vdd B1 Net-_M12-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM13  vdd cin Net-_M12-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM14  Net-_M12-Pad3_ cin1 Net-_M11-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM15  Net-_M12-Pad3_ B Net-_M11-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM16  Net-_M11-Pad3_ A Net-_M16-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM17  Net-_M11-Pad3_ B1 Net-_M17-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM18  Net-_M11-Pad3_ cin1 Net-_M17-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM19  Net-_M17-Pad3_ B Net-_M16-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM20  Net-_M17-Pad3_ cin Net-_M16-Pad3_ vdd sky130_fd_pr__pfet_01v8 		
+xM21  Net-_M16-Pad3_ A1 Net-_M21-Pad3_ gnd sky130_fd_pr__nfet_01v8 		
+xM22  Net-_M21-Pad3_ B1 Net-_M22-Pad3_ gnd sky130_fd_pr__nfet_01v8 		
+xM23  Net-_M22-Pad3_ cin gnd gnd sky130_fd_pr__nfet_01v8 		
+xM24  Net-_M21-Pad3_ B Net-_M24-Pad3_ gnd sky130_fd_pr__nfet_01v8 		
+xM25  Net-_M24-Pad3_ cin1 gnd gnd sky130_fd_pr__nfet_01v8 		
+xM26  Net-_M16-Pad3_ A Net-_M26-Pad3_ gnd sky130_fd_pr__nfet_01v8 		
+xM27  Net-_M26-Pad3_ B1 Net-_M27-Pad3_ gnd sky130_fd_pr__nfet_01v8 		
+xM28  Net-_M27-Pad3_ cin1 gnd gnd sky130_fd_pr__nfet_01v8 		
+xM29  Net-_M26-Pad3_ B Net-_M29-Pad3_ gnd sky130_fd_pr__nfet_01v8 		
+xM30  Net-_M29-Pad3_ cin gnd gnd sky130_fd_pr__nfet_01v8 		
+xM31  vdd Net-_M31-Pad2_ carry vdd sky130_fd_pr__pfet_01v8 		
+xM32  carry Net-_M31-Pad2_ gnd gnd sky130_fd_pr__nfet_01v8 		
+xM39  vdd Net-_M16-Pad3_ sum vdd sky130_fd_pr__pfet_01v8 		
+xM40  sum Net-_M16-Pad3_ gnd gnd sky130_fd_pr__nfet_01v8 		
+xM33  vdd A A1 vdd sky130_fd_pr__pfet_01v8 		
+xM34  A1 A gnd gnd sky130_fd_pr__nfet_01v8 		
+xM35  vdd B B1 vdd sky130_fd_pr__pfet_01v8 		
+xM36  B1 B gnd gnd sky130_fd_pr__nfet_01v8 		
+xM37  vdd cin cin1 vdd sky130_fd_pr__pfet_01v8 		
+xM38  cin1 cin gnd gnd sky130_fd_pr__nfet_01v8 	
+
+
+.ends fadymcm72

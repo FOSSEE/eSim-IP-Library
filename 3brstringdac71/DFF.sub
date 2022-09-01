@@ -1,0 +1,15 @@
+.include CMOS_Inv.sub
+.include TX_Gate.sub 
+
+.subckt DFF VDD CLK nCLK D Q nQ
+
+XI1  VDD Net-_XG1-Pad5_ Net-_XG3-Pad2_ CMOS_Inv		
+XI3  VDD Net-_XG3-Pad5_ Q CMOS_Inv		
+XI4  VDD Q nQ CMOS_Inv		
+XI2  VDD Net-_XG3-Pad2_ Net-_XG2-Pad2_ CMOS_Inv		
+XG3  VDD Net-_XG3-Pad2_ CLK nCLK Net-_XG3-Pad5_ TX_Gate		
+XG4  VDD nQ nCLK CLK Net-_XG3-Pad5_ TX_Gate		
+XG2  VDD Net-_XG2-Pad2_ CLK nCLK Net-_XG1-Pad5_ TX_Gate		
+XG1  VDD D nCLK CLK Net-_XG1-Pad5_ TX_Gate	
+
+.ends DFF

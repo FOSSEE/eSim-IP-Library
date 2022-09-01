@@ -1,0 +1,28 @@
+* C:\Users\mihir\eSim-Workspace\ic741tstr31\ic741tstr31.cir
+
+
+
+.subckt ic741tstr31 vdd GND in vb out
+
+xM2  Net-_M1-Pad1_ Net-_M1-Pad1_ in in sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM1  Net-_M1-Pad1_ Net-_M1-Pad2_ Net-_M1-Pad3_ Net-_M1-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM4  Net-_M4-Pad1_ Net-_M1-Pad1_ in in sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM5  Net-_M4-Pad1_ Net-_M11-Pad3_ Net-_M1-Pad3_ Net-_M1-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM3  Net-_M1-Pad3_ vb out GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM7  in Net-_M4-Pad1_ Net-_M10-Pad2_ Net-_M10-Pad2_ sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM9  Net-_C2-Pad1_ Net-_M4-Pad1_ in in sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM8  Net-_M4-Pad1_ out Net-_C2-Pad2_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM6  Net-_M10-Pad2_ vb out GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM10  Net-_C2-Pad1_ Net-_M10-Pad2_ out GND sky130_fd_pr__nfet_01v8 w=.42 l=.5			
+C2  Net-_C2-Pad1_ Net-_C2-Pad2_ 10u		
+R3  Net-_C1-Pad2_ Net-_M1-Pad2_ 10K		
+C1  in Net-_C1-Pad2_ 10u		
+R1  in Net-_M11-Pad3_ 10K		
+R5  Net-_C1-Pad2_ Net-_C2-Pad1_ 10K		
+R4  Net-_M11-Pad3_ Net-_C2-Pad1_ 4.7K		
+R6  Net-_C2-Pad1_ out 1K		
+R2  Net-_M11-Pad3_ out 10K		
+xM11  Net-_M1-Pad2_ Net-_M1-Pad2_ Net-_M11-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5	
+xM12  Net-_M11-Pad3_ Net-_M11-Pad3_ Net-_M1-Pad2_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+
+.ends ic741tstr31

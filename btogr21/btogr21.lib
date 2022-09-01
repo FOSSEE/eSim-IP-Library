@@ -1,0 +1,41 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# btogr21
+#
+DEF btogr21 X 0 40 Y Y 5 F N
+F0 "X" 0 0 60 H V C CNN
+F1 "btogr21" 0 -100 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -400 100 500 -300 0 1 0 N
+X vdd 1 100 300 200 D 50 50 1 1 I
+X GND 2 100 -500 200 U 50 50 1 1 I
+X digitalinputa 3 -600 50 200 R 50 50 1 1 I
+X digitalinputb 4 -600 -200 200 R 50 50 1 1 I
+X vout 5 700 -100 200 L 50 50 1 1 O
+X digitalinputa ?? -600 50 200 R 50 50 2 1 I
+X digitalinputb ?? -600 -200 200 R 50 50 2 1 I
+X GND ?? 100 -500 200 U 50 50 2 1 I
+X vdd ?? 100 300 200 D 50 50 2 1 I
+X vout ?? 700 -100 200 L 50 50 2 1 O
+X digitalinputa ?? -600 50 200 R 50 50 3 1 I
+X digitalinputb ?? -600 -200 200 R 50 50 3 1 I
+X GND ?? 100 -500 200 U 50 50 3 1 I
+X vdd ?? 100 300 200 D 50 50 3 1 I
+X vout ?? 700 -100 200 L 50 50 3 1 O
+X digitalinputa ?? -600 50 200 R 50 50 4 1 I
+X digitalinputb ?? -600 -200 200 R 50 50 4 1 I
+X GND ?? 100 -500 200 U 50 50 4 1 I
+X vdd ?? 100 300 200 D 50 50 4 1 I
+X vout ?? 700 -100 200 L 50 50 4 1 O
+X digitalinputa ?? -600 50 200 R 50 50 5 1 I
+X digitalinputb ?? -600 -200 200 R 50 50 5 1 I
+X GND ?? 100 -500 200 U 50 50 5 1 I
+X vdd ?? 100 300 200 D 50 50 5 1 I
+X vout ?? 700 -100 200 L 50 50 5 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

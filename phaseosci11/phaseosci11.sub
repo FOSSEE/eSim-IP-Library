@@ -1,0 +1,22 @@
+* C:\Users\mihir\eSim-Workspace\phaseosci11\phaseosci11.cir
+
+
+
+.subckt phaseosci11 GND vdd vout
+
+C1  Net-_C1-Pad1_ vout 0.1u		
+C2  Net-_C2-Pad1_ Net-_C1-Pad1_ 0.1u
+C3  Net-_C3-Pad1_ Net-_C2-Pad1_ 0.1u		
+R1  Net-_C1-Pad1_ GND sky130_fd_pr__res_generic_nd l=10			
+R2  Net-_C2-Pad1_ GND sky130_fd_pr__res_generic_nd l=10			
+R3  Net-_C3-Pad1_ Net-_M1-Pad2_ sky130_fd_pr__res_generic_nd l=10			
+R5  Net-_M1-Pad2_ GND sky130_fd_pr__res_generic_nd l=10			
+R7  Net-_C4-Pad1_ GND sky130_fd_pr__res_generic_nd l=10			
+C4  Net-_C4-Pad1_ GND 0.1u			
+R6  vdd vout sky130_fd_pr__res_generic_nd l=10			
+R4  vdd Net-_M1-Pad2_ sky130_fd_pr__res_generic_nd l=10		
+xM1  vout Net-_M1-Pad2_ Net-_C4-Pad1_ Net-_C4-Pad1_ sky130_fd_pr__nfet_01v8 w=1 l=0.5	
+
+
+
+.ends phaseosci11

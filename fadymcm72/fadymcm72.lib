@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# fadymcm72
+#
+DEF fadymcm72 X 0 40 Y Y 1 F N
+F0 "X" 0 -100 60 H V C CNN
+F1 "fadymcm72" 0 200 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 750 -350 -750 450 0 1 0 N
+X vdd 1 -450 650 200 D 50 50 1 1 I
+X gnd 2 400 -550 200 U 50 50 1 1 I
+X A 3 -950 350 200 R 50 50 1 1 I
+X B 4 -950 200 200 R 50 50 1 1 I
+X A1 5 -950 100 200 R 50 50 1 1 I
+X B1 6 -950 -50 200 R 50 50 1 1 I
+X cin 7 -950 -200 200 R 50 50 1 1 I
+X cin1 8 -950 -300 200 R 50 50 1 1 I
+X sum 9 950 300 200 L 50 50 1 1 O
+X carry ~ 950 -150 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,65 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# lowpownand32
+#
+DEF lowpownand32 X 0 40 Y Y 7 F N
+F0 "X" 0 0 60 H V C CNN
+F1 "lowpownand32" 0 -100 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -1100 250 1400 -500 0 1 0 N
+X vdd 1 50 450 200 D 50 50 1 1 I
+X GND 2 100 -700 200 U 50 50 1 1 I
+X a 3 -1300 150 200 R 50 50 1 1 I
+X b 4 -1300 -100 200 R 50 50 1 1 I
+X borrow_in 5 -1300 -350 200 R 50 50 1 1 I
+X borrow_out 6 1600 150 200 L 50 50 1 1 O
+X diff 7 1600 -250 200 L 50 50 1 1 O
+X a ?? -1300 150 200 R 50 50 2 1 I
+X b ?? -1300 -100 200 R 50 50 2 1 I
+X borrow_in ?? -1300 -350 200 R 50 50 2 1 I
+X borrow_out ?? 1600 150 200 L 50 50 2 1 O
+X diff ?? 1600 -250 200 L 50 50 2 1 O
+X GND ?? 100 -700 200 U 50 50 2 1 I
+X vdd ?? 50 450 200 D 50 50 2 1 I
+X a ?? -1300 150 200 R 50 50 3 1 I
+X b ?? -1300 -100 200 R 50 50 3 1 I
+X borrow_in ?? -1300 -350 200 R 50 50 3 1 I
+X borrow_out ?? 1600 150 200 L 50 50 3 1 O
+X diff ?? 1600 -250 200 L 50 50 3 1 O
+X GND ?? 100 -700 200 U 50 50 3 1 I
+X vdd ?? 50 450 200 D 50 50 3 1 I
+X a ?? -1300 150 200 R 50 50 4 1 I
+X b ?? -1300 -100 200 R 50 50 4 1 I
+X borrow_in ?? -1300 -350 200 R 50 50 4 1 I
+X borrow_out ?? 1600 150 200 L 50 50 4 1 O
+X diff ?? 1600 -250 200 L 50 50 4 1 O
+X GND ?? 100 -700 200 U 50 50 4 1 I
+X vdd ?? 50 450 200 D 50 50 4 1 I
+X a ?? -1300 150 200 R 50 50 5 1 I
+X b ?? -1300 -100 200 R 50 50 5 1 I
+X borrow_in ?? -1300 -350 200 R 50 50 5 1 I
+X borrow_out ?? 1600 150 200 L 50 50 5 1 O
+X diff ?? 1600 -250 200 L 50 50 5 1 O
+X GND ?? 100 -700 200 U 50 50 5 1 I
+X vdd ?? 50 450 200 D 50 50 5 1 I
+X a ?? -1300 150 200 R 50 50 6 1 I
+X b ?? -1300 -100 200 R 50 50 6 1 I
+X borrow_in ?? -1300 -350 200 R 50 50 6 1 I
+X borrow_out ?? 1600 150 200 L 50 50 6 1 O
+X diff ?? 1600 -250 200 L 50 50 6 1 O
+X GND ?? 100 -700 200 U 50 50 6 1 I
+X vdd ?? 50 450 200 D 50 50 6 1 I
+X a ?? -1300 150 200 R 50 50 7 1 I
+X b ?? -1300 -100 200 R 50 50 7 1 I
+X borrow_in ?? -1300 -350 200 R 50 50 7 1 I
+X borrow_out ?? 1600 150 200 L 50 50 7 1 O
+X diff ?? 1600 -250 200 L 50 50 7 1 O
+X GND ?? 100 -700 200 U 50 50 7 1 I
+X vdd ?? 50 450 200 D 50 50 7 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

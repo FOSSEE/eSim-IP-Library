@@ -1,9 +1,0 @@
-int foopiso12_1(int,int);
-        int temp_clk[1024];
-        int port_clk;
-        int temp_load[1024];
-        int port_load;
-        int temp_Data_pr[1024];
-        int port_Data_pr;
-        int temp_Data_sr[1024];
-        int port_Data_sr;

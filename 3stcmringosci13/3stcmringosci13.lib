@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 3stcmringosci13
+#
+DEF 3stcmringosci13 X 0 40 Y Y 1 F N
+F0 "X" -350 500 60 H V C CNN
+F1 "3stcmringosci13" -50 -350 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -400 450 400 -300 0 1 0 N
+X vdd 1 -600 150 200 R 50 50 1 1 B
+X out1 2 600 350 200 L 50 50 1 1 B
+X out2 3 600 100 200 L 50 50 1 1 B
+X out3 4 600 -200 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

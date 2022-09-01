@@ -1,2 +1,0 @@
-	CLK                 input   1
-	COUNT               output  1

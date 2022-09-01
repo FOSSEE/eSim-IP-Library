@@ -1,0 +1,15 @@
+*Library for skywater130nm mosfet's,here typical corner(tt) is used.
+
+
+.subckt 3phaseinv73 vinn digi1 digi2 digi3 digi4 digi5 digi6 outa outb outc
+
+*CMOS switches
+xM2  outa digi2 GND GND sky130_fd_pr__nfet_01v8 w=0.45 l=0.5
+xM1  vinn digi1 outa vinn sky130_fd_pr__pfet_01v8 w=1.5 l=0.5
+xM4  outb digi4 GND GND sky130_fd_pr__nfet_01v8 w=0.45 l=0.5
+xM3  vinn digi3 outb vinn sky130_fd_pr__pfet_01v8 w=1.5 l=0.5
+xM6  outc digi6 GND GND sky130_fd_pr__nfet_01v8 w=0.45 l=0.5
+xM5  vinn digi5 outc vinn sky130_fd_pr__pfet_01v8 w=1.5 l=0.5
+
+
+.ends 3phaseinv73

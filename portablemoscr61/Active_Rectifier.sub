@@ -1,0 +1,12 @@
+.subckt Active_Rectifier ind_i/p vg1 vg2 gnd net-_m1-pad1_
+
+* c:\fossee\esim\library\subcircuitlibrary\active_rectifier\active_rectifier.cir
+
+xm1  net-_m1-pad1_ vg1 ind_i/p gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+xm2  net-_m1-pad1_ vg2 gnd gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+xm3  ind_i/p vg2 net-_m3-pad3_ gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+xm4  gnd vg1 net-_m3-pad3_ gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+
+* Control Statements
+
+.ends Active_Rectifier

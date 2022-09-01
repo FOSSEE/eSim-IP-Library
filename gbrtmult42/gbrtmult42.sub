@@ -1,0 +1,14 @@
+* C:\Users\mihir\eSim-Workspace\gbrtmult42\gbrtmult42.cir
+
+
+
+.subckt gbrtmult42 v1 v2 i1 i2 gnd vout1 vout2 
+
+xm3 vout1 v2 i2 i2 sky130_fd_pr__nfet_01v8 W=6 L=0.18 M=1
+xm1 vout1 v1 i1 i1 sky130_fd_pr__nfet_01v8 W=6 L=0.18 M=1
+xm2 vout2 v2 i1 i1 sky130_fd_pr__nfet_01v8 W=6 L=0.18 M=1
+xm4 vout2 v1 i2 i2 sky130_fd_pr__nfet_01v8 W=6 L=0.18 M=1
+
+
+
+.ends gbrtmult42

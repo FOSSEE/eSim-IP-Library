@@ -1,9 +1,0 @@
-int fooasyupcnt58(int,int);
-        int temp_clk[1024];
-        int port_clk;
-        int temp_rst[1024];
-        int port_rst;
-        int temp_q[1024];
-        int port_q;
-        int temp_qb[1024];
-        int port_qb;

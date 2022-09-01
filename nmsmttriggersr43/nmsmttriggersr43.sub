@@ -1,0 +1,21 @@
+* /home/hemanth/esim-workspace/nmsmttriggersr43/nmsmttriggersr43.cir
+
+
+.subckt nmsmttriggersr43 vq vq_ vdd vdd1 vwl vbl vbl_
+
+xM12  Net-_M1-Pad2_ vq GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM11  Net-_M1-Pad2_ vq Net-_M11-Pad3_ Net-_M11-Pad3_ sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM1  vdd Net-_M1-Pad2_ vq_ vq_ sky130_fd_pr__nfet_01v8 w=.42 l=.5				
+xM2  vq_ vq Net-_M2-Pad3_ Net-_M2-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM3  Net-_M2-Pad3_ vq GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM7  vdd vq_ Net-_M2-Pad3_ Net-_M2-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM14  Net-_M13-Pad1_ vq_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM13  Net-_M13-Pad1_ vq_ vdd1 vdd1 sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM4  vdd Net-_M13-Pad1_ vq vq sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM5  vq vq_ Net-_M5-Pad3_ Net-_M5-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM6  Net-_M5-Pad3_ vq_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM8  vdd vq Net-_M5-Pad3_ Net-_M5-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.5			
+xM9  vq vwl vbl vbl sky130_fd_pr__nfet_01v8 w=.42 l=.5				
+xM10  vbl_ vwl vq_ vq_ sky130_fd_pr__nfet_01v8 w=.42 l=.5				
+
+.ends nmsmttriggersr43

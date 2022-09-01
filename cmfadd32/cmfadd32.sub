@@ -1,0 +1,35 @@
+* C:\Users\mihir\eSim-Workspace\cmfadd32\cmfadd32.cir
+
+.subckt  cmfadd32  A B C_in Sum Cout Vdd GND
+
+* Sheet Name: /
+xM1  Net-_M1-Pad1_ A Vdd Vdd sky130_fd_pr__pfet_01v8		
+xM4  C_bar C_in Net-_M1-Pad1_ Vdd sky130_fd_pr__pfet_01v8		
+xM27  Sum Net-_M16-Pad1_ Vdd Vdd sky130_fd_pr__pfet_01v8		
+xM2  Net-_M1-Pad1_ B Vdd Vdd sky130_fd_pr__pfet_01v8		
+xM13  Net-_M13-Pad1_ A Vdd Vdd sky130_fd_pr__pfet_01v8		
+xM14  Net-_M13-Pad1_ B Vdd Vdd sky130_fd_pr__pfet_01v8		
+xM5  C_bar B Net-_M3-Pad1_ Vdd sky130_fd_pr__pfet_01v8		
+xM3  Net-_M3-Pad1_ A Vdd Vdd sky130_fd_pr__pfet_01v8		
+xM19  Net-_M16-Pad1_ C_in Net-_M18-Pad1_ Vdd sky130_fd_pr__pfet_01v8		
+xM11  Cout C_bar Vdd Vdd sky130_fd_pr__pfet_01v8		
+xM15  Net-_M13-Pad1_ C_in Vdd Vdd sky130_fd_pr__pfet_01v8		
+xM16  Net-_M16-Pad1_ C_bar Net-_M13-Pad1_ Vdd sky130_fd_pr__pfet_01v8		
+xM17  Net-_M17-Pad1_ A Vdd Vdd sky130_fd_pr__pfet_01v8 		
+xM18  Net-_M18-Pad1_ B Net-_M17-Pad1_ Vdd sky130_fd_pr__pfet_01v8		
+xM10  Net-_M10-Pad1_ A GND GND sky130_fd_pr__nfet_01v8		
+xM12  Cout C_bar GND GND sky130_fd_pr__nfet_01v8		
+xM20  Net-_M16-Pad1_ C_bar Net-_M20-Pad3_ GND sky130_fd_pr__nfet_01v8		
+xM7  C_bar B Net-_M10-Pad1_ GND sky130_fd_pr__nfet_01v8		
+xM26  Net-_M25-Pad3_ A GND GND sky130_fd_pr__nfet_01v8		
+xM28  Sum Net-_M16-Pad1_ GND GND sky130_fd_pr__nfet_01v8		
+xM8  Net-_M6-Pad3_ A GND GND sky130_fd_pr__nfet_01v8		
+xM21  Net-_M20-Pad3_ A GND GND sky130_fd_pr__nfet_01v8		
+xM22  Net-_M20-Pad3_ B GND GND sky130_fd_pr__nfet_01v8		
+xM6  C_bar C_in Net-_M6-Pad3_ GND sky130_fd_pr__nfet_01v8		
+xM23  Net-_M20-Pad3_ C_in GND GND sky130_fd_pr__nfet_01v8		
+xM25  Net-_M24-Pad3_ B Net-_M25-Pad3_ GND sky130_fd_pr__nfet_01v8		
+xM9  Net-_M6-Pad3_ B GND GND sky130_fd_pr__nfet_01v8		
+xM24  Net-_M16-Pad1_ C_in Net-_M24-Pad3_ GND sky130_fd_pr__nfet_01v8		
+
+.ends cmfadd32

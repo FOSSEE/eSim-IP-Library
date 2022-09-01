@@ -1,3 +1,0 @@
-	in                  input   3
-	en                  input   1
-	out                 output  8

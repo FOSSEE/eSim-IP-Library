@@ -1,0 +1,28 @@
+* /home/hemanth/esim-workspace/8bcmwaltreemult66/8bcmwaltreemult66.cir
+
+
+
+.subckt 8bcmwaltreemult66 a0 a1 a2 b0 b1 b2 z0 z1 z2 z3 z4 z5 
+
+.include fulladder.sub
+.include and_gate.sub
+.include halfadder.sub
+x2 b0 a0 z0 and_gate
+x1 b0 a1 net-_x1-pad3_ and_gate
+x5 b1 a0 net-_x5-pad3_ and_gate
+x6 b1 a1 net-_x6-pad3_ and_gate
+x7 net-_x5-pad3_ net-_x1-pad3_ z1 net-_x7-pad4_ halfadder
+* u1  a1 a0 a2 b0 b1 b2 z0 z1 z2 z3 z4 z5 port
+x3 b0 a2 net-_x3-pad3_ and_gate
+x4 b1 a2 net-_x4-pad3_ and_gate
+x8 net-_x6-pad3_ net-_x3-pad3_ net-_x7-pad4_ net-_x13-pad2_ net-_x8-pad5_ fulladder
+x10 b2 a0 net-_x10-pad3_ and_gate
+x11 b2 a1 net-_x11-pad3_ and_gate
+x12 b2 a2 net-_x12-pad3_ and_gate
+x13 net-_x10-pad3_ net-_x13-pad2_ z2 net-_x13-pad4_ halfadder
+x14 net-_x11-pad3_ net-_x14-pad2_ net-_x13-pad4_ z3 net-_x14-pad5_ fulladder
+x9 net-_x8-pad5_ net-_x4-pad3_ net-_x14-pad2_ net-_x15-pad2_ halfadder
+x15 net-_x12-pad3_ net-_x15-pad2_ net-_x14-pad5_ z4 z5 fulladder
+
+
+.ends 8bcmwaltreemult66

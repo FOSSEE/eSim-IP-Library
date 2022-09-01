@@ -1,0 +1,11 @@
+* Subcircuit fulladder
+.subckt fulladder net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ 
+* /home/drako/applications/esim-2.1/library/subcircuitlibrary/fulladder/fulladder.cir
+.include xor_gate.sub
+.include halfadder.sub
+x3 net-_x2-pad4_ net-_x1-pad4_ net-_u1-pad5_ xor_gate
+x1 net-_u1-pad2_ net-_u1-pad3_ net-_x1-pad3_ net-_x1-pad4_ halfadder
+x2 net-_u1-pad1_ net-_x1-pad3_ net-_u1-pad4_ net-_x2-pad4_ halfadder
+* Control Statements
+
+.ends fulladder

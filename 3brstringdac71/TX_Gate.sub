@@ -1,0 +1,5 @@
+.subckt TX_Gate vdd vin S nS vout
+xM1  vout S vin GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5		
+xM2  vin nS vout vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5
+
+.ends TX_Gate

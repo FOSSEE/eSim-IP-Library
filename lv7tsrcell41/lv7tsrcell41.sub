@@ -1,0 +1,20 @@
+* /home/hemanth/esim-workspace/lv7tsrcell/lv7tsrcell.cir
+
+
+* Sheet Name: /
+
+.subckt lv7tsrcell41 BL WL Q1 vdd RBL
+
+xM1  Q Q1 Net-_M1-Pad3_ Net-_M1-Pad3_ sky130_fd_pr__pfet_01v8 w=0.84 l=0.21 
+		
+xM2  Q Q1 GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.21		
+xM3  Q1 Q Net-_M1-Pad3_ Net-_M1-Pad3_ sky130_fd_pr__pfet_01v8 w=0.84 l=0.21
+		
+xM4  Q1 Q GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.21	
+xM7  Net-_M1-Pad3_ Q vdd vdd sky130_fd_pr__pfet_01v8 w=0.84 l=0.21
+	
+xM5  Q WL BL GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.21
+xM6  RBL Q1 GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.21
+
+.ends lv7tsrcell41
+

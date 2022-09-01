@@ -1,9 +1,0 @@
-int foodlatch31(int,int);
-        int temp_d[1024];
-        int port_d;
-        int temp_en[1024];
-        int port_en;
-        int temp_rstn[1024];
-        int port_rstn;
-        int temp_q[1024];
-        int port_q;

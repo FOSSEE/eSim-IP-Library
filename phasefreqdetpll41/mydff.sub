@@ -1,0 +1,30 @@
+* Subcircuit mydff
+.subckt mydff clk d reset vcc gnd q 
+* /home/gummadi/documents/esim/esim-2.1/library/subcircuitlibrary/mydff/mydff.cir
+xm6  vcc d net-_m6-pad3_ vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm7  net-_m6-pad3_ clk net-_m10-pad3_ net-_m6-pad3_ sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm4  net-_m10-pad3_ n_clk net-_m3-pad3_ net-_m3-pad3_ sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm5  net-_m3-pad3_ d gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm16  vcc net-_m11-pad2_ net-_m16-pad3_ vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm17  net-_m16-pad3_ clk net-_m14-pad1_ net-_m16-pad3_ sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm14  net-_m14-pad1_ n_clk net-_m14-pad3_ net-_m14-pad3_ sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm15  net-_m14-pad3_ net-_m11-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm9  vcc net-_m10-pad3_ net-_m11-pad2_ vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm8  net-_m11-pad2_ net-_m10-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm19  vcc net-_m14-pad1_ q vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm18  q net-_m14-pad1_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm21  vcc q net-_m20-pad1_ vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm20  net-_m20-pad1_ clk net-_m14-pad1_ net-_m20-pad1_ sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm23  net-_m14-pad1_ n_clk net-_m22-pad1_ net-_m22-pad1_ sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm22  net-_m22-pad1_ q gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm11  vcc net-_m11-pad2_ net-_m10-pad1_ vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm10  net-_m10-pad1_ clk net-_m10-pad3_ net-_m10-pad1_ sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm13  net-_m10-pad3_ n_clk net-_m12-pad1_ net-_m12-pad1_ sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm12  net-_m12-pad1_ net-_m11-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm2  vcc clk n_clk vcc sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xm1  n_clk clk gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5
+xm3  vcc reset net-_m3-pad3_ net-_m3-pad3_ sky130_fd_pr__nfet_01v8 w=1 l=0.5
+r1  net-_m3-pad3_ gnd 1000
+* Control Statements
+
+.ends mydff

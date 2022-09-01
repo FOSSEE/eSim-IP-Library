@@ -1,0 +1,52 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# halfaddmux22
+#
+DEF halfaddmux22 X 0 40 Y Y 6 F N
+F0 "X" 0 0 60 H V C CNN
+F1 "halfaddmux22" 0 -100 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -750 250 900 -450 0 1 0 N
+X vdd 1 50 450 200 D 50 50 1 1 I
+X GND 2 100 -650 200 U 50 50 1 1 I
+X in 3 -950 100 200 R 50 50 1 1 I
+X sel 4 -950 -250 200 R 50 50 1 1 I
+X sum 5 1100 150 200 L 50 50 1 1 O
+X carry 6 1100 -200 200 L 50 50 1 1 O
+X carry ?? 1100 -200 200 L 50 50 2 1 O
+X GND ?? 100 -650 200 U 50 50 2 1 I
+X in ?? -950 100 200 R 50 50 2 1 I
+X sel ?? -950 -250 200 R 50 50 2 1 I
+X sum ?? 1100 150 200 L 50 50 2 1 O
+X vdd ?? 50 450 200 D 50 50 2 1 I
+X carry ?? 1100 -200 200 L 50 50 3 1 O
+X GND ?? 100 -650 200 U 50 50 3 1 I
+X in ?? -950 100 200 R 50 50 3 1 I
+X sel ?? -950 -250 200 R 50 50 3 1 I
+X sum ?? 1100 150 200 L 50 50 3 1 O
+X vdd ?? 50 450 200 D 50 50 3 1 I
+X carry ?? 1100 -200 200 L 50 50 4 1 O
+X GND ?? 100 -650 200 U 50 50 4 1 I
+X in ?? -950 100 200 R 50 50 4 1 I
+X sel ?? -950 -250 200 R 50 50 4 1 I
+X sum ?? 1100 150 200 L 50 50 4 1 O
+X vdd ?? 50 450 200 D 50 50 4 1 I
+X carry ?? 1100 -200 200 L 50 50 5 1 O
+X GND ?? 100 -650 200 U 50 50 5 1 I
+X in ?? -950 100 200 R 50 50 5 1 I
+X sel ?? -950 -250 200 R 50 50 5 1 I
+X sum ?? 1100 150 200 L 50 50 5 1 O
+X vdd ?? 50 450 200 D 50 50 5 1 I
+X carry ?? 1100 -200 200 L 50 50 6 1 O
+X GND ?? 100 -650 200 U 50 50 6 1 I
+X in ?? -950 100 200 R 50 50 6 1 I
+X sel ?? -950 -250 200 R 50 50 6 1 I
+X sum ?? 1100 150 200 L 50 50 6 1 O
+X vdd ?? 50 450 200 D 50 50 6 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

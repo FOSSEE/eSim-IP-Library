@@ -1,3 +1,0 @@
-	A                   input   4
-	B                   input   4
-	Y                   output  8

@@ -1,0 +1,14 @@
+* Subcircuit Opamp_bias
+
+.subckt Opamp_bias vdd va 
+* C:\Users\mihir\eSim-Workspace\2stgopampfc41\Opamp_bias.cir
+rb1  vdd vc 1k
+xm1  net-_m1-pad1_ va vc vdd sky130_fd_pr__pfet_01v8 w=25 l=1
+xm2  va va vdd vdd sky130_fd_pr__pfet_01v8 w=25 l=1
+xm3  net-_m3-pad1_ vb net-_m1-pad1_ vdd sky130_fd_pr__pfet_01v8 w=10 l=1
+xm4  vb vb va vdd sky130_fd_pr__pfet_01v8 w=10 l=1
+xm5  net-_m3-pad1_ net-_m3-pad1_ vss vss sky130_fd_pr__nfet_01v8 w=10 l=1
+xm6  vb net-_m3-pad1_ vss vss sky130_fd_pr__nfet_01v8 w=10 l=1
+* Control Statements
+
+.ends Opamp_bias

@@ -1,0 +1,13 @@
+* Subcircuit and_gate
+.subckt and_gate net-_m1-pad2_ net-_m3-pad2_ net-_m5-pad1_ 
+* /home/drako/applications/esim-2.1/library/subcircuitlibrary/and_gate/and_gate.cir
+xm2  net-_m1-pad3_ net-_m1-pad2_ net-_m2-pad3_ net-_m2-pad3_ sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm3  net-_m2-pad3_ net-_m3-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm1  net-_m1-pad1_ net-_m1-pad2_ net-_m1-pad3_ net-_m1-pad1_ sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm4  net-_m1-pad1_ net-_m3-pad2_ net-_m1-pad3_ net-_m1-pad1_ sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm5  net-_m5-pad1_ net-_m1-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm6  net-_m1-pad1_ net-_m1-pad3_ net-_m5-pad1_ net-_m1-pad1_ sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+v1  net-_m1-pad1_ gnd 3.3v
+* Control Statements
+
+.ends and_gate

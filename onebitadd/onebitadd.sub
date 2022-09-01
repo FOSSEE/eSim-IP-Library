@@ -1,0 +1,35 @@
+* /home/ayush/eSim-Workspace/onebitadd/onebitadd.cir
+
+
+.subckt onebitadd VDD GND A B C Sum Cout 
+xM1  Net-_M1-Pad1_ A VDD VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM2  Net-_M1-Pad1_ B VDD VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM4  Net-_M4-Pad1_ B VDD VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM5  ~Cout A Net-_M4-Pad1_ VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM3  ~Cout C Net-_M1-Pad1_ VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM7  Net-_M6-Pad3_ A VDD VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM8  Net-_M6-Pad3_ B VDD VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM9  Net-_M6-Pad3_ C VDD VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM6  ~Sum ~Cout Net-_M6-Pad3_ VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM10  Net-_M10-Pad1_ C VDD VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM11  Net-_M11-Pad1_ B Net-_M10-Pad1_ VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM12  ~Sum A Net-_M11-Pad1_ VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5		
+xM15  ~Cout C Net-_M13-Pad1_ GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM13  Net-_M13-Pad1_ A GND GND sky130_fd_pr__nfet_01v8 w=1 l =0.5	
+xM14  Net-_M13-Pad1_ B GND GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM17  ~Cout A Net-_M16-Pad1_ GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM16  Net-_M16-Pad1_ B GND GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM18  ~Sum ~Cout Net-_M18-Pad3_ GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM19  Net-_M18-Pad3_ A GND GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM20  Net-_M18-Pad3_ B GND GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM21  Net-_M18-Pad3_ C GND GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM24  ~Sum A Net-_M23-Pad1_ GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM23  Net-_M23-Pad1_ B Net-_M22-Pad1_ GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM22  Net-_M22-Pad1_ C GND GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM26  Sum ~Sum GND GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM28  Cout ~Cout GND GND sky130_fd_pr__nfet_01v8 w=1 l =0.5		
+xM25  Sum ~Sum VDD VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5	
+xM27  Cout ~Cout VDD VDD sky130_fd_pr__pfet_01v8 w=1 l =0.5	
+
+
+.ends onebitadd

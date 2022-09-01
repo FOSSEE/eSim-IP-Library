@@ -1,0 +1,22 @@
+* /home/ayush/eSim-Workspace/diff_amp/diff_amp.cir
+
+
+
+.subckt diff_amp vdd GND vout1 vout2 vin_1 vin_2
+xM1  Net-_C2-Pad2_ Net-_C1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM2  Net-_C4-Pad1_ Net-_C3-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+R1  vdd Net-_C1-Pad1_ 2.1Meg
+R2  Net-_C1-Pad1_ GND 270k
+R5  vdd Net-_C3-Pad2_ 2.1Meg
+R6  Net-_C3-Pad2_ GND 270k
+C1  Net-_C1-Pad1_ vin_1 0.1uF
+C3  vin_2 Net-_C3-Pad2_ 0.1uF
+R3  vdd Net-_C2-Pad2_ 2.4k
+R7  vdd Net-_C4-Pad1_ 2.4k
+R4  vout1 GND 10Meg
+C2  vout1 Net-_C2-Pad2_ 10uF
+C4  Net-_C4-Pad1_ vout2 10uF
+R8  vout2 GND 10Meg
+
+.ends diff_amp
+		

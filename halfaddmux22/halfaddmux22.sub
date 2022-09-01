@@ -1,0 +1,23 @@
+* /home/ayush/eSim-Workspace/halfaddmux22/halfaddmux22.cir
+
+
+.subckt halfaddmux22  vdd GND in sel sum carry
+xM1  Net-_M1-Pad1_ sel vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM2  Net-_M1-Pad1_ sel GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM3  GND sel carry Net-_M3-Pad4_ sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM4  carry Net-_M1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM5  in Net-_M1-Pad1_ carry Net-_M5-Pad4_ sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM6  carry sel in GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM11  in sel sum Net-_M11-Pad4_ sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM12  sum Net-_M12-Pad2_ in GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM13  Net-_M10-Pad1_ Net-_M12-Pad2_ /sum Net-_M13-Pad4_ sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM14  sum sel Net-_M10-Pad1_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM7  Net-_M12-Pad2_ sel vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM8  Net-_M12-Pad2_ sel GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM9  Net-_M10-Pad1_ in vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM10  Net-_M10-Pad1_ in GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+
+
+
+.ends halfaddmux22
+

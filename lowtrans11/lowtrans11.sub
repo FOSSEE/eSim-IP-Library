@@ -1,0 +1,23 @@
+* /home/ayush/eSim-Workspace/lowtrans11/lowtrans11.cir
+
+
+.subckt lowtrans11 vdd GND I1 V1 V2 vout
+xM1  I1 I1 vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM7  Net-_M2-Pad2_ V1 I1 GND sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM9  Net-_M10-Pad1_ V2 I1 GND sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM14  Net-_M14-Pad1_ Net-_M10-Pad1_ vout Net-_M14-Pad1_ sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM13  vout I1 vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5				
+xM3  Net-_M2-Pad1_ Net-_M2-Pad2_ Net-_M3-Pad3_ Net-_M3-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM5  Net-_M2-Pad2_ Net-_M2-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM4  Net-_M3-Pad3_ Net-_M2-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM8  Net-_M2-Pad2_ Net-_M2-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM2  Net-_M2-Pad1_ Net-_M2-Pad2_ I1 Net-_M2-Pad1_ sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM6  Net-_M2-Pad2_ Net-_M2-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM11  Net-_M10-Pad1_ Net-_M10-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM12  Net-_M10-Pad1_ Net-_M10-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM10  Net-_M10-Pad1_ Net-_M10-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM15  Net-_M14-Pad1_ Net-_M10-Pad1_ Net-_M15-Pad3_ Net-_M15-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM16  Net-_M15-Pad3_ Net-_M10-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5			
+
+
+.ends lowtrans11

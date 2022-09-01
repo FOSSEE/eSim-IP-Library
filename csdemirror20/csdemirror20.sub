@@ -1,0 +1,13 @@
+
+* C:\Users\mihir\eSim-Workspace\csdemirror20\csdemirror20.cir
+
+
+
+.subckt csdemirror20 vdd GND currentsrc 
+
+XM2 vdd  currentsrc n4 GND sky130_fd_pr__nfet_01v8 W=2 L=0.65 M=1
+XM1 currentsrc currentsrc n2 GND sky130_fd_pr__nfet_01v8 W=2 L=0.65 M=1 		
+XM4 n4 n2 GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.65 M=1		
+XM3 n2 n2 GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.65 M=1 		
+
+.ends csdemirror20

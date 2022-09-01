@@ -1,3 +1,0 @@
-	A                   input   3
-	B                   input   3
-	prod                output  6

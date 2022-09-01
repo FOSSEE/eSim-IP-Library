@@ -1,0 +1,24 @@
+* C:\Users\mihir\eSim-Workspace\2stgopampfc43\2stgopampfc43.cir
+
+
+.lib "C:\Users\mihir\eSim-Workspace\skywater-pdk-libs-sky130_fd_pr-main\models\sky130.lib.spice" tt
+
+.subckt 2stgopampfc43 vdd vss gnd vinp vinm vo vbias vout
+
+.include Opamp_bias.sub
+xm1  net-_m1-pad1_ vbias vdd vdd sky130_fd_pr__pfet_01v8 w=20 l=1
+xm4  net-_m2-pad1_ net-_m2-pad1_ vss vss sky130_fd_pr__nfet_01v8 w=20 l=1
+xm2  net-_m2-pad1_ vinp net-_m1-pad1_ net-_m1-pad1_ sky130_fd_pr__pfet_01v8 w=70 l=1
+xm3  vo vinm net-_m1-pad1_ net-_m1-pad1_ sky130_fd_pr__pfet_01v8 w=70 l=1
+xm5  vo net-_m2-pad1_ vss vss sky130_fd_pr__nfet_01v8 w=20 l=1
+
+* u1  /vdd /vinp /vinm /vout port
+
+r1  vo net-_c1-pad2_ 44
+c1  vout net-_c1-pad2_ 3.3p
+xm6  vout vbias vdd vdd sky130_fd_pr__pfet_01v8 w=20 l=1
+xm7  vout vo vss vss sky130_fd_pr__nfet_01v8 w=20 l=1
+x1 vdd vbias Opamp_bias
+
+
+.ends 2stgopampfc43

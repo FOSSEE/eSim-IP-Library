@@ -1,0 +1,21 @@
+* C:\Users\mihir\eSim-Workspace\lpcmamult52\lpcmamult52.cir
+
+
+
+.subckt lpcmamult52 vdd GND v1 v2 v3 v4 out1 out2
+
+* Sheet Name:
+xm9   Net-m1-Pad2 v1 GND GND sky130_fd_pr__nfet_01v8
+xm10  Net-m10-Pad1 v2 GND GND sky130_fd_pr__nfet_01v8
+r1    out1 GND 2.47075k
+r2    out2 GND 2.47075k
+xm1   Net-m1-Pad1 Net-m1-Pad2 vdd vdd sky130_fd_pr__pfet_01v8
+xm2   Net-m1-Pad2 v3 Net-m1-Pad1 vdd sky130_fd_pr__pfet_01v8
+xm3   out1 v3 Net-m1-Pad1 vdd sky130_fd_pr__pfet_01v8
+xm4   out2 v4 Net-m1-Pad1 vdd sky130_fd_pr__pfet_01v8
+xm7   Net-m5-Pad3 Net-m10-Pad1 vdd vdd sky130_fd_pr__pfet_01v8
+xm8   Net-m10-Pad1 v3 Net-m5-Pad3 vdd sky130_fd_pr__pfet_01v8
+xm6   out2 v3 Net-m5-Pad3 vdd sky130_fd_pr__pfet_01v8
+xm5   out1 v4 Net-m5-Pad3 vdd sky130_fd_pr__pfet_01v8
+
+.ends lpcmamult52

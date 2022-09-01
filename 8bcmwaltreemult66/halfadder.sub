@@ -1,0 +1,10 @@
+* Subcircuit halfadder
+.subckt halfadder net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ 
+* /home/drako/applications/esim-2.1/library/subcircuitlibrary/halfadder/halfadder.cir
+.include xor_gate.sub
+.include and_gate.sub
+x2 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad4_ and_gate
+x1 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ xor_gate
+* Control Statements
+
+.ends halfadder

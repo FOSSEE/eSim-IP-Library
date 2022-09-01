@@ -1,0 +1,20 @@
+* /home/hemanth/esim-workspace/1blpfadd42/1blpfadd42.cir
+
+
+
+.subckt 1blpfadd42 A B C VDD SUM CARRY
+
+
+xQ1  VDD A GND VDD sky130_fd_pr__pfet_01v8 W=1 L=0.5	
+xQ2  GND A GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5 		
+xQ3  A B Net-_Q3-Pad3_ A sky130_fd_pr__pfet_01v8 W=1 L=0.5		
+xQ4  Net-_Q3-Pad3_ B GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5 	
+xQ5  VDD Net-_Q3-Pad3_ GND VDD sky130_fd_pr__pfet_01v8 W=1 L=0.5 		
+xQ6  GND Net-_Q3-Pad3_ GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5	
+xQ7  Net-_Q3-Pad3_ C SUM Net-_Q3-Pad3_ sky130_fd_pr__pfet_01v8 W=1 L=0.5		
+xQ8  SUM C GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5 		
+xQ10  B A CARRY CARRY sky130_fd_pr__nfet_01v8 W=0.42 L=0.5	
+xQ9  C Net-_Q3-Pad3_ CARRY CARRY sky130_fd_pr__nfet_01v8 W=0.42 L=0.5 
+
+
+.ends 1blpfadd42

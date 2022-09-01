@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 1bnpcmadd62
+#
+DEF 1bnpcmadd62 X 0 40 Y Y 1 F N
+F0 "X" -250 600 60 H V C CNN
+F1 "1bnpcmadd62" 0 -400 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -300 550 400 -350 0 1 0 N
+X a 1 -500 450 200 R 50 50 1 1 B
+X b 2 -500 300 200 R 50 50 1 1 B
+X c 3 -500 150 200 R 50 50 1 1 B
+X clock 4 -500 0 200 R 50 50 1 1 B
+X clock_bar 5 -500 -150 200 R 50 50 1 1 B
+X cout_bar 6 -500 -300 200 R 50 50 1 1 B
+X vdd 7 600 450 200 L 50 50 1 1 B
+X sum_bar 8 600 300 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

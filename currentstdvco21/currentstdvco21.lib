@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# currentstdvco21
+#
+DEF currentstdvco21 X 0 40 Y Y 1 F N
+F0 "X" -300 350 60 H V C CNN
+F1 "currentstdvco21" 0 -300 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -350 300 350 -250 0 1 0 N
+X vdd 1 -550 200 200 R 50 50 1 1 B
+X vctrl 2 -550 -150 200 R 50 50 1 1 B
+X f_out 3 550 50 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

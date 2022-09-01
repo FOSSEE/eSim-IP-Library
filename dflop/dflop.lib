@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# dflop
+#
+DEF dflop X 0 40 Y Y 4 F N
+F0 "X" 0 0 60 H V C CNN
+F1 "dflop" 0 -100 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -250 50 300 -250 0 1 0 N
+X vdd 1 0 250 200 D 50 50 1 1 I
+X GND 2 0 -250 200 D 50 50 1 1 I
+X D 3 -450 -100 200 R 50 50 1 1 I
+X Q 4 500 -100 200 L 50 50 1 1 O
+X D ?? -450 -100 200 R 50 50 2 1 I
+X GND ?? 0 -250 200 D 50 50 2 1 I
+X Q ?? 500 -100 200 L 50 50 2 1 O
+X vdd ?? 0 250 200 D 50 50 2 1 I
+X D ?? -450 -100 200 R 50 50 3 1 I
+X GND ?? 0 -250 200 D 50 50 3 1 I
+X Q ?? 500 -100 200 L 50 50 3 1 O
+X vdd ?? 0 250 200 D 50 50 3 1 I
+X D ?? -450 -100 200 R 50 50 4 1 I
+X GND ?? 0 -250 200 D 50 50 4 1 I
+X Q ?? 500 -100 200 L 50 50 4 1 O
+X vdd ?? 0 250 200 D 50 50 4 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

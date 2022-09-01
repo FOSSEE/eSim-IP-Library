@@ -1,4 +1,0 @@
-	i0                  input   1
-	i1                  input   1
-	sel                 input   1
-	y                   output  1

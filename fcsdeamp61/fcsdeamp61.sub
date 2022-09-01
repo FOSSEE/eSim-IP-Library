@@ -1,0 +1,20 @@
+* C:\Users\mihir\eSim-Workspace\fcsdeamp61\fcsdeamp61.cir
+
+
+
+.subckt fcsdeamp61 vdd GND vout vin1 vin2 vin3 vin4 vin5
+
+xM2  Net-_M2-Pad1_ Net-_M1-Pad2_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 		
+xM1  Net-_M1-Pad1_ Net-_M1-Pad2_ vdd vdd sky130_fd_pr__pfet_01v8  w=1 l=0.5 		
+xM11  Net-_M11-Pad1_ vin5 Net-_M11-Pad3_ Net-_M11-Pad3_ sky130_fd_pr__pfet_01v8 w=1 l=0.5 
+xM4  vout vin1 Net-_M2-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 	
+xM6  Net-_M10-Pad1_ vin4 Net-_M11-Pad3_ Net-_M11-Pad3_ sky130_fd_pr__pfet_01v8 w=1 l=0.5 		
+xM3  Net-_M1-Pad2_ vin1 Net-_M1-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 		
+xM8  vout vin2 Net-_M10-Pad1_ GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5 		
+xM7  Net-_M1-Pad2_ vin2 Net-_M11-Pad1_ GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5  		
+xM10  Net-_M10-Pad1_ vin3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5 		
+xM9  Net-_M11-Pad1_ vin3 GND GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5 		
+xM5  Net-_M11-Pad3_ GND vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 			
+C1  vout GND 50
+
+.ends fcsdeamp61

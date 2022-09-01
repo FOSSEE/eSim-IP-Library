@@ -1,0 +1,25 @@
+* /home/hemanth/esim-workspace/1bnpcmadd62/1bnpcmadd62.cir
+
+.subckt 1bnpcmadd62 a b c clock clock_bar cout_bar vdd  sum_bar 
+
+xM4  Net-_M2-Pad1_ c Net-_M3-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM5  Net-_M2-Pad1_ b cout_bar vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM6  Net-_M3-Pad1_ a cout_bar vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM7  cout_bar clock_bar GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM9  sum_bar a Net-_M10-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM10  sum_bar b Net-_M10-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM11  sum_bar c Net-_M10-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM12  Net-_M10-Pad3_ cout_bar Net-_M12-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM14  sum_bar a Net-_M14-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM13  Net-_M12-Pad3_ clock GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM1  Net-_M1-Pad1_ clock_bar vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM8  sum_bar clock vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM15  Net-_M14-Pad3_ b Net-_M15-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM16  Net-_M15-Pad3_ c Net-_M12-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM2  Net-_M2-Pad1_ a Net-_M1-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM3  Net-_M3-Pad1_ b Net-_M1-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xM18  clock_bar clock GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM17  clock_bar clock vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+* U1  /vdd /a /b /c /clock /cout_bar /sum_bar PORT
+
+.ends 1bnpcmadd

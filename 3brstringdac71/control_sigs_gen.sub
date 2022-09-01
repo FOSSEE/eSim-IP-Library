@@ -1,0 +1,11 @@
+
+.include DFF.sub 
+.subckt control_sigs_gen vdd clk b0 b1 b2 out_b0 out_b1 out_b2 out_b0bar out_b1bar out_b2bar
+
+X1  vdd clk vdd GND Y TX_Gate		
+X2  vdd clk Net-_X2-Pad3_ CMOS_Inv		
+XD3  vdd Y Net-_X2-Pad3_ b0 out_b0 out_b0bar DFF		
+XD4  vdd Y Net-_X2-Pad3_ b1 out_b1 out_b1bar DFF		
+XD5  vdd Y Net-_X2-Pad3_ b2 out_b2 out_b2bar DFF	
+
+.ends control_signals_gen

@@ -1,0 +1,14 @@
+* C:\Users\mihir\eSim-Workspace\fwbgrectifier11\fwbgrectifier11.cir
+
+
+
+.subckt fwbgrectifier11 vin vout GND
+
+xM3  vin vin vout vout sky130_fd_pr__pfet_01v8 w=1 l=0.5	
+xM1  vin vin Net-_M1-Pad3_ Net-_M1-Pad3_  sky130_fd_pr__nfet_01v8 w=.42 l=0.5
+xM4  vin vin vout vout sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xM2  vin vin Net-_M1-Pad3_ Net-_M1-Pad3_ sky130_fd_pr__nfet_01v8 w=.42 l=0.5	
+R1  vout GND 1000
+
+.ends fwbgrectifier11
+

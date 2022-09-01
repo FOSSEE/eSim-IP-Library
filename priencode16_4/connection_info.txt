@@ -1,2 +1,0 @@
-	out                 output  4
-	i                   input   16

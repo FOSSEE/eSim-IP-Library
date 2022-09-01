@@ -1,3 +1,0 @@
-	in                  input   16
-	s                   input   4
-	out                 output  1

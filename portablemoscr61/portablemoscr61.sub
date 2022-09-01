@@ -1,0 +1,10 @@
+* /home/hemanth/esim-workspace/portablemoscr61/portablemoscr61.cir
+.include Active_Rectifier.sub
+
+
+.subckt portablemoscr61 V_ac Vg1 Vg2 gnd net-_m1-pad1_ 5V_DC vout
+
+xm1  net-_m1-pad1_ net-_m1-pad1_ 5V_DC vout sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+* u1  v_dc 5v_dc port
+x1 V_ac Vg1 Vg2 gnd net-_m1-pad1_ Active_Rectifier
+.ends portablemoscr61
