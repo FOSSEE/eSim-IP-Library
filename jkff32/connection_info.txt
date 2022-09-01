@@ -1,0 +1,5 @@
+	j                   input   1
+	k                   input   1
+	clk                 input   1
+	q                   output  1
+	qb                  output  1

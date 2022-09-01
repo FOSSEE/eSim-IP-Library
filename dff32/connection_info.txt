@@ -1,0 +1,5 @@
+	Q                   output  1
+	Qbar                output  1
+	D                   input   1
+	Clk                 input   1
+	Reset               input   1

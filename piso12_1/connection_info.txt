@@ -1,0 +1,4 @@
+	clk                 input   1
+	load                input   1
+	Data_pr             input   10
+	Data_sr             output  1

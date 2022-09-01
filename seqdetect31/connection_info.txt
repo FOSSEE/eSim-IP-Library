@@ -1,0 +1,4 @@
+	I                   input   1
+	CLK                 input   1
+	RST                 input   1
+	Z                   output  1

@@ -1,0 +1,2 @@
+	clk                 input   1
+	val                 output  4

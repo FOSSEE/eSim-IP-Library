@@ -1,0 +1,11 @@
+int foojkff32(int,int);
+        int temp_j[1024];
+        int port_j;
+        int temp_k[1024];
+        int port_k;
+        int temp_clk[1024];
+        int port_clk;
+        int temp_q[1024];
+        int port_q;
+        int temp_qb[1024];
+        int port_qb;

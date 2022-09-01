@@ -1,0 +1,2 @@
+	din                 input   8
+	dout                output  3

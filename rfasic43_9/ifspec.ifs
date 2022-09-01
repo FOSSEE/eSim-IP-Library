@@ -1,0 +1,136 @@
+
+        /*
+        SUMMARY: This file is auto generated and it contains the interface
+         specification for the code model. */
+
+        NAME_TABLE:
+        C_Function_Name: cm_rfasic43_9
+        Spice_Model_Name: rfasic43_9
+        Description: "Model generated from NgVeri code rfasic43_9.v" 
+
+
+PORT_TABLE:
+Port_Name:	in_Sensor1
+Description:	"input port in_Sensor1"
+Direction:	in
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[8 8]
+Null_Allowed:	no
+
+PORT_TABLE:
+Port_Name:	in_Sensor2
+Description:	"input port in_Sensor2"
+Direction:	in
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[8 8]
+Null_Allowed:	no
+
+PORT_TABLE:
+Port_Name:	in_Sensor3
+Description:	"input port in_Sensor3"
+Direction:	in
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[8 8]
+Null_Allowed:	no
+
+PORT_TABLE:
+Port_Name:	in_Sensor4
+Description:	"input port in_Sensor4"
+Direction:	in
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[8 8]
+Null_Allowed:	no
+
+PORT_TABLE:
+Port_Name:	in_Sensor5
+Description:	"input port in_Sensor5"
+Direction:	in
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[8 8]
+Null_Allowed:	no
+
+PORT_TABLE:
+Port_Name:	in_Global_Clock
+Description:	"input port in_Global_Clock"
+Direction:	in
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[1 1]
+Null_Allowed:	no
+
+PORT_TABLE:
+Port_Name:	in_Clk
+Description:	"input port in_Clk"
+Direction:	in
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[1 1]
+Null_Allowed:	no
+
+PORT_TABLE:
+Port_Name:	in_RST
+Description:	"input port in_RST"
+Direction:	in
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[1 1]
+Null_Allowed:	no
+
+PORT_TABLE:
+Port_Name:	out_Light
+Description:	"output port out_Light"
+Direction:	out
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[8 8]
+Null_Allowed:	no
+
+PORT_TABLE:
+Port_Name:	out_Tx_Serial
+Description:	"output port out_Tx_Serial"
+Direction:	out
+Default_Type:	d
+Allowed_Types:	[d]
+Vector:	yes
+Vector_Bounds:	[1 1]
+Null_Allowed:	no
+
+
+
+
+
+        PARAMETER_TABLE:
+        Parameter_Name:     instance_id                  input_load
+        Description:        "instance_id"                "input load value (F)"
+        Data_Type:          real                         real
+        Default_Value:      0                            1.0e-12
+        Limits:             -                            -
+        Vector:              no                          no
+        Vector_Bounds:       -                           -
+        Null_Allowed:       yes                          yes
+
+        PARAMETER_TABLE:
+        Parameter_Name:     rise_delay                  fall_delay
+        Description:        "rise delay"                "fall delay"
+        Data_Type:          real                        real
+        Default_Value:      1.0e-9                      1.0e-9
+        Limits:             [1e-12 -]                   [1e-12 -]
+        Vector:              no                          no
+        Vector_Bounds:       -                           -
+        Null_Allowed:       yes                         yes
+
+        

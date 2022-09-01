@@ -1,0 +1,3 @@
+	clk                 input   1
+	reset               input   1
+	counter             output  3

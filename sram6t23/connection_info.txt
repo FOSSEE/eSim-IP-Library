@@ -1,0 +1,3 @@
+	din                 input   1
+	wen                 input   1
+	q                   output  1

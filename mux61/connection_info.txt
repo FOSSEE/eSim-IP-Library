@@ -1,0 +1,7 @@
+	a                   input   1
+	b                   input   1
+	c                   input   1
+	d                   input   1
+	s0                  input   1
+	s1                  input   1
+	out                 output  1

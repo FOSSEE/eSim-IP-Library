@@ -1,0 +1,4 @@
+	clk                 input   1
+	rst                 input   4
+	q                   output  4
+	qb                  output  4

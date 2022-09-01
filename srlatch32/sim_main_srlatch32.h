@@ -1,0 +1,11 @@
+int foosrlatch32(int,int);
+        int temp_CLK[1024];
+        int port_CLK;
+        int temp_S[1024];
+        int port_S;
+        int temp_R[1024];
+        int port_R;
+        int temp_Q[1024];
+        int port_Q;
+        int temp_Qn[1024];
+        int port_Qn;

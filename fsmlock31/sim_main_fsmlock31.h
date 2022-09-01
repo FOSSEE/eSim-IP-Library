@@ -1,0 +1,9 @@
+int foofsmlock31(int,int);
+        int temp_clk[1024];
+        int port_clk;
+        int temp_reset[1024];
+        int port_reset;
+        int temp_din[1024];
+        int port_din;
+        int temp_pattern_detect[1024];
+        int port_pattern_detect;

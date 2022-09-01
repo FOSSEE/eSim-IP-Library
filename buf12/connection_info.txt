@@ -1,0 +1,3 @@
+	a                   input   1
+	y                   output  1
+	ybar                output  1

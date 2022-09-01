@@ -1,0 +1,30 @@
+module glenn_3bitDecoder(
+
+input [2:0]  in3,
+
+input en,
+
+output d0,d1,d2,d3,d4,d5,d6,d7
+   
+);
+
+reg a,b,c;
+
+assign a=in3[0];
+assign b=in3[1];
+assign c=in3[2];
+
+always @( in3 )
+
+begin
+      if (en) 
+		d0=(~a&~b&~c),
+		d1=(~a&~b&c),
+		d2=(~a&b&~c),
+		d3=(~a&b&c),
+		d4=(a&~b&~c),
+		d5=(a&~b&c),
+		d6=(a&b&~c),
+		d7=(a&b&c);
+end
+endmodule
