@@ -1,0 +1,14 @@
+* C:\Users\mihir\eSim-Workspace\bbconvtr21\bbconvtr21.cir
+
+.subckt bbconvtr21 GND in SQpulse out
+
+D2  Net-_D2-Pad1_ GND sky130_fd_pr__diode_pd2nw_05v5		
+D1  out Net-_D1-Pad2_ sky130_fd_pr__diode_pd2nw_05v5		
+C1  out GND 11e-07		
+L2  Net-_D2-Pad1_ out 35e-04		
+L1  Net-_D1-Pad2_ GND 35e-04	
+R1  out GND 50		
+xM1  in SQpulse Net-_D1-Pad2_ Net-_D1-Pad2_ sky130_fd_pr__pfet_01v8 w=1 l=.5	
+	
+	
+.ends bbconvtr21

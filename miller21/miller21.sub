@@ -1,0 +1,13 @@
+* /home/ayush/eSim-Workspace/miller21/miller21.cir
+
+
+
+
+.subckt miller21 vdd clk data out
+.include static.sub
+.include toutput.sub
+X1  vdd clk data Net-_X1-Pad4_ static		
+X2  vdd Net-_X1-Pad4_ out toutput		
+*U1  vdd clk data out PORT	
+
+.ends miller21

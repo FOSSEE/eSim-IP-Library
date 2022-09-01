@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# lvlpamp11
+#
+DEF lvlpamp11 X 0 40 Y Y 1 F N
+F0 "X" 50 -100 60 H V C CNN
+F1 "lvlpamp11" 50 300 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 850 -400 -750 500 0 1 0 N
+X gnd 1 50 -600 200 U 50 50 1 1 I
+X in 2 -950 50 200 R 50 50 1 1 I
+X out 3 1050 50 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

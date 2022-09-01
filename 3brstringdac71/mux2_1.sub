@@ -1,0 +1,8 @@
+.subckt mux2_1 vdd vin_a vin_b c cbar vout
+
+xM1  vin_a c vout GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5		
+xM2  vout cbar vin_a vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM3  vin_b cbar vout GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5		
+xM4  vout c vin_b vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+
+.ends mux2_1

@@ -1,0 +1,13 @@
+* /home/hemanth/esim-workspace/diboamp42/diboamp42.cir
+
+.subckt diboamp42 in1 in2 vdd vss vout1 vout2
+
+
+r1  vdd vout1 25k		
+r2  vdd vout2 25k		
+xM1 vout1 in1 sink vss sky130_fd_pr__nfet_01v8 w=2.1 l=1		
+xM2 vout2 in2 sink vss sky130_fd_pr__nfet_01v8 w=2.1 l=1	
+r3  sink vss 20k		
+
+.ends diboamp42
+

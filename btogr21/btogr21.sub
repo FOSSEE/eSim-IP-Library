@@ -1,0 +1,19 @@
+* /home/ayush/eSim-Workspace/btogr21/btogr21.cir
+
+
+.subckt btogr21 vdd GND digitalinputa digitalinputb vout
+xM5  Net-_M5-Pad1_ vout digitalinputa digitalinputa sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM6  Net-_M6-Pad1_ digitalinputa digitalinputa digitalinputa sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM7  vout digitalinputb Net-_M5-Pad1_ digitalinputa sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM8  vout Net-_M12-Pad2_ Net-_M6-Pad1_ digitalinputa sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM9  vout digitalinputa Net-_M10-Pad1_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM11 vout vout Net-_M11-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM10  Net-_M10-Pad1_ digitalinputb GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM12  Net-_M11-Pad3_ Net-_M12-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM2  vout digitalinputa GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+xM1  vout digitalinputa digitalinputa digitalinputa sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM3  Net-_M12-Pad2_ digitalinputb digitalinputa digitalinputa sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM4  Net-_M12-Pad2_ digitalinputb GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5		
+
+
+.ends btogr21

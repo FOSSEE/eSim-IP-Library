@@ -1,0 +1,21 @@
+* /home/hemanth/esim-workspace/smtrigger21/smtrigger21.cir
+
+
+.subckt smttrigger21 digital_input Vdd Vout 
+
+*/Sheet
+
+xM3  Vout digital_input Net-_M3-Pad3_ Vdd sky130_fd_pr__pfet_01v8 W=1 L=0.5			
+xM6  GND Vout Net-_M3-Pad3_ Vdd sky130_fd_pr__pfet_01v8 W=1 L=0.5				
+xM2  Vout digital_input Net-_M1-Pad1_ GND sky130_fd_pr__nfet_01v8 W=.42 L=.5	
+
+xM1  Net-_M1-Pad1_ digital_input GND GND sky130_fd_pr__nfet_01v8 W=.42 L=.5
+xM5  Vdd Vout GND GND sky130_fd_pr__nfet_01v8 W=.42 L=.5
+
+	
+xM4  Net-_M3-Pad3_ digital_input Vdd Vdd sky130_fd_pr__pfet_01v8 W=1 L=0.5	
+
+			
+
+
+.ends smttrigger21

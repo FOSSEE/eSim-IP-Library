@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 1stcmamp31
+#
+DEF 1stcmamp31 X 0 40 Y Y 1 F N
+F0 "X" -250 350 60 H V C CNN
+F1 "1stcmamp31" 0 -350 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -300 300 300 -300 0 1 0 N
+X vin1 1 -500 200 200 R 50 50 1 1 B
+X vin2 2 -500 -100 200 R 50 50 1 1 B
+X idc 3 500 200 200 L 50 50 1 1 B
+X vout 4 500 -150 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

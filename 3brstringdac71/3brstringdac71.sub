@@ -1,0 +1,23 @@
+* /home/hemanth/esim-workspace/3brstringdac71/3brstringdac71.cir
+
+
+.subckt 3brstringdac71 b0 b1 b2 vrefl vrefh vdd clk vout
+.include control_sigs_gen.sub 
+.include mux8_1.sub
+
+* Sheet Name: /
+X1  vdd Net-_R1-Pad2_ Net-_R2-Pad2_ Net-_R3-Pad2_ Net-_R4-Pad2_ Net-_R5-Pad2_ Net-_R6-Pad2_ Net-_R7-Pad2_ vrefl Net-_X1-Pad10_ Net-_X1-Pad11_ Net-_X1-Pad12_ vout Net-_X1-Pad14_ Net-_X1-Pad15_ Net-_X1-Pad16_ mux8_1		
+
+R2  Net-_R1-Pad2_ Net-_R2-Pad2_ 1811		
+R3  Net-_R2-Pad2_ Net-_R3-Pad2_ 1811		
+R8  Net-_R7-Pad2_ vrefl 1811		
+R7  Net-_R6-Pad2_ Net-_R7-Pad2_ 1811		
+R6  Net-_R5-Pad2_ Net-_R6-Pad2_ 1811		
+R5  Net-_R4-Pad2_ Net-_R5-Pad2_ 1811		
+R4  Net-_R3-Pad2_ Net-_R4-Pad2_ 1811		
+R1  vrefh Net-_R1-Pad2_ 1811		
+
+XCS1  vdd clk b0 b1 b2 Net-_X1-Pad12_ Net-_X1-Pad11_ Net-_X1-Pad10_ Net-_X1-Pad16_ Net-_X1-Pad15_ Net-_X1-Pad14_ control_sigs_gen		
+
+
+.ends 3brstringdac71

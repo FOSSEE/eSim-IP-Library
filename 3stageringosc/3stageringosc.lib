@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 3stageringosc
+#
+DEF 3stageringosc X 0 40 Y Y 3 F N
+F0 "X" 0 0 60 H V C CNN
+F1 "3stageringosc" 50 -150 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -800 150 1200 -600 0 1 0 N
+X gnd 1 50 -800 200 U 50 50 1 1 I
+X v1 2 -1000 -250 200 R 50 50 1 1 I
+X out 3 1400 -300 200 L 50 50 1 1 I
+X gnd ?? 50 -800 200 U 50 50 2 1 I
+X out ?? 1400 -300 200 L 50 50 2 1 I
+X v1 ?? -1000 -250 200 R 50 50 2 1 I
+X gnd ?? 50 -800 200 U 50 50 3 1 I
+X out ?? 1400 -300 200 L 50 50 3 1 I
+X v1 ?? -1000 -250 200 R 50 50 3 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

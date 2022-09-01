@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# nmsmttrigger43
+#
+DEF nmsmttrigger43 X 0 40 Y Y 1 F N
+F0 "X" -350 500 60 H V C CNN
+F1 "nmsmttrigger43" -50 -500 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -400 450 400 -450 0 1 0 N
+X vq 1 -600 350 200 R 50 50 1 1 B
+X vq_ 2 -600 150 200 R 50 50 1 1 B
+X vdd 3 -600 -50 200 R 50 50 1 1 B
+X vdd1 4 -600 -300 200 R 50 50 1 1 B
+X vwl 5 600 300 200 L 50 50 1 1 B
+X vbl 6 600 100 200 L 50 50 1 1 B
+X vbl_ 7 600 -200 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

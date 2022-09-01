@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 2stgcmamp52
+#
+DEF 2stgcmamp52 X 0 40 Y Y 1 F N
+F0 "X" -300 550 60 H V C CNN
+F1 "2stgcmamp52" -50 -550 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -350 500 450 -500 0 1 0 N
+X in1 1 -550 400 200 R 50 50 1 1 B
+X in2 2 -550 200 200 R 50 50 1 1 B
+X ref 3 -550 -50 200 R 50 50 1 1 B
+X vdd 4 -550 -250 200 R 50 50 1 1 B
+X vss 5 -550 -400 200 R 50 50 1 1 B
+X out1 6 650 350 200 L 50 50 1 1 B
+X out2 7 650 -400 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

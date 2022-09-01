@@ -1,0 +1,19 @@
+* C:\Users\mihir\eSim-Workspace\darlingtonamp21\darlingtonamp21.cir
+
+
+
+.subckt darlingtonamp21 VDD vin vout
+
+xM1  VDD Net-_C1-Pad2_ Net-_M1-Pad3_ vout sky130_fd_pr__nfet_01v8    
+R1  VDD Net-_C1-Pad2_ 0          
+R2  Net-_C1-Pad2_ vout 0        
+C1  vin Net-_C1-Pad2_ 0    
+R3  Net-_M1-Pad3_ vout 0        
+xM2  Net-_M2-Pad1_ Net-_M1-Pad3_ Net-_C2-Pad1_ VDD sky130_fd_pr__pfet_01v8
+        
+R5  VDD Net-_M2-Pad1_ 0        
+R4  Net-_C2-Pad1_ vout 0        
+R6  Net-_M2-Pad1_ vout 0
+C2  Net-_C2-Pad1_ vout 0                
+
+.ends darlingtonamp21

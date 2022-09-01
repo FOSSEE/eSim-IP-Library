@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# faddcm32
+#
+DEF faddcm32 X 0 40 Y Y 1 F N
+F0 "X" 0 -250 60 H V C CNN
+F1 "faddcm32" 0 200 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 750 -500 -650 450 0 1 0 N
+X vdd 1 -350 650 200 D 50 50 1 1 I
+X GND 2 450 -700 200 U 50 50 1 1 I
+X vin_a 3 -850 300 200 R 50 50 1 1 I
+X vin_b 4 -850 -50 200 R 50 50 1 1 I
+X vin_c 5 -850 -450 200 R 50 50 1 1 I
+X sum 6 950 300 200 L 50 50 1 1 O
+X carry 7 950 -400 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

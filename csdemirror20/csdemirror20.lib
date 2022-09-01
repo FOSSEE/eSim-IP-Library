@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# csdemirror20
+#
+DEF csdemirror20 X 0 40 Y Y 1 F N
+F0 "X" 0 -50 60 H V C CNN
+F1 "csdemirror20" 0 200 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 650 -350 -600 500 0 1 0 N
+X vdd 1 0 700 200 D 50 50 1 1 I
+X GND 2 0 -550 200 U 50 50 1 1 I
+X currentsrc 3 850 100 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,42 @@
+* /home/hemanth/esim-workspace/84nmbarsft94/84nmbarsft94.cir
+* EESchema Netlist Version 1.1 (Spice format) creation date: 6/29/2021 11:56:39 PM
+
+.subckt 84nmbarsft94 Input_In0 Input_In1 Input_In2 Input_In3 Input_In4 Input_In5 Input_In6 Input_In7 Vdd Out0 Out1 Out2 Out3
+
+* Sheet Name: /
+xM2 Out0 GND Input_In1 GND sky130_fd_pr__nfet_01v8 		
+xM1 Out0 GND Input_In0 GND sky130_fd_pr__nfet_01v8 		
+xM4 Out0 GND Input_In3 GND sky130_fd_pr__nfet_01v8 		
+xM3 Out0 GND Input_In2 GND sky130_fd_pr__nfet_01v8 		
+xM5 Out0 Vdd Input_In4 GND sky130_fd_pr__nfet_01v8 		
+xM7 Out1 GND Input_In2 GND sky130_fd_pr__nfet_01v8 		
+xM6 Out1 GND Input_In1 GND sky130_fd_pr__nfet_01v8 	
+xM9 Out1 GND Input_In4 GND sky130_fd_pr__nfet_01v8 		
+xM8 Out1 GND Input_In3 GND sky130_fd_pr__nfet_01v8 		
+xM10 Out1 Vdd Input_In5 GND sky130_fd_pr__nfet_01v8 		
+xM12 Out2 GND Input_In3 GND sky130_fd_pr__nfet_01v8 		
+xM11 Out2 GND Input_In2 GND sky130_fd_pr__nfet_01v8 		
+xM14 Out2 GND Input_In5 GND sky130_fd_pr__nfet_01v8 	
+xM13 Out2 GND Input_In4 GND sky130_fd_pr__nfet_01v8 		
+xM15 Out2 Vdd Input_In6 GND sky130_fd_pr__nfet_01v8 		
+xM17 Out3 GND Input_In4 GND sky130_fd_pr__nfet_01v8 	
+xM16 Out3 GND Input_In3 GND sky130_fd_pr__nfet_01v8 		
+xM19 Out3 GND Input_In6 GND sky130_fd_pr__nfet_01v8 		
+xM18 Out3 GND Input_In5 GND sky130_fd_pr__nfet_01v8 		
+xM20 Out3 Vdd Input_In7 GND sky130_fd_pr__nfet_01v8 		
+*U1  /Input_In0 PORT		
+*U2  /Input_In1 PORT		
+*U3  /Input_In2 PORT		
+*U4  /Input_In3 PORT		
+*U5  /Input_In4 PORT		
+*U6  /Input_In5 PORT		
+*U7  /Input_In6 PORT		
+*U8  /Input_In7 PORT		
+*U9  /Out0 PORT		
+*U10  /Out1 PORT		
+*U11  /Out2 PORT		
+*U12  /Out3 PORT		
+*U13  /Vdd PORT		
+
+
+.ends 84nmbarsft94

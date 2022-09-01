@@ -1,3 +1,0 @@
-	clk                 input   1
-	reset               input   1
-	out                 output  4

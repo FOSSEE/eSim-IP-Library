@@ -1,4 +1,0 @@
-	clk                 input   1
-	reset               input   1
-	din                 input   1
-	pattern_detect      output  1

@@ -1,0 +1,15 @@
+
+.include mux2_1.sub
+
+.subckt mux8_1 vdd vin_7 vin_6 vin_5 vin_4 vin_3 vin_2 vin_1 vin_0 sel_2 sel_1 sel_0 vout sel_2bar sel_1bar sel_0bar
+
+x1 vdd vin_7 vin_6 sel_2 sel_2bar net-_x1-pad6_ mux2_1
+x2 vdd vin_5 vin_4 sel_2 sel_2bar net-_x2-pad6_ mux2_1
+x3 vdd vin_3 vin_2 sel_2 sel_2bar net-_x3-pad6_ mux2_1
+x4 vdd vin_1 vin_0 sel_2 sel_2bar net-_x4-pad6_ mux2_1
+x5 vdd net-_x1-pad6_ net-_x2-pad6_ sel_1 sel_1bar net-_x5-pad6_ mux2_1
+x6 vdd net-_x3-pad6_ net-_x4-pad6_ sel_1 sel_1bar net-_x6-pad6_ mux2_1
+x7 vdd net-_x5-pad6_ net-_x6-pad6_ sel_0 sel_0bar vout mux2_1
+* Control Statements
+
+.ends mux8_1

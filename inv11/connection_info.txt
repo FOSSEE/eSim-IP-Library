@@ -1,2 +1,0 @@
-	inv_out             output  1
-	inv_in              input   1

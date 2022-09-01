@@ -1,0 +1,20 @@
+* /home/hemanth/esim-workspace/2bpdonmpg71/2bpdonmpg71.cir
+
+.subckt 2bpdonmpg71 A D C B DC_D vdd DC_B PARITY_BIT 
+xM3  Net-_M1-Pad1_ GND vdd vdd sky130_fd_pr__pfet_01v8 W=1 L=0.5		
+xM7  Net-_M6-Pad1_ GND vdd vdd sky130_fd_pr__pfet_01v8 W=1 L=0.5
+xM10  Net-_M10-Pad1_ GND vdd vdd sky130_fd_pr__pfet_01v8 W=1 L=0.5		
+xM14 PARITY_BIT GND vdd vdd sky130_fd_pr__pfet_01v8 W=1 L=0.5	
+xM6  Net-_M6-Pad1_ Net-_M1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5	
+xM1  Net-_M1-Pad1_ A Net-_M1-Pad3_ Net-_M1-Pad3_ sky130_fd_pr__nfet_01v8 W=0.42 L=0.5		
+xM4  Net-_M1-Pad1_ B Net-_M4-Pad3_ Net-_M4-Pad3_ sky130_fd_pr__nfet_01v8 W=0.42 L=0.5		
+xM2  Net-_M1-Pad3_ D GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5		
+xM5  Net-_M4-Pad3_ C GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5	
+xM8  Net-_M10-Pad1_ Net-_M6-Pad1_ Net-_M8-Pad3_ Net-_M8-Pad3_ sky130_fd_pr__nfet_01v8 W=0.42 L=0.5		
+xM11 Net-_M10-Pad1_ DC_B Net-_M11-Pad3_ Net-_M11-Pad3_ sky130_fd_pr__nfet_01v8 W=0.42 L=0.5		
+xM9  Net-_M8-Pad3_ DC_D GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5		
+xM12 Net-_M11-Pad3_ Net-_M1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5		
+xM13 PARITY_BIT Net-_M10-Pad1_ GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.5		
+		
+
+.ends 2bpdonmpg71

@@ -1,0 +1,15 @@
+* C:\Users\mihir\eSim-Workspace\cmsmttrigger21\cmsmttrigger21.cir
+
+
+
+.subckt cmsmttrigger21 vdd GND Input output
+
+xM5  vdd Input Net-_M4-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM4  Net-_M4-Pad1_ Input output vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM6  Net-_M4-Pad1_ output GND vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM2  output Input Net-_M1-Pad1_ GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM1  Net-_M1-Pad1_ Input GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM3  vdd output Net-_M1-Pad1_ GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+
+.ends cmsmttrigger21	
+

@@ -1,5 +1,0 @@
-	Q                   output  1
-	Qn                  output  1
-	CLK                 input   1
-	S                   input   1
-	R                   input   1

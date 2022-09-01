@@ -1,0 +1,13 @@
+* Subcircuit 2_or_gate
+
+.subckt 2_or_gate vin_2 vin_1 vdd vout 
+* c:\fossee\esim\library\subcircuitlibrary\2_or_gate\2_or_gate.cir
+xm2  net-_m2-pad1_ vin_1 vdd vdd sky130_fd_pr__pfet_01v8 w=3 l=1.5
+xm3  net-_m1-pad1_ vin_2 net-_m2-pad1_ vdd sky130_fd_pr__pfet_01v8 w=3 l=1.5
+xm1  net-_m1-pad1_ vin_1 net-_m1-pad3_ net-_m1-pad3_ sky130_fd_pr__nfet_01v8 w=2.42 l=1.5
+xm4  net-_m1-pad1_ vin_2 net-_m1-pad3_ net-_m1-pad3_ sky130_fd_pr__nfet_01v8 w=2.42 l=1.5
+xm6  vout net-_m1-pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=3 l=1.5
+xm5  vout net-_m1-pad1_ net-_m1-pad3_ net-_m1-pad3_ sky130_fd_pr__nfet_01v8 w=2.42 l=1.5
+* Control Statements
+
+.ends 2_or_gate

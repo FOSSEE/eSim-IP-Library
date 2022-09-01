@@ -1,0 +1,47 @@
+* /home/ayush/eSim-Workspace/lowpownand32/lowpownand32.cir
+
+.subckt lowpownand32 vdd GND a  b borrow_in borrow_out  diff
+
+xM1  Net-_M1-Pad1_ a vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM4  Net-_M1-Pad1_ b vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM2  Net-_M1-Pad1_ a Net-_M2-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM3  Net-_M2-Pad3_ b GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM5  Net-_M11-Pad1_ a vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM11  Net-_M11-Pad1_ Net-_M1-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM7  Net-_M11-Pad1_ a Net-_M7-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM8  Net-_M7-Pad3_ Net-_M1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM6  Net-_M12-Pad1_ Net-_M1-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM12  Net-_M12-Pad1_ b vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM9  Net-_M12-Pad1_ Net-_M1-Pad1_ Net-_M10-Pad1_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM10  Net-_M10-Pad1_ b GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM13  Net-_M13-Pad1_ Net-_M11-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM16  Net-_M13-Pad1_ Net-_M12-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM14  Net-_M13-Pad1_ Net-_M11-Pad1_ Net-_M14-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM15  Net-_M14-Pad3_ Net-_M12-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM17  Net-_M17-Pad1_ Net-_M13-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM20  Net-_M17-Pad1_ borrow_in vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM18  Net-_M17-Pad1_ Net-_M13-Pad1_ Net-_M18-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM19  Net-_M18-Pad3_ borrow_in GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM21  Net-_M21-Pad1_ Net-_M13-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM27  Net-_M21-Pad1_ Net-_M17-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM23  Net-_M21-Pad1_ Net-_M13-Pad1_ Net-_M23-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM24  Net-_M23-Pad3_ Net-_M17-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM22  Net-_M22-Pad1_ Net-_M17-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM28  Net-_M22-Pad1_ borrow_in vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM25  Net-_M22-Pad1_ Net-_M17-Pad1_ Net-_M25-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM26  Net-_M25-Pad3_ borrow_in GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM29  diff Net-_M21-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM35  diff Net-_M22-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM31  diff Net-_M21-Pad1_ Net-_M31-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM32  Net-_M31-Pad3_ Net-_M22-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM30  borrow_out Net-_M22-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM36  borrow_out Net-_M12-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=.5
+xM33  borrow_out Net-_M22-Pad1_ Net-_M33-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM34  Net-_M33-Pad3_ Net-_M12-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+
+.ends lowpownand32
+plot V(borrow_out)
+.endc
+
+.end
+

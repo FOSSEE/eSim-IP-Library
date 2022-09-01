@@ -1,0 +1,20 @@
+* /home/hemanth/esim-workspace/lpsrcell72/lpsrcell72.cir
+
+
+.subckt lpsrcell72 BL nBL WL body_N body_P CLK VDD Q nQ
+.include CMOS_Inv.sub
+
+xM2  Q nQ virtual_GND virtual_GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM1  Q nQ virtual_VDD virtual_VDD sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xM4  nQ Q virtual_GND virtual_GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM3  nQ Q virtual_VDD virtual_VDD sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xM6  nBL WL nQ GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM5  BL WL Q GND sky130_fd_pr__nfet_01v8 w=.42 l=.5
+xM7  virtual_VDD nCLK VDD body_P sky130_fd_pr__pfet_01v8 w=1 l=0.5
+xM8  virtual_GND CLK GND body_N sky130_fd_pr__nfet_01v8 w=.42 l=.5
+
+
+X1  VDD CLK nCLK CMOS_Inv		
+
+
+.ends lpsrcell72

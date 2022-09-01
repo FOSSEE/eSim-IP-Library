@@ -1,3 +1,0 @@
-	clk                 input   1
-	rst                 input   1
-	out                 output  1

@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# portablemoscr61
+#
+DEF portablemoscr61 X 0 40 Y Y 1 F N
+F0 "X" -350 300 60 H V C CNN
+F1 "portablemoscr61" -50 -250 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -400 250 450 -200 0 1 0 N
+X V_ac 1 -600 200 200 R 50 50 1 1 B
+X Vg1 2 -600 100 200 R 50 50 1 1 B
+X Vg2 3 -600 -50 200 R 50 50 1 1 B
+X gnd 4 -600 -150 200 R 50 50 1 1 B
+X rect_out 5 650 150 200 L 50 50 1 1 B
+X 5V_Dc 6 650 0 200 L 50 50 1 1 B
+X vout 7 650 -150 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

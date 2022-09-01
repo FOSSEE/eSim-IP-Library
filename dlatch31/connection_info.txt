@@ -1,4 +1,0 @@
-	d                   input   1
-	en                  input   1
-	rstn                input   1
-	q                   output  1

@@ -1,5 +1,0 @@
-	D                   output  1
-	B                   output  1
-	X                   input   1
-	Y                   input   1
-	Z                   input   1

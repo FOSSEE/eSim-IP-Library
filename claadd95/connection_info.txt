@@ -1,5 +1,0 @@
-	sum                 output  4
-	c_out               output  1
-	a                   input   4
-	b                   input   4
-	c_in                input   1

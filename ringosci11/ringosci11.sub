@@ -1,0 +1,19 @@
+* C:\Users\mihir\eSim-Workspace\ringosci11\ringosci11.cir
+
+
+
+.subckt ringosci11 gnd v1 out 
+
+xm2  net-_m2-pad1_ out net-_c1-pad1_ net-_m2-pad1_ sky130_fd_pr__pfet_01v8 w=0.96 l=0.24
+xm4  net-_m2-pad1_ net-_c1-pad1_ net-_c2-pad1_ net-_m2-pad1_ sky130_fd_pr__pfet_01v8 w=0.96 l=0.24
+xm6  net-_m2-pad1_ net-_c2-pad1_ out net-_m2-pad1_ sky130_fd_pr__pfet_01v8 w=0.96 l=0.24
+xm1  net-_c1-pad1_ out gnd gnd sky130_fd_pr__nfet_01v8 w=0.48 l=0.24
+xm3  net-_c2-pad1_ net-_c1-pad1_ gnd gnd sky130_fd_pr__nfet_01v8 w=0.48 l=0.24
+xm5  out net-_c2-pad1_ gnd gnd sky130_fd_pr__nfet_01v8 w=0.48 l=0.24
+c1  net-_c1-pad1_ gnd 10p
+c2  net-_c2-pad1_ gnd 10p
+c3  out gnd 10p
+v1 net-_m2-pad1_ gnd  dc 2.5V
+* u1  out plot_v1
+
+.ends ringosci11

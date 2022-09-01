@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# aprxcmprsr63
+#
+DEF aprxcmprsr63 X 0 40 Y Y 1 F N
+F0 "X" 0 -100 60 H V C CNN
+F1 "aprxcmprsr63" 0 150 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -500 350 -500 350 0 1 0 N
+S 550 -300 -550 350 0 1 0 N
+X vdd 1 -300 550 200 D 50 50 1 1 I
+X p0 2 -750 300 200 R 50 50 1 1 I
+X p1 3 -750 200 200 R 50 50 1 1 I
+X p2 4 -750 50 200 R 50 50 1 1 I
+X p3 5 -750 -100 200 R 50 50 1 1 I
+X p4 6 -750 -200 200 R 50 50 1 1 I
+X w1 7 750 250 200 L 50 50 1 1 I
+X w2 8 750 0 200 L 50 50 1 1 I
+X w3 9 750 -250 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

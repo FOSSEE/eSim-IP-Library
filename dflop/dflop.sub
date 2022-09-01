@@ -1,0 +1,28 @@
+* /home/ayush/eSim-Workspace/dflop/dflop.cir
+
+
+.subckt dflop vdd GND D Q 
+xP6  Net-_N6-Pad1_ Q vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5	
+xN6  Net-_N6-Pad1_ Q GND GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5 	
+xP7  Net-_N7-Pad1_ Net-_N3-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xN7  Net-_N7-Pad1_ Net-_N3-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5		
+xP9  Net-_N10-Pad2_ clk Net-_N6-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xN9  Net-_N6-Pad1_ clkb Net-_N10-Pad2_ GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5		
+xP8  Net-_N10-Pad2_ clkb Net-_N7-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xN8  Net-_N7-Pad1_ clk Net-_N10-Pad2_ GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5		
+xP10  Q Net-_N10-Pad2_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xN10  Q Net-_N10-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5				
+xP5  clkb clk vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xN5  clkb clk GND GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5	
+xP1  Net-_P1-Pad1_ clk vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xP2  x1 D Net-_P1-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xN1  x1 D Net-_N1-Pad3_ GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5	
+xN2  Net-_N1-Pad3_ clkb GND GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5		
+xP3  Net-_N3-Pad1_ Net-_N3-Pad2_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xN3  Net-_N3-Pad1_ Net-_N3-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5		
+xP4  Net-_N3-Pad2_ Net-_N3-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xN4  Net-_N3-Pad2_ Net-_N3-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=.42 l=0.5		
+
+
+
+.ends dflop

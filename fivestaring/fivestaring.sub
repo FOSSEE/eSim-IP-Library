@@ -1,0 +1,28 @@
+* /home/ayush/eSim-Workspace/fivestaring/fivestaring.cir
+
+.subckt fivestaring vdd GND vout
+
+
+
+
+
+xM1  Net-_C1-Pad1_ vout GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=.5		
+xM2  vdd vout Net-_C1-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM3  Net-_C2-Pad1_ Net-_C1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM4  vdd Net-_C1-Pad1_ Net-_C2-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM5  Net-_C3-Pad1_ Net-_C2-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM6  vdd Net-_C2-Pad1_ Net-_C3-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM7  Net-_C4-Pad1_ Net-_C3-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM8  vdd Net-_C3-Pad1_ Net-_C4-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+xM9  vout Net-_C4-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=.5		
+xM10  vdd Net-_C4-Pad1_ vout vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5		
+		
+C1  Net-_C1-Pad1_ GND 10p		
+C2  Net-_C2-Pad1_ GND 10p		
+C3  Net-_C3-Pad1_ GND 10p
+C4  Net-_C4-Pad1_ GND 10p		
+C5  vout GND 10p	
+
+
+.ends fivestaring
+

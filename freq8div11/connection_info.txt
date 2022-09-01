@@ -1,2 +1,0 @@
-	out_clk             output  1
-	clk                 input   1

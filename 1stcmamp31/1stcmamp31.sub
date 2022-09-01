@@ -1,0 +1,22 @@
+* c:\users\rithw\esim-workspace\ckt_op\ckt_op.cir
+
+.subckt 1stcmamp31 vin1 vin2 idc vout
+
+
+xM1  Net-_I1-Pad1_ Net-_I1-Pad1_ Net-_M1-Pad3_ Net-_M1-Pad3_ sky130_fd_pr__nfet_01v8 W=2.87 L=0.21		
+xM4  Net-_M2-Pad3_ Net-_I1-Pad1_ Net-_M1-Pad3_ Net-_M1-Pad3_ sky130_fd_pr__nfet_01v8 W=2.87 L=0.21		
+xM6  vout vin2 Net-_M2-Pad3_ Net-_M2-Pad3_ sky130_fd_pr__nfet_01v8 W=1.61 L=0.23		
+xM2  Net-_M2-Pad1_ vin1 Net-_M2-Pad3_ Net-_M2-Pad3_ sky130_fd_pr__nfet_01v8 W=1.61 L=0.23		
+xM3  Net-_M2-Pad1_ Net-_M2-Pad1_ idc idc sky130_fd_pr__pfet_01v8 W=3.3 L=0.22		
+xM5  vout Net-_M2-Pad1_ idc idc sky130_fd_pr__pfet_01v8 W=3.3 L=0.22		
+I1  Net-_I1-Pad1_ idc 50u		
+v3  idc Net-_R3-Pad1_ 1.8		
+v1  vin1 vin2 sine(0 1m 500 0 0)		
+v2  Net-_M1-Pad3_ Net-_R2-Pad1_ -1.8		
+R2  Net-_R2-Pad1_ GND 0		
+R3  Net-_R3-Pad1_ GND 0		
+C1  vout GND 0.0000003E-12		
+v4  vin2 Net-_R1-Pad1_ 1.59		
+R1  Net-_R1-Pad1_ GND 0		
+
+.ends 1stcmamp31

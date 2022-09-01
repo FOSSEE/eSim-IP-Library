@@ -1,0 +1,16 @@
+* C:\Users\Lenovo\eSim-Workspace\Ring_oscillator\Ring_oscillator.cir
+
+
+.subckt ringoscillator Vdd GND vout
+XM1  Net-_M1-Pad1_ vout  Vdd Vdd sky130_fd_pr__pfet_01v8 w=50 l=0.5 	
+XM4  Net-_M1-Pad1_ vout  GND GND sky130_fd_pr__nfet_01v8 w=25 l=0.5 		
+XM2  Net-_M2-Pad1_ Net-_M1-Pad1_ Vdd Vdd sky130_fd_pr__pfet_01v8 w=50 l=0.5 		
+XM5  Net-_M2-Pad1_ Net-_M1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=25 l=0.5 		
+XM3  Net-_M3-Pad1_ Net-_M2-Pad1_ vout Vdd sky130_fd_pr__pfet_01v8 w=50 l=0.5 		
+XM6  Net-_M3-Pad1_ Net-_M2-Pad1_ vout GND sky130_fd_pr__nfet_01v8 w=25 l=0.5
+
+
+
+ 
+.ends ringoscillator
+ 

@@ -1,0 +1,28 @@
+* /home/hemanth/esim-workspace/dymcscomp71/dymcscomp71.cir
+
+
+.subckt dymcscomp71 vinh vinl vrefh vrefl CLK vdd vss vout
+
+xM2  Net-_M1-Pad1_ CLK vdd vdd sky130_fd_pr__pfet_01v8 w=3 l=1		
+xM1  Net-_M1-Pad1_ CLK GND GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM13  Net-_M13-Pad1_ Net-_M1-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=3 l=1		
+xM3  vouth voutl Net-_M13-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=3 l=1		
+xM6  voutl vouth Net-_M13-Pad1_ vdd sky130_fd_pr__pfet_01v8 w=3 l=1		
+xM14  Net-_M14-Pad1_ vouth Net-_M14-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=3 l=0.5		
+xM16  Net-_M14-Pad3_ Net-_M14-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=3 l=0.5		
+xM18  Net-_M18-Pad1_ voutl Net-_M14-Pad3_ vdd sky130_fd_pr__pfet_01v8 w=3 l=0.5		
+xM20  vout Net-_M18-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=3 l=0.5		
+xM4  voutl vouth Net-_M10-Pad1_ GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM8  vouth voutl Net-_M11-Pad1_ Net-_M8-Pad4_ sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM9  vouth Net-_M1-Pad1_ voutl Net-_M8-Pad4_ sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM10  Net-_M10-Pad1_ vinh Net-_M10-Pad3_ GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM5  Net-_M10-Pad1_ vrefl Net-_M10-Pad3_ GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM12  Net-_M10-Pad3_ CLK GND GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM11  Net-_M11-Pad1_ vrefh Net-_M10-Pad3_ GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM7  Net-_M11-Pad1_ vinl Net-_M10-Pad3_ GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM15  Net-_M14-Pad1_ vouth Net-_M15-Pad3_ GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM17  Net-_M15-Pad3_ Net-_M14-Pad1_ vss GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM19  Net-_M18-Pad1_ voutl Net-_M15-Pad3_ GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+xM21  vout Net-_M18-Pad1_ vss GND sky130_fd_pr__nfet_01v8 w=0.5 l=0.5		
+
+.ends dymcscomp71

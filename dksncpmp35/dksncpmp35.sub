@@ -1,0 +1,20 @@
+* C:\Users\mihir\eSim-Workspace\dksncpmp35\dksncpmp35.cir.out
+
+
+
+
+.subckt dksncpmp35 gnd in  clk1 clk2 v1 v2 v3 v4 out
+xm1 in in v1 gnd sky130_fd_pr__nfet_01v8 w=1 l=0.18
+xm2 v1 v1 v2 gnd sky130_fd_pr__nfet_01v8 w=1 l=0.18
+xm3 v2 v2 v3 gnd sky130_fd_pr__nfet_01v8 w=1 l=0.18
+xm4 v3 v3 v4 gnd sky130_fd_pr__nfet_01v8 w=1 l=0.18
+xm5 v4 v4 out gnd sky130_fd_pr__nfet_01v8 w=1 l=0.18
+xc1  v1 clk1 sky130_fd_pr__cap_mim_m3_1 w=1 l=100
+xc2  v2 clk2 sky130_fd_pr__cap_mim_m3_1 w=1 l=100
+xc3  v3 clk1 sky130_fd_pr__cap_mim_m3_1 w=1 l=100
+xc4  v4 clk2 sky130_fd_pr__cap_mim_m3_1 w=1 l=100
+xcout1  out gnd sky130_fd_pr__cap_mim_m3_1 w=1 l=100
+
+xr1  out gnd gnd sky130_fd_pr__res_high_po_0p69 l=100000
+
+.ends dksncpmp35

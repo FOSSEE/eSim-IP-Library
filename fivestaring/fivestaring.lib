@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# fivestaring
+#
+DEF fivestaring X 0 40 Y Y 3 F N
+F0 "X" 0 0 60 H V C CNN
+F1 "fivestaring" 50 -250 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -1650 800 2350 -1250 0 1 0 N
+X vdd 1 100 1000 200 D 50 50 1 1 I
+X GND 2 100 -1450 200 U 50 50 1 1 I
+X vout 3 2550 -300 200 L 50 50 1 1 O
+X GND ?? 100 -1450 200 U 50 50 2 1 I
+X vdd ?? 100 1000 200 D 50 50 2 1 I
+X vout ?? 2550 -300 200 L 50 50 2 1 O
+X GND ?? 100 -1450 200 U 50 50 3 1 I
+X vdd ?? 100 1000 200 D 50 50 3 1 I
+X vout ?? 2550 -300 200 L 50 50 3 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

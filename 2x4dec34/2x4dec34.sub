@@ -1,0 +1,22 @@
+* c:\fossee\esim\esim-workspace\2x4dec34\2x4dec34.cir
+
+
+
+.subckt 2x4dec34 vdd gnd a b d0 d1 d2 d3
+
+xm5  d0 a gnd gnd sky130_fd_pr__nfet_01v8
+xm4  net-_m1-pad1_ b d0 d0 sky130_fd_pr__pfet_01v8
+xm3  d0 b gnd gnd sky130_fd_pr__nfet_01v8
+xm7  d1 a b b sky130_fd_pr__pfet_01v8
+xm6  b net-_m1-pad1_ d1 d1 sky130_fd_pr__nfet_01v8
+xm8  d1 a gnd gnd sky130_fd_pr__nfet_01v8
+xm1  net-_m1-pad1_ a gnd gnd sky130_fd_pr__nfet_01v8
+xm2  vdd a net-_m1-pad1_ net-_m1-pad1_ sky130_fd_pr__pfet_01v8
+xm11  d2 net-_m1-pad1_ gnd gnd sky130_fd_pr__nfet_01v8
+xm10  a b d2 d2 sky130_fd_pr__pfet_01v8
+xm9  d2 b gnd gnd sky130_fd_pr__nfet_01v8
+xm13  d3 a b b sky130_fd_pr__pfet_01v8
+xm12  b net-_m1-pad1_ d3 d3 sky130_fd_pr__nfet_01v8
+xm14  d3 a gnd gnd sky130_fd_pr__nfet_01v8
+
+.ends 2x4dec34 vdd gnd a b d0 d1 d2 d3
