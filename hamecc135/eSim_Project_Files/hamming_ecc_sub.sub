@@ -1,0 +1,19 @@
+* --- Pipelined Hamming ECC Subcircuit ---
+
+.subckt hamming_ecc_sub clk rst data_in3 data_in2 data_in1 data_in0 err6 err5 err4 err3 err2 err1 err0 data_out3 data_out2 data_out1 data_out0 err_det
+
+* --- ADC Bridges (13 Inputs) ---
+A_adc_inputs [clk rst data_in3 data_in2 data_in1 data_in0 err6 err5 err4 err3 err2 err1 err0] [d_clk d_rst d_in3 d_in2 d_in1 d_in0 d_e6 d_e5 d_e4 d_e3 d_e2 d_e1 d_e0] adc_1
+
+* --- Verilog Digital Core ---
+A_hamming_core [d_clk] [d_rst] [d_in3 d_in2 d_in1 d_in0] [d_e6 d_e5 d_e4 d_e3 d_e2 d_e1 d_e0] [d_out3 d_out2 d_out1 d_out0] [d_err_det] hamming_ecc
+
+* --- DAC Bridges (5 Outputs) ---
+A_dac_outputs [d_out3 d_out2 d_out1 d_out0 d_err_det] [data_out3 data_out2 data_out1 data_out0 err_det] dac_1
+
+* --- Standard Bridge Models ---
+.model adc_1 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9)
+.model dac_1 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9)
+.model hamming_ecc hamming_ecc(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12)
+
+.ends hamming_ecc_sub
