@@ -1,0 +1,21 @@
+.title kicad schematic
+
+.include ps2_rx_sub.sub
+v3 /ps2_clk gnd pulse(5 0 5u 1n 1n 4900n 10u)
+v2 /rst gnd pulse(5 0 2u 1n 1n 1000m 1000m)
+x1 /clk /rst /ps2_clk /ps2_data /rx_done rx_data7 rx_data6 rx_data5 rx_data4 rx_data3 rx_data2 rx_data1 /rx_data0 ps2_rx_sub
+* u1 /rx_done plot_v1
+* u2 /rx_data0 plot_v1
+v4 /ps2_data gnd pulse(0 5 0 1n 1n 13u 26u)
+v1 /clk gnd pulse(0 5 0 1n 1n 490n 1u)
+.tran 10e-09 150e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(/rx_done)
+plot v(/rx_data0)
+.endc
+.end
