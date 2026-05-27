@@ -1,0 +1,7 @@
+.title KiCad schematic
+U3 Net-_U2-Pad22_ /balance0 dac_bridge_1
+U5 Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ /dispense /change7 /change6 /change5 /change4 /change3 /change2 /change1 dac_bridge_8
+U4 Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ Net-_U2-Pad17_ Net-_U2-Pad18_ Net-_U2-Pad19_ Net-_U2-Pad20_ Net-_U2-Pad21_ /change0 /balance7 /balance6 /balance5 /balance4 /balance3 /balance2 /balance1 dac_bridge_8
+U2 Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ Net-_U2-Pad17_ Net-_U2-Pad18_ Net-_U2-Pad19_ Net-_U2-Pad20_ Net-_U2-Pad21_ Net-_U2-Pad22_ vending_fsm
+U1 /clk /rst /coin_50 /coin_100 /buy Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ adc_bridge_5
+.end
