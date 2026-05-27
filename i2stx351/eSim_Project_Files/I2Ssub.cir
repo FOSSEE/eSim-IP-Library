@@ -1,0 +1,9 @@
+.title KiCad schematic
+U5 /left_data1 /left_data0 /right_data15 /right_data14 /right_data13 /right_data12 /right_data11 /right_data10 Net-_U5-Pad9_ Net-_U5-Pad10_ Net-_U5-Pad11_ Net-_U5-Pad12_ Net-_U5-Pad13_ Net-_U5-Pad14_ Net-_U5-Pad15_ Net-_U5-Pad16_ adc_bridge_8
+U6 Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ Net-_U3-Pad13_ Net-_U3-Pad14_ Net-_U3-Pad15_ Net-_U3-Pad16_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U5-Pad9_ Net-_U5-Pad10_ Net-_U5-Pad11_ Net-_U5-Pad12_ Net-_U5-Pad13_ Net-_U5-Pad14_ Net-_U5-Pad15_ Net-_U5-Pad16_ Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ Net-_U4-Pad3_ Net-_U4-Pad4_ Net-_U6-Pad35_ Net-_U6-Pad36_ i2s_tx_16bit
+U7 Net-_U6-Pad35_ Net-_U6-Pad36_ /lrclk /sdata dac_bridge_2
+U3 /bclk /rst /left_data15 /left_data14 /left_data13 /left_data12 /left_data11 /left_data10 Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ Net-_U3-Pad13_ Net-_U3-Pad14_ Net-_U3-Pad15_ Net-_U3-Pad16_ adc_bridge_8
+U1 /left_data9 /left_data8 /left_data7 /left_data6 /left_data5 /left_data4 /left_data3 /left_data2 Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ adc_bridge_8
+U4 /right_data1 /right_data0 Net-_U4-Pad3_ Net-_U4-Pad4_ adc_bridge_2
+U2 /right_data9 /right_data8 /right_data7 /right_data6 /right_data5 /right_data4 /right_data3 /right_data2 Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ adc_bridge_8
+.end

@@ -1,0 +1,27 @@
+* --- 16-bit I2S Audio Transmitter (I2Ssub) ---
+
+.subckt I2Ssub bclk rst left15 left14 left13 left12 left11 left10 left9 left8 left7 left6 left5 left4 left3 left2 left1 left0 right15 right14 right13 right12 right11 right10 right9 right8 right7 right6 right5 right4 right3 right2 right1 right0 lrclk sdata
+
+* --- ADC Bridges (Clock and Reset) ---
+A_adc_clk [bclk] [d_bclk] adc_1
+A_adc_rst [rst] [d_rst] adc_1
+
+* --- ADC Bridges (Left Channel 16-bit) ---
+A_adc_left [left15 left14 left13 left12 left11 left10 left9 left8 left7 left6 left5 left4 left3 left2 left1 left0] [d_l15 d_l14 d_l13 d_l12 d_l11 d_l10 d_l9 d_l8 d_l7 d_l6 d_l5 d_l4 d_l3 d_l2 d_l1 d_l0] adc_1
+
+* --- ADC Bridges (Right Channel 16-bit) ---
+A_adc_right [right15 right14 right13 right12 right11 right10 right9 right8 right7 right6 right5 right4 right3 right2 right1 right0] [d_r15 d_r14 d_r13 d_r12 d_r11 d_r10 d_r9 d_r8 d_r7 d_r6 d_r5 d_r4 d_r3 d_r2 d_r1 d_r0] adc_1
+
+* --- Verilog Digital Core ---
+A_i2s_core [d_bclk] [d_rst] [d_l15 d_l14 d_l13 d_l12 d_l11 d_l10 d_l9 d_l8 d_l7 d_l6 d_l5 d_l4 d_l3 d_l2 d_l1 d_l0] [d_r15 d_r14 d_r13 d_r12 d_r11 d_r10 d_r9 d_r8 d_r7 d_r6 d_r5 d_r4 d_r3 d_r2 d_r1 d_r0] [d_lrclk] [d_sdata] i2s_tx_16bit
+
+* --- DAC Bridges (Outputs) ---
+A_dac_lrclk [d_lrclk] [lrclk] dac_1
+A_dac_sdata [d_sdata] [sdata] dac_1
+
+* --- Standard Bridge Models ---
+.model adc_1 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9)
+.model dac_1 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9)
+.model i2s_tx_16bit i2s_tx_16bit(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12)
+
+.ends I2Ssub

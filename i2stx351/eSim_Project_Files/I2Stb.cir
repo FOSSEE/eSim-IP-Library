@@ -1,0 +1,8 @@
+.title KiCad schematic
+I1 /VDD_5V GND dc
+v1 /bclk_label GND pulse
+v2 /rst_label GND pulse
+X1 /bclk_label /rst_label /VDD_5V GND /VDD_5V GND /VDD_5V GND /VDD_5V GND /VDD_5V GND /VDD_5V GND /VDD_5V GND /VDD_5V GND /VDD_5V /VDD_5V /VDD_5V /VDD_5V GND GND GND GND /VDD_5V /VDD_5V /VDD_5V /VDD_5V GND GND GND GND /lrclk_label /sdata_label I2Ssub
+U2 /sdata_label plot_v1
+U1 /lrclk_label plot_v1
+.end
