@@ -1,0 +1,44 @@
+.subckt vga clk rst hsync vsync video_on x_pos9 x_pos8 x_pos7 x_pos6 x_pos5 x_pos4 x_pos3 x_pos2 x_pos1 x_pos0 y_pos9 y_pos8 y_pos7 y_pos6 y_pos5 y_pos4 y_pos3 y_pos2 y_pos1 y_pos0
+
+* --- ADC Bridges (Inputs) ---
+A_adc_clk [clk] [d_clk] adc_1
+A_adc_rst [rst] [d_rst] adc_1
+
+* --- Verilog Core ---
+A_vga [d_clk] [d_rst] [d_hsync] [d_vsync] [d_vidon] [d_x9 d_x8 d_x7 d_x6 d_x5 d_x4 d_x3 d_x2 d_x1 d_x0] [d_y9 d_y8 d_y7 d_y6 d_y5 d_y4 d_y3 d_y2 d_y1 d_y0] vga_timing_gen
+
+* --- DAC Bridges (Control Signals) ---
+A_dac_hsync [d_hsync] [hsync] dac_1
+A_dac_vsync [d_vsync] [vsync] dac_1
+A_dac_vidon [d_vidon] [video_on] dac_1
+
+* --- DAC Bridges (10-Bit X Position Bus) ---
+A_dac_x9 [d_x9] [x_pos9] dac_1
+A_dac_x8 [d_x8] [x_pos8] dac_1
+A_dac_x7 [d_x7] [x_pos7] dac_1
+A_dac_x6 [d_x6] [x_pos6] dac_1
+A_dac_x5 [d_x5] [x_pos5] dac_1
+A_dac_x4 [d_x4] [x_pos4] dac_1
+A_dac_x3 [d_x3] [x_pos3] dac_1
+A_dac_x2 [d_x2] [x_pos2] dac_1
+A_dac_x1 [d_x1] [x_pos1] dac_1
+A_dac_x0 [d_x0] [x_pos0] dac_1
+
+* --- DAC Bridges (10-Bit Y Position Bus) ---
+A_dac_y9 [d_y9] [y_pos9] dac_1
+A_dac_y8 [d_y8] [y_pos8] dac_1
+A_dac_y7 [d_y7] [y_pos7] dac_1
+A_dac_y6 [d_y6] [y_pos6] dac_1
+A_dac_y5 [d_y5] [y_pos5] dac_1
+A_dac_y4 [d_y4] [y_pos4] dac_1
+A_dac_y3 [d_y3] [y_pos3] dac_1
+A_dac_y2 [d_y2] [y_pos2] dac_1
+A_dac_y1 [d_y1] [y_pos1] dac_1
+A_dac_y0 [d_y0] [y_pos0] dac_1
+
+* --- Models ---
+.model adc_1 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9)
+.model dac_1 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9)
+.model vga_timing_gen vga_timing_gen(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12)
+
+.ends vga

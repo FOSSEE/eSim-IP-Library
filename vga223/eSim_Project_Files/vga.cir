@@ -1,0 +1,11 @@
+.title KiCad schematic
+U1 /clk Net-_U1-Pad2_ adc_bridge_1
+U2 /rst Net-_U2-Pad2_ adc_bridge_1
+U3 Net-_U1-Pad2_ Net-_U2-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ Net-_U3-Pad5_ Net-_U3-Pad6_ Net-_U3-Pad7_ Net-_U3-Pad8_ Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ Net-_U3-Pad13_ Net-_U3-Pad14_ Net-_U3-Pad15_ Net-_U3-Pad16_ Net-_U3-Pad17_ Net-_U3-Pad18_ Net-_U3-Pad19_ Net-_U3-Pad20_ Net-_U3-Pad21_ Net-_U3-Pad22_ Net-_U3-Pad23_ Net-_U3-Pad24_ Net-_U3-Pad25_ vga_timing_gen
+U6 Net-_U3-Pad18_ Net-_U3-Pad19_ Net-_U3-Pad20_ Net-_U3-Pad21_ Net-_U3-Pad22_ Net-_U3-Pad23_ Net-_U3-Pad24_ Net-_U3-Pad25_ /y_pos7 /y_pos6 /y_pos5 /y_pos4 /y_pos3 /y_pos2 /y_pos1 /y_pos0 dac_bridge_8
+U4 Net-_U3-Pad3_ /hsync dac_bridge_1
+U7 Net-_U3-Pad4_ /vsync dac_bridge_1
+U8 Net-_U3-Pad5_ /video_on dac_bridge_1
+U9 Net-_U3-Pad14_ Net-_U3-Pad15_ Net-_U3-Pad16_ Net-_U3-Pad17_ /x_pos1 /x_pos0 /y_pos9 /y_pos8 dac_bridge_4
+U5 Net-_U3-Pad6_ Net-_U3-Pad7_ Net-_U3-Pad8_ Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ Net-_U3-Pad13_ /x_pos9 /x_pos8 /x_pos7 /x_pos6 /x_pos5 /x_pos4 /x_pos3 /x_pos2 dac_bridge_8
+.end
