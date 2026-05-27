@@ -1,0 +1,6 @@
+.title KiCad schematic
+v3 data GND pulse
+X1 clk reset data detect OSD2
+v2 reset GND pulse
+v1 clk GND pulse
+.end

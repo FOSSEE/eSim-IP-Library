@@ -1,0 +1,16 @@
+.title kicad schematic
+
+.include OSD2.sub
+v3 data gnd pulse(0 5 5m 1u 1u 15m 30m)
+x1 clk reset data detect OSD2
+v2 reset gnd pulse(5 0 2m 1u 1u 1000m 1000m)
+v1 clk gnd pulse(0 5 0 1u 1u 5m 10m)
+.tran 100e-06 60e-03 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end
