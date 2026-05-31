@@ -1,0 +1,28 @@
+* C:\Users\yamin\eSim-Workspace\round_robin_arbiter_testing\round_robin_arbiter_testing.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/29/26 11:25:54
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  clk GND pulse		
+v2  reset GND pulse		
+v3  req3 GND pulse		
+v4  req2 GND pulse		
+v5  req1 GND pulse		
+v6  req0 GND pulse		
+v7  VCC GND DC		
+U7  grant3 plot_v1		
+U8  grant2 plot_v1		
+U9  grant1 plot_v1		
+U10  grant0 plot_v1		
+U1  clk plot_v1		
+U2  reset plot_v1		
+U3  req3 plot_v1		
+U4  req2 plot_v1		
+U5  req1 plot_v1		
+U6  req0 plot_v1		
+X1  clk reset req3 req2 req1 req0 grant3 grant2 grant1 grant0 round_robin_arbiter_ip		
+
+.end

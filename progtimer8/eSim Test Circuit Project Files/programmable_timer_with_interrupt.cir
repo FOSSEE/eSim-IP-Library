@@ -1,0 +1,49 @@
+* C:\Users\yamin\eSim-Workspace\programmable_timer_with_interrupt\programmable_timer_with_interrupt.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 04/21/26 23:17:37
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  clk reset start load_enable load_value7 load_value6 load_value5 load_value4 load_value3 load_value2 load_value1 load_value0 mode int_clear timer_interrupt current_count7 current_count6 current_count5 current_count4 current_count3 current_count2 current_count1 current_count0 programmable_timer		
+v15  VCC GND DC		
+v1  clk GND pulse		
+v2  reset GND pulse		
+v3  start GND pulse		
+v4  load_enable GND pulse		
+v5  load_value7 GND pulse		
+v6  load_value6 GND pulse		
+v7  load_value5 GND pulse		
+v8  load_value4 GND pulse		
+v9  load_value3 GND pulse		
+v10  load_value2 GND pulse		
+v11  load_value1 GND pulse		
+v12  load_value0 GND pulse		
+v13  mode GND pulse		
+v14  int_clear GND pulse		
+U15  timer_interrupt plot_v1		
+U16  current_count7 plot_v1		
+U17  current_count6 plot_v1		
+U18  current_count5 plot_v1		
+U19  current_count4 plot_v1		
+U20  current_count3 plot_v1		
+U21  current_count2 plot_v1		
+U22  current_count1 plot_v1		
+U23  current_count0 plot_v1		
+U5  clk plot_v1		
+U7  reset plot_v1		
+U9  start plot_v1		
+U11  load_enable plot_v1		
+U13  load_value7 plot_v1		
+U2  load_value6 plot_v1		
+U3  load_value5 plot_v1		
+U6  load_value4 plot_v1		
+U10  load_value3 plot_v1		
+U12  load_value2 plot_v1		
+U14  load_value1 plot_v1		
+U1  load_value0 plot_v1		
+U4  mode plot_v1		
+U8  int_clear plot_v1		
+
+.end

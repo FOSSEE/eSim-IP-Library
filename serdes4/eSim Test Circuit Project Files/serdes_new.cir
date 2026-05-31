@@ -1,0 +1,35 @@
+* C:\Users\yamin\eSim-Workspace\serdes_new\serdes_new.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 04/04/26 14:10:14
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  clk GND pulse		
+v2  rst GND pulse		
+v3  load GND pulse		
+v4  data_in3 GND pulse		
+v5  data_in2 GND pulse		
+v6  data_in1 GND pulse		
+v7  data_in0 GND pulse		
+v8  VCC GND DC		
+U1  clk plot_v1		
+U2  rst plot_v1		
+U3  load plot_v1		
+U4  data_in3 plot_v1		
+U5  data_in2 plot_v1		
+U6  data_in1 plot_v1		
+U7  data_in0 plot_v1		
+U10  data_out3 plot_v1		
+U11  data_out2 plot_v1		
+U12  data_out1 plot_v1		
+U13  data_out0 plot_v1		
+U14  done_des plot_v1		
+v9  start GND pulse		
+U8  done_ser plot_v1		
+U9  start plot_v1		
+X1  clk rst load data_in3 data_in2 data_in1 data_in0 Net-_X1-Pad8_ done_ser serializer_ip_ser		
+X2  clk rst start Net-_X1-Pad8_ data_out3 data_out2 data_out1 data_out0 done_des deserializer_ip		
+
+.end

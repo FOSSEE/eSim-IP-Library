@@ -1,0 +1,23 @@
+* C:\Users\yamin\eSim-Workspace\handshake_pulse_synchronizer\handshake_pulse_synchronizer.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 04/11/26 10:02:41
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  clk_a rst_a pulse_in clk_b rst_b pulse_out handshake_pulse_synchronizer_ip		
+v1  clk_a GND pulse		
+v2  rst_a GND pulse		
+v3  pulse_in GND pulse		
+v4  clk_b GND pulse		
+v5  rst_b GND pulse		
+v6  VCC GND DC		
+U1  clk_a plot_v1		
+U3  pulse_in plot_v1		
+U4  clk_b plot_v1		
+U5  rst_b plot_v1		
+U6  pulse_out plot_v1		
+U2  rst_a plot_v1		
+
+.end

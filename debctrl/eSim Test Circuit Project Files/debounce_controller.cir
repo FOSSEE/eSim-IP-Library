@@ -1,0 +1,23 @@
+* C:\Users\yamin\eSim-Workspace\debounce_controller\debounce_controller.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 04/24/26 20:06:05
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  clk reset noisy_in mode1 mode0 clean_out debounce_controller		
+v1  clk GND pulse		
+v2  reset GND pulse		
+v3  noisy_in GND pulse		
+v4  mode1 GND pulse		
+v5  mode0 GND pulse		
+v6  VCC GND DC		
+U6  clean_out plot_v1		
+U5  clk plot_v1		
+U1  reset plot_v1		
+U2  noisy_in plot_v1		
+U3  mode1 plot_v1		
+U4  mode0 plot_v1		
+
+.end

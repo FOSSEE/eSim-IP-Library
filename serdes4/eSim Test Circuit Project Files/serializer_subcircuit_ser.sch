@@ -1,0 +1,189 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:eSim_Ngveri
+LIBS:eSim_SKY130
+LIBS:eSim_SKY130_Subckts
+LIBS:serializer_subcircuit_ser-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L adc_bridge_7 U3
+U 1 1 69D0A1CF
+P 4600 3150
+F 0 "U3" H 4600 3150 60  0000 C CNN
+F 1 "adc_bridge_7" H 4600 3300 60  0000 C CNN
+F 2 "" H 4600 3150 60  0000 C CNN
+F 3 "" H 4600 3150 60  0000 C CNN
+	1    4600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dac_bridge_2 U4
+U 1 1 69D0A21C
+P 7000 3150
+F 0 "U4" H 7000 3150 60  0000 C CNN
+F 1 "dac_bridge_2" H 7050 3300 60  0000 C CNN
+F 2 "" H 7000 3150 60  0000 C CNN
+F 3 "" H 7000 3150 60  0000 C CNN
+	1    7000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U2
+U 1 1 69D0A261
+P 3750 3100
+F 0 "U2" H 3800 3200 30  0000 C CNN
+F 1 "PORT" H 3750 3100 30  0000 C CNN
+F 2 "" H 3750 3100 60  0000 C CNN
+F 3 "" H 3750 3100 60  0000 C CNN
+	1    3750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U2
+U 2 1 69D0A2EC
+P 3750 3200
+F 0 "U2" H 3800 3300 30  0000 C CNN
+F 1 "PORT" H 3750 3200 30  0000 C CNN
+F 2 "" H 3750 3200 60  0000 C CNN
+F 3 "" H 3750 3200 60  0000 C CNN
+	2    3750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U2
+U 3 1 69D0A30F
+P 3750 3300
+F 0 "U2" H 3800 3400 30  0000 C CNN
+F 1 "PORT" H 3750 3300 30  0000 C CNN
+F 2 "" H 3750 3300 60  0000 C CNN
+F 3 "" H 3750 3300 60  0000 C CNN
+	3    3750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U2
+U 4 1 69D0A338
+P 3750 3400
+F 0 "U2" H 3800 3500 30  0000 C CNN
+F 1 "PORT" H 3750 3400 30  0000 C CNN
+F 2 "" H 3750 3400 60  0000 C CNN
+F 3 "" H 3750 3400 60  0000 C CNN
+	4    3750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U2
+U 5 1 69D0A363
+P 3750 3500
+F 0 "U2" H 3800 3600 30  0000 C CNN
+F 1 "PORT" H 3750 3500 30  0000 C CNN
+F 2 "" H 3750 3500 60  0000 C CNN
+F 3 "" H 3750 3500 60  0000 C CNN
+	5    3750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U2
+U 6 1 69D0A398
+P 3750 3600
+F 0 "U2" H 3800 3700 30  0000 C CNN
+F 1 "PORT" H 3750 3600 30  0000 C CNN
+F 2 "" H 3750 3600 60  0000 C CNN
+F 3 "" H 3750 3600 60  0000 C CNN
+	6    3750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U2
+U 7 1 69D0A3CB
+P 3750 3700
+F 0 "U2" H 3800 3800 30  0000 C CNN
+F 1 "PORT" H 3750 3700 30  0000 C CNN
+F 2 "" H 3750 3700 60  0000 C CNN
+F 3 "" H 3750 3700 60  0000 C CNN
+	7    3750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U2
+U 8 1 69D0A406
+P 7800 3100
+F 0 "U2" H 7850 3200 30  0000 C CNN
+F 1 "PORT" H 7800 3100 30  0000 C CNN
+F 2 "" H 7800 3100 60  0000 C CNN
+F 3 "" H 7800 3100 60  0000 C CNN
+	8    7800 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U2
+U 9 1 69D0A5AF
+P 7800 3200
+F 0 "U2" H 7850 3300 30  0000 C CNN
+F 1 "PORT" H 7800 3200 30  0000 C CNN
+F 2 "" H 7800 3200 60  0000 C CNN
+F 3 "" H 7800 3200 60  0000 C CNN
+	9    7800 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L serializer_verilog U1
+U 1 1 69D0CEF3
+P 3000 5000
+F 0 "U1" H 5850 6800 60  0000 C CNN
+F 1 "serializer_verilog" H 5850 7000 60  0000 C CNN
+F 2 "" H 5850 6950 60  0000 C CNN
+F 3 "" H 5850 6950 60  0000 C CNN
+	1    3000 5000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,72 @@
+* C:\Users\yamin\eSim-Workspace\Universal_Shift_Register\Universal_Shift_Register.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/25/26 11:04:16
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U16  clk Net-_U14-Pad1_ adc_bridge_1		
+U17  rst Net-_U14-Pad2_ adc_bridge_1		
+U18  parallel_in7 Net-_U14-Pad3_ adc_bridge_1		
+U19  parallel_in6 Net-_U14-Pad4_ adc_bridge_1		
+U20  parallel_in5 Net-_U14-Pad5_ adc_bridge_1		
+U21  parallel_in4 Net-_U14-Pad6_ adc_bridge_1		
+U22  parallel_in3 Net-_U14-Pad7_ adc_bridge_1		
+U23  parallel_in2 Net-_U14-Pad8_ adc_bridge_1		
+U24  parallel_in1 Net-_U14-Pad9_ adc_bridge_1		
+U25  parallel_in0 Net-_U14-Pad10_ adc_bridge_1		
+U26  left_bit Net-_U14-Pad11_ adc_bridge_1		
+U27  right_bit Net-_U14-Pad12_ adc_bridge_1		
+U28  mode1 Net-_U14-Pad13_ adc_bridge_1		
+U29  mode0 Net-_U14-Pad14_ adc_bridge_1		
+U30  Net-_U14-Pad15_ parallel_out7 dac_bridge_1		
+U31  Net-_U14-Pad16_ parallel_out6 dac_bridge_1		
+U32  Net-_U14-Pad17_ parallel_out5 dac_bridge_1		
+U33  Net-_U14-Pad18_ parallel_out4 dac_bridge_1		
+U34  Net-_U14-Pad19_ parallel_out3 dac_bridge_1		
+U35  Net-_U14-Pad20_ parallel_out2 dac_bridge_1		
+U36  Net-_U14-Pad21_ parallel_out1 dac_bridge_1		
+U37  Net-_U14-Pad22_ parallel_out0 dac_bridge_1		
+U38  Net-_U14-Pad23_ serial_out dac_bridge_1		
+v2  rst GND pulse		
+v3  parallel_in7 GND pulse		
+v4  parallel_in6 GND pulse		
+v5  parallel_in5 GND pulse		
+v6  parallel_in4 GND pulse		
+v7  parallel_in3 GND pulse		
+v8  parallel_in2 GND pulse		
+v9  parallel_in1 GND pulse		
+v10  parallel_in0 GND pulse		
+v11  left_bit GND pulse		
+v12  right_bit GND pulse		
+v13  mode1 GND pulse		
+v1  clk GND pulse		
+v14  mode0 GND pulse		
+v15  VCC GND DC		
+U39  parallel_out7 plot_v1		
+U40  parallel_out6 plot_v1		
+U41  parallel_out5 plot_v1		
+U42  parallel_out4 plot_v1		
+U43  parallel_out3 plot_v1		
+U44  parallel_out2 plot_v1		
+U45  parallel_out1 plot_v1		
+U46  parallel_out0 plot_v1		
+U47  serial_out plot_v1		
+U1  clk plot_v1		
+U2  rst plot_v1		
+U4  parallel_in7 plot_v1		
+U6  parallel_in6 plot_v1		
+U8  parallel_in5 plot_v1		
+U10  parallel_in4 plot_v1		
+U12  parallel_in3 plot_v1		
+U15  parallel_in2 plot_v1		
+U3  parallel_in1 plot_v1		
+U5  parallel_in0 plot_v1		
+U7  left_bit plot_v1		
+U9  right_bit plot_v1		
+U11  mode1 plot_v1		
+U13  mode0 plot_v1		
+U14  Net-_U14-Pad1_ Net-_U14-Pad2_ Net-_U14-Pad3_ Net-_U14-Pad4_ Net-_U14-Pad5_ Net-_U14-Pad6_ Net-_U14-Pad7_ Net-_U14-Pad8_ Net-_U14-Pad9_ Net-_U14-Pad10_ Net-_U14-Pad11_ Net-_U14-Pad12_ Net-_U14-Pad13_ Net-_U14-Pad14_ Net-_U14-Pad15_ Net-_U14-Pad16_ Net-_U14-Pad17_ Net-_U14-Pad18_ Net-_U14-Pad19_ Net-_U14-Pad20_ Net-_U14-Pad21_ Net-_U14-Pad22_ Net-_U14-Pad23_ universal_shift_register		
+
+.end

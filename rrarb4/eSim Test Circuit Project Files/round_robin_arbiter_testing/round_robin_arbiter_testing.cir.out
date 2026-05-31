@@ -1,0 +1,37 @@
+* c:\users\yamin\esim-workspace\round_robin_arbiter_testing\round_robin_arbiter_testing.cir
+
+.include round_robin_arbiter_subcircuit.sub
+v1  clk gnd pulse(0 5 0.5 0 0 0.5 1)
+v2  reset gnd pulse(5 0 0.3 0 0 8 16)
+vreq0 req0 0 dc 5
+vreq1 req1 0 dc 5
+vreq2 req2 0 dc 5
+vreq3 req3 0 dc 5
+
+
+* SIMULATION CONTROL (FAST)
+
+* u7  grant3 plot_v1
+* u8  grant2 plot_v1
+* u9  grant1 plot_v1
+* u10  grant0 plot_v1
+* u1  clk plot_v1
+* u2  reset plot_v1
+* u3  req3 plot_v1
+* u4  req2 plot_v1
+* u5  req1 plot_v1
+* u6  req0 plot_v1
+x1 clk reset req3 req2 req1 req0 grant3 grant2 grant1 grant0 round_robin_arbiter_subcircuit
+.tran 0.01e-00 8e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+set xbrushwidth = 3
+plot v(grant3)+40 v(grant2) +30v(grant1) +20v(grant0) +10v(clk) +100v(reset)+90 v(req3) +80v(req2) +70v(req1) +60v(req0)+50
+.endc
+.end
+
+
