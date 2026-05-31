@@ -1,0 +1,28 @@
+.title kicad schematic
+
+.include vending_fsm_sb.sub
+v3 /coin_50 gnd pulse(0 5 5u 1n 1n 2u 100m)
+v4 /coin_100 gnd pulse(0 5 10u 1n 1n 2u 100m)
+v1 /clk gnd pulse(0 5 0 1n 1n 490n 1u)
+v2 /rst gnd pulse(5 0 2u 1n 1n 100m 100m)
+v5 /buy gnd pulse(0 5 15u 1n 1n 2u 100m)
+x1 /clk /rst /coin_50 /coin_100 /buy /deispense change7 chnage6 change5 change4 change3 change2 /change1 /change0 balance7 balance6 balance5 balance4 balance3 balance2 /balance1 /balance0 vending_fsm_sb
+* u1 /deispense plot_v1
+* u4 /change0 plot_v1
+* u2 /change1 plot_v1
+* u5 /balance0 plot_v1
+* u3 /balance1 plot_v1
+.tran 10e-09 25e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(/deispense)
+plot v(/change0)
+plot v(/change1)
+plot v(/balance0)
+plot v(/balance1)
+.endc
+.end

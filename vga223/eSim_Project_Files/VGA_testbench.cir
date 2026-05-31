@@ -1,0 +1,8 @@
+.title KiCad schematic
+v1 Net-_X1-Pad1_ GND pulse
+v2 Net-_X1-Pad2_ GND pulse
+X1 Net-_X1-Pad1_ Net-_X1-Pad2_ /hsync_plot /vsync_plot /video x_pos9 x_pos8 x_pos7 x_pos6 x_pos5 x_pos4 x_pos3 x_pos2 x_pos1 x_pos0 y_pos9 y_pos8 y_pos7 y_pos6 y_pos5 y_pos4 y_pos3 y_pos2 y_pos1 y_pos0 vga
+U3 /video plot_v1
+U2 /vsync_plot plot_v1
+U1 /hsync_plot plot_v1
+.end

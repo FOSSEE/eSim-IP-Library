@@ -1,0 +1,13 @@
+.title KiCad schematic
+v3 /coin_50 GND pulse
+v4 /coin_100 GND pulse
+v1 /clk GND pulse
+v2 /rst GND pulse
+v5 /buy GND pulse
+X1 /clk /rst /coin_50 /coin_100 /buy /deispense change7 chnage6 change5 change4 change3 change2 /change1 /change0 balance7 balance6 balance5 balance4 balance3 balance2 /balance1 /balance0 vending_fsm_sb
+U1 /deispense plot_v1
+U4 /change0 plot_v1
+U2 /change1 plot_v1
+U5 /balance0 plot_v1
+U3 /balance1 plot_v1
+.end

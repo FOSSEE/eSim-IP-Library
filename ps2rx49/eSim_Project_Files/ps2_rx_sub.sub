@@ -1,0 +1,19 @@
+* --- PS/2 Keyboard Receiver Subcircuit ---
+
+.subckt ps2_rx_sub clk rst ps2_clk ps2_data rx_done rx_data7 rx_data6 rx_data5 rx_data4 rx_data3 rx_data2 rx_data1 rx_data0
+
+* --- ADC Bridges (Inputs) ---
+A_adc_inputs [clk rst ps2_clk ps2_data] [d_clk d_rst d_ps2c d_ps2d] adc_1
+
+* --- Verilog Digital Core ---
+A_ps2_core [d_clk] [d_rst] [d_ps2c] [d_ps2d] [d_done] [d_d7 d_d6 d_d5 d_d4 d_d3 d_d2 d_d1 d_d0] ps2_rx
+
+* --- DAC Bridges (Outputs) ---
+A_dac_outputs [d_done d_d7 d_d6 d_d5 d_d4 d_d3 d_d2 d_d1 d_d0] [rx_done rx_data7 rx_data6 rx_data5 rx_data4 rx_data3 rx_data2 rx_data1 rx_data0] dac_1
+
+* --- Standard Bridge Models ---
+.model adc_1 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9)
+.model dac_1 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9)
+.model ps2_rx ps2_rx(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12)
+
+.ends ps2_rx_sub

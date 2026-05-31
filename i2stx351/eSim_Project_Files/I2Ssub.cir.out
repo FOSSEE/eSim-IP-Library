@@ -1,0 +1,39 @@
+.title kicad schematic
+
+* u5 /left_data1 /left_data0 /right_data15 /right_data14 /right_data13 /right_data12 /right_data11 /right_data10 net-_u5-pad9_ net-_u5-pad10_ net-_u5-pad11_ net-_u5-pad12_ net-_u5-pad13_ net-_u5-pad14_ net-_u5-pad15_ net-_u5-pad16_ adc_bridge_8
+* u6 net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ net-_u3-pad13_ net-_u3-pad14_ net-_u3-pad15_ net-_u3-pad16_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u5-pad9_ net-_u5-pad10_ net-_u5-pad11_ net-_u5-pad12_ net-_u5-pad13_ net-_u5-pad14_ net-_u5-pad15_ net-_u5-pad16_ net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ net-_u4-pad3_ net-_u4-pad4_ net-_u6-pad35_ net-_u6-pad36_ i2s_tx_16bit
+* u7 net-_u6-pad35_ net-_u6-pad36_ /lrclk /sdata dac_bridge_2
+* u3 /bclk /rst /left_data15 /left_data14 /left_data13 /left_data12 /left_data11 /left_data10 net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ net-_u3-pad13_ net-_u3-pad14_ net-_u3-pad15_ net-_u3-pad16_ adc_bridge_8
+* u1 /left_data9 /left_data8 /left_data7 /left_data6 /left_data5 /left_data4 /left_data3 /left_data2 net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ adc_bridge_8
+* u4 /right_data1 /right_data0 net-_u4-pad3_ net-_u4-pad4_ adc_bridge_2
+* u2 /right_data9 /right_data8 /right_data7 /right_data6 /right_data5 /right_data4 /right_data3 /right_data2 net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ adc_bridge_8
+a1 [/left_data1 /left_data0 /right_data15 /right_data14 /right_data13 /right_data12 /right_data11 /right_data10 ] [net-_u5-pad9_ net-_u5-pad10_ net-_u5-pad11_ net-_u5-pad12_ net-_u5-pad13_ net-_u5-pad14_ net-_u5-pad15_ net-_u5-pad16_ ] u5
+a2 [net-_u3-pad9_ ] [net-_u3-pad10_ ] [net-_u3-pad11_ net-_u3-pad12_ net-_u3-pad13_ net-_u3-pad14_ net-_u3-pad15_ net-_u3-pad16_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u5-pad9_ net-_u5-pad10_ ] [net-_u5-pad11_ net-_u5-pad12_ net-_u5-pad13_ net-_u5-pad14_ net-_u5-pad15_ net-_u5-pad16_ net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ net-_u4-pad3_ net-_u4-pad4_ ] [net-_u6-pad35_ ] [net-_u6-pad36_ ] u6
+a3 [net-_u6-pad35_ net-_u6-pad36_ ] [/lrclk /sdata ] u7
+a4 [/bclk /rst /left_data15 /left_data14 /left_data13 /left_data12 /left_data11 /left_data10 ] [net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ net-_u3-pad13_ net-_u3-pad14_ net-_u3-pad15_ net-_u3-pad16_ ] u3
+a5 [/left_data9 /left_data8 /left_data7 /left_data6 /left_data5 /left_data4 /left_data3 /left_data2 ] [net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ ] u1
+a6 [/right_data1 /right_data0 ] [net-_u4-pad3_ net-_u4-pad4_ ] u4
+a7 [/right_data9 /right_data8 /right_data7 /right_data6 /right_data5 /right_data4 /right_data3 /right_data2 ] [net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ ] u2
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             i2s_tx_16bit, Ngspice Name: i2s_tx_16bit
+.model u6 i2s_tx_16bit(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             dac_bridge_2, Ngspice Name: dac_bridge
+.model u7 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u3 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u1 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_2, Ngspice Name: adc_bridge
+.model u4 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u2 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

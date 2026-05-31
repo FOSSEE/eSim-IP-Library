@@ -1,0 +1,19 @@
+.subckt osd2 clk_in reset_in data_in detected_out
+
+* --- ADC Bridges (Analog to Digital) ---
+A_adc_1 [clk_in] [d_clk] adc_1
+A_adc_2 [reset_in] [d_rst] adc_1
+A_adc_3 [data_in] [d_dat] adc_1
+
+* --- The Verilog Core ---
+A_fsm [d_clk] [d_rst] [d_dat] [d_det] seq_detector_1011
+
+* --- DAC Bridge (Digital to Analog) ---
+A_dac_1 [d_det] [detected_out] dac_1
+
+* --- Models ---
+.model adc_1 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9)
+.model dac_1 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9)
+.model seq_detector_1011 seq_detector_1011(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12)
+
+.ends osd2

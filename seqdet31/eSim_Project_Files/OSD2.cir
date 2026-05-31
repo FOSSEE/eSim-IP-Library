@@ -1,0 +1,7 @@
+.title KiCad schematic
+U4 Net-_U1-Pad2_ Net-_U2-Pad2_ Net-_U3-Pad2_ Net-_U4-Pad4_ seq_detector_1011
+U5 Net-_U4-Pad4_ /detect_out dac_bridge_1
+U1 /clk_in Net-_U1-Pad2_ adc_bridge_1
+U2 /reset_in Net-_U2-Pad2_ adc_bridge_1
+U3 /data_in Net-_U3-Pad2_ adc_bridge_1
+.end

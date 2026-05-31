@@ -1,0 +1,12 @@
+.title KiCad schematic
+v1 /clk GND pulse
+v2 /rst GND pulse
+v3 /error_inject2 GND pulse
+I1 GND Net-_I1-Pad2_ dc
+X1 /clk /rst Net-_I1-Pad2_ GND Net-_I1-Pad2_ Net-_I1-Pad2_ GND GND GND GND /error_inject2 GND GND Net-_X1-Pad14_ Net-_X1-Pad15_ Net-_X1-Pad16_ /data_out0 /error_detected hamming_ecc_sub
+U3 Net-_X1-Pad15_ plot_v1
+U2 Net-_X1-Pad14_ plot_v1
+U4 Net-_X1-Pad16_ plot_v1
+U5 /data_out0 plot_v1
+U6 /error_detected plot_v1
+.end

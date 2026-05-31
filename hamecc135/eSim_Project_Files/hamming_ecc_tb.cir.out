@@ -1,0 +1,27 @@
+.title kicad schematic
+
+.include hamming_ecc_sub.sub
+v1 /clk gnd pulse(0 5 0 1n 1n 490n 1u)
+v2 /rst gnd pulse(5 0 2u 1n 1n 100m 100m)
+v3 /error_inject2 gnd pulse(0 5 5u 1n 1n 2500u 8u)
+i1 gnd net-_i1-pad2_  dc 5
+x1 /clk /rst net-_i1-pad2_ gnd net-_i1-pad2_ net-_i1-pad2_ gnd gnd gnd gnd /error_inject2 gnd gnd net-_x1-pad14_ net-_x1-pad15_ net-_x1-pad16_ /data_out0 /error_detected hamming_ecc_sub
+* u3 net-_x1-pad15_ plot_v1
+* u2 net-_x1-pad14_ plot_v1
+* u4 net-_x1-pad16_ plot_v1
+* u5 /data_out0 plot_v1
+* u6 /error_detected plot_v1
+.tran 10e-09 20e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(net-_x1-pad15_)
+plot v(net-_x1-pad14_)
+plot v(net-_x1-pad16_)
+plot v(/data_out0)
+plot v(/error_detected)
+.endc
+.end

@@ -1,0 +1,71 @@
+* c:\fossee\esim-workspace\macproject\macproject.cir
+
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ mac_unit
+* u6  net-_u6-pad1_ net-_u1-pad1_ adc_bridge_1
+* u2  net-_u2-pad1_ net-_u1-pad2_ adc_bridge_1
+* u3  net-_u3-pad1_ net-_u1-pad3_ adc_bridge_1
+* u4  net-_u4-pad1_ net-_u1-pad4_ adc_bridge_1
+* u5  net-_u5-pad1_ gnd gnd gnd net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ adc_bridge_4
+* u7  net-_u7-pad1_ gnd gnd gnd net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ adc_bridge_4
+* u8  net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ /out_1 /out_2 /out_3 /out_4 /out_5 /out_6 /out_7 /out_8 dac_bridge_8
+* u9  net-_u1-pad21_ /overflow dac_bridge_1
+v6  net-_u7-pad1_ gnd pulse(0 5 0 1u 1u 1000m 1000m)
+v5  net-_u5-pad1_ gnd pulse(0 5 0 1u 1u 1000m 1000m)
+v3  net-_u4-pad1_ gnd pulse(0 0 0 0 0 0 0)
+v2  net-_u3-pad1_ gnd pulse(0 5 3m 1u 1u 1000m 1000m)
+v1  net-_u2-pad1_ gnd pulse(5 0 2m 1u 1u 1000m 1000m)
+v4  net-_u6-pad1_ gnd pulse(0 5 0 1u 1u 5m 10m)
+* u10  /out_1 plot_v1
+* u12  /out_2 plot_v1
+* u14  /out_3 plot_v1
+* u15  /out_4 plot_v1
+* u17  /out_5 plot_v1
+* u18  /out_6 plot_v1
+* u16  /out_7 plot_v1
+* u13  /out_8 plot_v1
+* u11  /overflow plot_v1
+a1 [net-_u1-pad1_ ] [net-_u1-pad2_ ] [net-_u1-pad3_ ] [net-_u1-pad4_ ] [net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ ] [net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ ] [net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ ] [net-_u1-pad21_ ] u1
+a2 [net-_u6-pad1_ ] [net-_u1-pad1_ ] u6
+a3 [net-_u2-pad1_ ] [net-_u1-pad2_ ] u2
+a4 [net-_u3-pad1_ ] [net-_u1-pad3_ ] u3
+a5 [net-_u4-pad1_ ] [net-_u1-pad4_ ] u4
+a6 [net-_u5-pad1_ gnd gnd gnd ] [net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ ] u5
+a7 [net-_u7-pad1_ gnd gnd gnd ] [net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ ] u7
+a8 [net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ ] [/out_1 /out_2 /out_3 /out_4 /out_5 /out_6 /out_7 /out_8 ] u8
+a9 [net-_u1-pad21_ ] [/overflow ] u9
+* Schematic Name:                             mac_unit, NgSpice Name: mac_unit
+.model u1 mac_unit(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u6 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u2 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u3 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u4 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_4, NgSpice Name: adc_bridge
+.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_4, NgSpice Name: adc_bridge
+.model u7 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u8 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u9 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+.tran 100e-06 100e-03 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(/out_1)
+plot v(/out_2)
+plot v(/out_3)
+plot v(/out_4)
+plot v(/out_5)
+plot v(/out_6)
+plot v(/out_7)
+plot v(/out_8)
+plot v(/overflow)
+.endc
+.end

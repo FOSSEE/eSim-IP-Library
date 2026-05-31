@@ -1,0 +1,20 @@
+.title kicad schematic
+
+.include I2Ssub.sub
+i1 /vdd_5v gnd  dc -5
+v1 /bclk_label gnd pulse(0 5 0 1n 1n 49n 100n)
+v2 /rst_label gnd pulse(5 0 150n 1n 1n 1000m 1000m)
+x1 /bclk_label /rst_label /vdd_5v gnd /vdd_5v gnd /vdd_5v gnd /vdd_5v gnd /vdd_5v gnd /vdd_5v gnd /vdd_5v gnd /vdd_5v gnd /vdd_5v /vdd_5v /vdd_5v /vdd_5v gnd gnd gnd gnd /vdd_5v /vdd_5v /vdd_5v /vdd_5v gnd gnd gnd gnd /lrclk_label /sdata_label I2Ssub
+* u2 /sdata_label plot_v1
+* u1 /lrclk_label plot_v1
+.tran 10e-09 10e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(/sdata_label)
+plot v(/lrclk_label)
+.endc
+.end

@@ -1,0 +1,9 @@
+.title KiCad schematic
+v3 /ps2_clk GND pulse
+v2 /rst GND pulse
+X1 /clk /rst /ps2_clk /ps2_data /rx_done rx_data7 rx_data6 rx_data5 rx_data4 rx_data3 rx_data2 rx_data1 /rx_data0 ps2_rx_sub
+U1 /rx_done plot_v1
+U2 /rx_data0 plot_v1
+v4 /ps2_data GND pulse
+v1 /clk GND pulse
+.end
