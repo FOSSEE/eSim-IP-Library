@@ -1,0 +1,176 @@
+* c:\users\yamin\esim-workspace\universal_shift_register\universal_shift_register.cir
+
+* u16  clk net-_u14-pad1_ adc_bridge_1
+* u17  rst net-_u14-pad2_ adc_bridge_1
+* u18  parallel_in7 net-_u14-pad3_ adc_bridge_1
+* u19  parallel_in6 net-_u14-pad4_ adc_bridge_1
+* u20  parallel_in5 net-_u14-pad5_ adc_bridge_1
+* u21  parallel_in4 net-_u14-pad6_ adc_bridge_1
+* u22  parallel_in3 net-_u14-pad7_ adc_bridge_1
+* u23  parallel_in2 net-_u14-pad8_ adc_bridge_1
+* u24  parallel_in1 net-_u14-pad9_ adc_bridge_1
+* u25  parallel_in0 net-_u14-pad10_ adc_bridge_1
+* u26  left_bit net-_u14-pad11_ adc_bridge_1
+* u27  right_bit net-_u14-pad12_ adc_bridge_1
+* u28  mode1 net-_u14-pad13_ adc_bridge_1
+* u29  mode0 net-_u14-pad14_ adc_bridge_1
+* u30  net-_u14-pad15_ parallel_out7 dac_bridge_1
+* u31  net-_u14-pad16_ parallel_out6 dac_bridge_1
+* u32  net-_u14-pad17_ parallel_out5 dac_bridge_1
+* u33  net-_u14-pad18_ parallel_out4 dac_bridge_1
+* u34  net-_u14-pad19_ parallel_out3 dac_bridge_1
+* u35  net-_u14-pad20_ parallel_out2 dac_bridge_1
+* u36  net-_u14-pad21_ parallel_out1 dac_bridge_1
+* u37  net-_u14-pad22_ parallel_out0 dac_bridge_1
+* u38  net-_u14-pad23_ serial_out dac_bridge_1
+* CLOCK: 1s period, rising edges at 0.5, 1.5, 2.5, ...
+v1 clk gnd pulse(0 5 0 1n 1n 0.5 1)
+
+* RESET: active-low, released once
+v2 rst gnd pwl(0 0 0.3 0 0.3001 5 11 5)
+
+* PARALLEL INPUT = 10110011
+v3 parallel_in7 gnd dc 5
+v4 parallel_in6 gnd dc 0
+v5 parallel_in5 gnd dc 5
+v6 parallel_in4 gnd dc 5
+v7 parallel_in3 gnd dc 0
+v8 parallel_in2 gnd dc 0
+v9 parallel_in1 gnd dc 5
+v10 parallel_in0 gnd dc 5
+
+* SHIFT INPUTS
+v11 left_bit  gnd dc 0
+v12 right_bit gnd dc 5
+
+* MODE sequence
+* 0.0 to 1.3   -> 00 HOLD
+* 1.3 to 2.3   -> 11 PARALLEL LOAD
+* 2.3 to 3.3   -> 00 HOLD
+* 3.3 to 6.3   -> 01 SHIFT LEFT
+* 6.3 to 7.3   -> 00 HOLD
+* 7.3 to 10.3  -> 10 SHIFT RIGHT
+
+* mode1
+v13 mode1 gnd pwl(0 0 1.3 0 1.3001 5 2.3 5 2.3001 0 7.3 0 7.3001 5 11 5)
+
+* mode0
+v14 mode0 gnd pwl(0 0 1.3 0 1.3001 5 2.3 5 2.3001 0 3.3 0 3.3001 5 6.3 5 6.3001 0 11 0)
+
+
+* u39  parallel_out7 plot_v1
+* u40  parallel_out6 plot_v1
+* u41  parallel_out5 plot_v1
+* u42  parallel_out4 plot_v1
+* u43  parallel_out3 plot_v1
+* u44  parallel_out2 plot_v1
+* u45  parallel_out1 plot_v1
+* u46  parallel_out0 plot_v1
+* u47  serial_out plot_v1
+* u1  clk plot_v1
+* u2  rst plot_v1
+* u4  parallel_in7 plot_v1
+* u6  parallel_in6 plot_v1
+* u8  parallel_in5 plot_v1
+* u10  parallel_in4 plot_v1
+* u12  parallel_in3 plot_v1
+* u15  parallel_in2 plot_v1
+* u3  parallel_in1 plot_v1
+* u5  parallel_in0 plot_v1
+* u7  left_bit plot_v1
+* u9  right_bit plot_v1
+* u11  mode1 plot_v1
+* u13  mode0 plot_v1
+* u14  net-_u14-pad1_ net-_u14-pad2_ net-_u14-pad3_ net-_u14-pad4_ net-_u14-pad5_ net-_u14-pad6_ net-_u14-pad7_ net-_u14-pad8_ net-_u14-pad9_ net-_u14-pad10_ net-_u14-pad11_ net-_u14-pad12_ net-_u14-pad13_ net-_u14-pad14_ net-_u14-pad15_ net-_u14-pad16_ net-_u14-pad17_ net-_u14-pad18_ net-_u14-pad19_ net-_u14-pad20_ net-_u14-pad21_ net-_u14-pad22_ net-_u14-pad23_ universal_shift_register
+a1 [clk ] [net-_u14-pad1_ ] u16
+a2 [rst ] [net-_u14-pad2_ ] u17
+a3 [parallel_in7 ] [net-_u14-pad3_ ] u18
+a4 [parallel_in6 ] [net-_u14-pad4_ ] u19
+a5 [parallel_in5 ] [net-_u14-pad5_ ] u20
+a6 [parallel_in4 ] [net-_u14-pad6_ ] u21
+a7 [parallel_in3 ] [net-_u14-pad7_ ] u22
+a8 [parallel_in2 ] [net-_u14-pad8_ ] u23
+a9 [parallel_in1 ] [net-_u14-pad9_ ] u24
+a10 [parallel_in0 ] [net-_u14-pad10_ ] u25
+a11 [left_bit ] [net-_u14-pad11_ ] u26
+a12 [right_bit ] [net-_u14-pad12_ ] u27
+a13 [mode1 ] [net-_u14-pad13_ ] u28
+a14 [mode0 ] [net-_u14-pad14_ ] u29
+a15 [net-_u14-pad15_ ] [parallel_out7 ] u30
+a16 [net-_u14-pad16_ ] [parallel_out6 ] u31
+a17 [net-_u14-pad17_ ] [parallel_out5 ] u32
+a18 [net-_u14-pad18_ ] [parallel_out4 ] u33
+a19 [net-_u14-pad19_ ] [parallel_out3 ] u34
+a20 [net-_u14-pad20_ ] [parallel_out2 ] u35
+a21 [net-_u14-pad21_ ] [parallel_out1 ] u36
+a22 [net-_u14-pad22_ ] [parallel_out0 ] u37
+a23 [net-_u14-pad23_ ] [serial_out ] u38
+a24 [net-_u14-pad1_ ] [net-_u14-pad2_ ] [net-_u14-pad3_ net-_u14-pad4_ net-_u14-pad5_ net-_u14-pad6_ net-_u14-pad7_ net-_u14-pad8_ net-_u14-pad9_ net-_u14-pad10_ ] [net-_u14-pad11_ ] [net-_u14-pad12_ ] [net-_u14-pad13_ net-_u14-pad14_ ] [net-_u14-pad15_ net-_u14-pad16_ net-_u14-pad17_ net-_u14-pad18_ net-_u14-pad19_ net-_u14-pad20_ net-_u14-pad21_ net-_u14-pad22_ ] [net-_u14-pad23_ ] u14
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u16 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u17 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u18 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u19 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u20 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u21 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u22 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u23 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u24 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u25 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u26 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u27 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u28 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u29 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u30 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u31 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u32 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u33 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u34 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u35 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u36 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u37 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u38 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             universal_shift_register, NgSpice Name: universal_shift_register
+.model u14 universal_shift_register(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+.tran 0.001e-00 12e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+
+
+display
+set xbrushwidth = 3
+
+plot v(clk)+10v(rst) + 20v(left_bit) + 30v(right_bit) + 40v(mode1) + 50v(mode0)+60
+plot v(parallel_in0)+10 v(parallel_in1)+20 v(parallel_in2)+30 v(parallel_in3)+40 v(parallel_in4)+50 v(parallel_in5)+60 v(parallel_in6)+70 v(parallel_in7) +80
+plot v(parallel_out0)+10 v(parallel_out1)+20 v(parallel_out2)+30 v(parallel_out3)+40 v(parallel_out4)+50 v(parallel_out5)+60 v(parallel_out6)+70 v(parallel_out7) + 80 v(serial_out)+90
+
+
+
+.endc
+.end

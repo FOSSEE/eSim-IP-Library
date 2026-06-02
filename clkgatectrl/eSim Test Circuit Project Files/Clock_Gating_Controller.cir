@@ -1,0 +1,41 @@
+* C:\Users\yamin\eSim-Workspace\Clock_Gating_Controller\Clock_Gating_Controller.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/24/26 16:55:03
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U8  Net-_U8-Pad1_ Net-_U10-Pad2_ Net-_U11-Pad2_ Net-_U12-Pad2_ Net-_U13-Pad2_ Net-_U14-Pad2_ Net-_U15-Pad2_ Net-_U16-Pad1_ Net-_U17-Pad1_ Net-_U18-Pad1_ Net-_U19-Pad1_ clock_gating_controller_ip		
+U9  clk Net-_U8-Pad1_ adc_bridge_1		
+U10  rst_n Net-_U10-Pad2_ adc_bridge_1		
+U11  enable3 Net-_U11-Pad2_ adc_bridge_1		
+U12  enable2 Net-_U12-Pad2_ adc_bridge_1		
+U13  enable1 Net-_U13-Pad2_ adc_bridge_1		
+U14  enable0 Net-_U14-Pad2_ adc_bridge_1		
+U15  test_mode Net-_U15-Pad2_ adc_bridge_1		
+U16  Net-_U16-Pad1_ gated_clk3 dac_bridge_1		
+U17  Net-_U17-Pad1_ gated_clk2 dac_bridge_1		
+U18  Net-_U18-Pad1_ gated_clk1 dac_bridge_1		
+U19  Net-_U19-Pad1_ gated_clk0 dac_bridge_1		
+v1  clk GND pulse		
+v2  rst_n GND pulse		
+v3  enable3 GND pulse		
+v4  enable2 GND pulse		
+v5  enable1 GND pulse		
+v6  enable0 GND pulse		
+U20  gated_clk3 plot_v1		
+U21  gated_clk2 plot_v1		
+U22  gated_clk1 plot_v1		
+U23  gated_clk0 plot_v1		
+v7  ? GND pulse		
+U2  rst_n plot_v1		
+U3  enable3 plot_v1		
+U4  enable2 plot_v1		
+U5  enable1 plot_v1		
+U6  enable0 plot_v1		
+U7  test_mode plot_v1		
+U1  clk plot_v1		
+v8  VCC GND DC		
+
+.end

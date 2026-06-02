@@ -1,0 +1,26 @@
+* c:\users\yamin\esim-workspace\handshake_pulse_synchronizer\handshake_pulse_synchronizer.cir
+
+.include handshake_pulse_synchronizer_subcircuit.sub
+x1 clk_a rst_a pulse_in clk_b rst_b pulse_out handshake_pulse_synchronizer_subcircuit
+v1  clk_a gnd pulse(0 5 0.5 0 0 0.5 1)
+v2  rst_a gnd pulse(5 0 0.3 0 0 24 48)
+v3  pulse_in gnd pulse(0 5 6 0 0 1 6)
+v4  clk_b gnd pulse(0 5 1 0 0 1 2)
+v5  rst_b gnd pulse(5 0 0.3 0 0 24 48)
+v6 vcc gnd  dc 5
+* u1  clk_a plot_v1
+* u3  pulse_in plot_v1
+* u4  clk_b plot_v1
+* u5  rst_b plot_v1
+* u6  pulse_out plot_v1
+* u2  rst_a plot_v1
+.tran 0.001e-00 24e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(clk_a) +60 v(clk_b) +50 v(rst_a) + 40 v(rst_b) +30 v(pulse_in) +20 v(pulse_out) + 10
+.endc
+.end

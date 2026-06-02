@@ -1,0 +1,54 @@
+* c:\users\yamin\esim-workspace\programmable_timer_with_interrupt\programmable_timer_with_interrupt.cir
+
+.include programmable_timer_subcircuit.sub
+x1 clk reset start load_enable load_value7 load_value6 load_value5 load_value4 load_value3 load_value2 load_value1 load_value0 mode int_clear timer_interrupt current_count7 current_count6 current_count5 current_count4 current_count3 current_count2 current_count1 current_count0 programmable_timer_subcircuit
+v15 vcc gnd  dc 5
+v1  clk gnd pulse(0 5 0 0 0 0.5 1)
+v2  reset gnd pulse(0 5 0 0 0 1 40)
+v3  start gnd pulse(0 5 3 0 0 1 14)
+v4  load_enable gnd pulse(0 5 2 0 0 1 14)
+v5  load_value7 gnd pulse(5 0 0 0 0 40 80)
+v6  load_value6 gnd pulse(5 0 0 0 0 40 80)
+v7  load_value5 gnd pulse(5 0 0 0 0 40 80)
+v8  load_value4 gnd pulse(5 0 0 0 0 40 80)
+v9  load_value3 gnd pulse(5 0 0 0 0 40 80)
+v10  load_value2 gnd pulse(0 5 0 0 0 40 80)
+v11  load_value1 gnd pulse(5 0 0 0 0 40 80)
+v12  load_value0 gnd pulse(0 5 0 0 0 40 80)
+v13  mode gnd pulse(5 0 0 0 0 20 40)
+v14  int_clear gnd pulse(5 0 0 0 0 40 80)
+* u15  timer_interrupt plot_v1
+* u16  current_count7 plot_v1
+* u17  current_count6 plot_v1
+* u18  current_count5 plot_v1
+* u19  current_count4 plot_v1
+* u20  current_count3 plot_v1
+* u21  current_count2 plot_v1
+* u22  current_count1 plot_v1
+* u23  current_count0 plot_v1
+* u5  clk plot_v1
+* u7  reset plot_v1
+* u9  start plot_v1
+* u11  load_enable plot_v1
+* u13  load_value7 plot_v1
+* u2  load_value6 plot_v1
+* u3  load_value5 plot_v1
+* u6  load_value4 plot_v1
+* u10  load_value3 plot_v1
+* u12  load_value2 plot_v1
+* u14  load_value1 plot_v1
+* u1  load_value0 plot_v1
+* u4  mode plot_v1
+* u8  int_clear plot_v1
+.tran 0.001e-00 35e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+set xbrushwidth = 3
+plot v(timer_interrupt)+ 90v(current_count7) +80v(current_count6) +70v(current_count5)+60 v(current_count4)+50 v(current_count3)+40 v(current_count2) +30v(current_count1) +20v(current_count0)+10
+plot v(clk) +140v(reset) +130v(start) +120v(load_enable) +110v(load_value7) +100v(load_value6)+90 v(load_value5) +80v(load_value4)+70 v(load_value3) +60v(load_value2) +50v(load_value1) +40v(load_value0) +30v(mode) +20v(int_clear)+10
+.endc
+.end

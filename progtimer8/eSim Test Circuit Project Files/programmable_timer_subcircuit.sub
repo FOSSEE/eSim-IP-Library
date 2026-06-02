@@ -1,0 +1,26 @@
+* Subcircuit programmable_timer_subcircuit
+.subckt programmable_timer_subcircuit net-_u2-pad1_ net-_u2-pad2_ net-_u2-pad3_ net-_u2-pad4_ net-_u2-pad5_ net-_u2-pad6_ net-_u2-pad7_ net-_u2-pad8_ net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ net-_u2-pad17_ net-_u2-pad18_ net-_u2-pad19_ net-_u2-pad20_ net-_u2-pad21_ net-_u2-pad22_ net-_u2-pad23_ 
+* c:\fossee\esim\library\subcircuitlibrary\programmable_timer_subcircuit\programmable_timer_subcircuit.cir
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ net-_u1-pad23_ programmable_timer_verilog
+* u3  net-_u2-pad1_ net-_u2-pad2_ net-_u2-pad3_ net-_u2-pad4_ net-_u2-pad5_ net-_u2-pad6_ net-_u2-pad7_ net-_u2-pad8_ net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ adc_bridge_8
+* u4  net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ adc_bridge_6
+* u5  net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ net-_u2-pad15_ net-_u2-pad16_ net-_u2-pad17_ net-_u2-pad18_ net-_u2-pad19_ net-_u2-pad20_ net-_u2-pad21_ net-_u2-pad22_ dac_bridge_8
+* u6  net-_u1-pad23_ net-_u2-pad23_ dac_bridge_1
+a1 [net-_u1-pad1_ ] [net-_u1-pad2_ ] [net-_u1-pad3_ ] [net-_u1-pad4_ ] [net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ ] [net-_u1-pad13_ ] [net-_u1-pad14_ ] [net-_u1-pad15_ ] [net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ net-_u1-pad23_ ] u1
+a2 [net-_u2-pad1_ net-_u2-pad2_ net-_u2-pad3_ net-_u2-pad4_ net-_u2-pad5_ net-_u2-pad6_ net-_u2-pad7_ net-_u2-pad8_ ] [net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ ] u3
+a3 [net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ ] [net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ ] u4
+a4 [net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ ] [net-_u2-pad15_ net-_u2-pad16_ net-_u2-pad17_ net-_u2-pad18_ net-_u2-pad19_ net-_u2-pad20_ net-_u2-pad21_ net-_u2-pad22_ ] u5
+a5 [net-_u1-pad23_ ] [net-_u2-pad23_ ] u6
+* Schematic Name:                             programmable_timer_verilog, NgSpice Name: programmable_timer_verilog
+.model u1 programmable_timer_verilog(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 )
+* Schematic Name:                             adc_bridge_8, NgSpice Name: adc_bridge
+.model u3 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 )
+* Schematic Name:                             adc_bridge_6, NgSpice Name: adc_bridge
+.model u4 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 )
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u5 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 )
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u6 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 )
+* Control Statements
+
+.ends programmable_timer_subcircuit

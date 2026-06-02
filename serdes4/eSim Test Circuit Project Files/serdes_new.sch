@@ -1,0 +1,618 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:eSim_Ngveri
+LIBS:eSim_SKY130
+LIBS:eSim_SKY130_Subckts
+LIBS:serdes_new-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pulse v1
+U 1 1 69D0A38F
+P 2350 1850
+F 0 "v1" H 2150 1950 60  0000 C CNN
+F 1 "pulse" H 2150 1800 60  0000 C CNN
+F 2 "R1" H 2050 1850 60  0000 C CNN
+F 3 "" H 2350 1850 60  0000 C CNN
+	1    2350 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L pulse v2
+U 1 1 69D0A43F
+P 2350 2500
+F 0 "v2" H 2150 2600 60  0000 C CNN
+F 1 "pulse" H 2150 2450 60  0000 C CNN
+F 2 "R1" H 2050 2500 60  0000 C CNN
+F 3 "" H 2350 2500 60  0000 C CNN
+	1    2350 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L pulse v3
+U 1 1 69D0A476
+P 2350 3200
+F 0 "v3" H 2150 3300 60  0000 C CNN
+F 1 "pulse" H 2150 3150 60  0000 C CNN
+F 2 "R1" H 2050 3200 60  0000 C CNN
+F 3 "" H 2350 3200 60  0000 C CNN
+	1    2350 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L pulse v4
+U 1 1 69D0A4BB
+P 2400 4000
+F 0 "v4" H 2200 4100 60  0000 C CNN
+F 1 "pulse" H 2200 3950 60  0000 C CNN
+F 2 "R1" H 2100 4000 60  0000 C CNN
+F 3 "" H 2400 4000 60  0000 C CNN
+	1    2400 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L pulse v5
+U 1 1 69D0A532
+P 2450 4800
+F 0 "v5" H 2250 4900 60  0000 C CNN
+F 1 "pulse" H 2250 4750 60  0000 C CNN
+F 2 "R1" H 2150 4800 60  0000 C CNN
+F 3 "" H 2450 4800 60  0000 C CNN
+	1    2450 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L pulse v6
+U 1 1 69D0A55B
+P 2450 5600
+F 0 "v6" H 2250 5700 60  0000 C CNN
+F 1 "pulse" H 2250 5550 60  0000 C CNN
+F 2 "R1" H 2150 5600 60  0000 C CNN
+F 3 "" H 2450 5600 60  0000 C CNN
+	1    2450 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L pulse v7
+U 1 1 69D0A59A
+P 2500 6400
+F 0 "v7" H 2300 6500 60  0000 C CNN
+F 1 "pulse" H 2300 6350 60  0000 C CNN
+F 2 "R1" H 2200 6400 60  0000 C CNN
+F 3 "" H 2500 6400 60  0000 C CNN
+	1    2500 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L DC v8
+U 1 1 69D0A956
+P 5100 1800
+F 0 "v8" H 4900 1900 60  0000 C CNN
+F 1 "DC" H 4900 1750 60  0000 C CNN
+F 2 "R1" H 4800 1800 60  0000 C CNN
+F 3 "" H 5100 1800 60  0000 C CNN
+	1    5100 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L eSim_GND #PWR01
+U 1 1 69D0AAC7
+P 4650 1800
+F 0 "#PWR01" H 4650 1550 50  0001 C CNN
+F 1 "eSim_GND" H 4650 1650 50  0000 C CNN
+F 2 "" H 4650 1800 50  0001 C CNN
+F 3 "" H 4650 1800 50  0001 C CNN
+	1    4650 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L eSim_VCC #PWR02
+U 1 1 69D0AAEF
+P 5550 1800
+F 0 "#PWR02" H 5550 1650 50  0001 C CNN
+F 1 "eSim_VCC" H 5550 1950 50  0000 C CNN
+F 2 "" H 5550 1800 50  0001 C CNN
+F 3 "" H 5550 1800 50  0001 C CNN
+	1    5550 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L eSim_GND #PWR03
+U 1 1 69D0ABA3
+P 1900 1850
+F 0 "#PWR03" H 1900 1600 50  0001 C CNN
+F 1 "eSim_GND" H 1900 1700 50  0000 C CNN
+F 2 "" H 1900 1850 50  0001 C CNN
+F 3 "" H 1900 1850 50  0001 C CNN
+	1    1900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L eSim_GND #PWR04
+U 1 1 69D0ABF3
+P 1900 2500
+F 0 "#PWR04" H 1900 2250 50  0001 C CNN
+F 1 "eSim_GND" H 1900 2350 50  0000 C CNN
+F 2 "" H 1900 2500 50  0001 C CNN
+F 3 "" H 1900 2500 50  0001 C CNN
+	1    1900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L eSim_GND #PWR05
+U 1 1 69D0AC1B
+P 1900 3200
+F 0 "#PWR05" H 1900 2950 50  0001 C CNN
+F 1 "eSim_GND" H 1900 3050 50  0000 C CNN
+F 2 "" H 1900 3200 50  0001 C CNN
+F 3 "" H 1900 3200 50  0001 C CNN
+	1    1900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L eSim_GND #PWR06
+U 1 1 69D0AC9D
+P 1950 4000
+F 0 "#PWR06" H 1950 3750 50  0001 C CNN
+F 1 "eSim_GND" H 1950 3850 50  0000 C CNN
+F 2 "" H 1950 4000 50  0001 C CNN
+F 3 "" H 1950 4000 50  0001 C CNN
+	1    1950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L eSim_GND #PWR07
+U 1 1 69D0ACF7
+P 2000 4800
+F 0 "#PWR07" H 2000 4550 50  0001 C CNN
+F 1 "eSim_GND" H 2000 4650 50  0000 C CNN
+F 2 "" H 2000 4800 50  0001 C CNN
+F 3 "" H 2000 4800 50  0001 C CNN
+	1    2000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L eSim_GND #PWR08
+U 1 1 69D0AD65
+P 2000 5600
+F 0 "#PWR08" H 2000 5350 50  0001 C CNN
+F 1 "eSim_GND" H 2000 5450 50  0000 C CNN
+F 2 "" H 2000 5600 50  0001 C CNN
+F 3 "" H 2000 5600 50  0001 C CNN
+	1    2000 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L eSim_GND #PWR09
+U 1 1 69D0AE19
+P 2050 6400
+F 0 "#PWR09" H 2050 6150 50  0001 C CNN
+F 1 "eSim_GND" H 2050 6250 50  0000 C CNN
+F 2 "" H 2050 6400 50  0001 C CNN
+F 3 "" H 2050 6400 50  0001 C CNN
+	1    2050 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U1
+U 1 1 69D0AFF9
+P 3100 1950
+F 0 "U1" H 3100 2450 60  0000 C CNN
+F 1 "plot_v1" H 3300 2300 60  0000 C CNN
+F 2 "" H 3100 1950 60  0000 C CNN
+F 3 "" H 3100 1950 60  0000 C CNN
+	1    3100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U2
+U 1 1 69D0B099
+P 3100 2650
+F 0 "U2" H 3100 3150 60  0000 C CNN
+F 1 "plot_v1" H 3300 3000 60  0000 C CNN
+F 2 "" H 3100 2650 60  0000 C CNN
+F 3 "" H 3100 2650 60  0000 C CNN
+	1    3100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U3
+U 1 1 69D0B142
+P 3100 3300
+F 0 "U3" H 3100 3800 60  0000 C CNN
+F 1 "plot_v1" H 3300 3650 60  0000 C CNN
+F 2 "" H 3100 3300 60  0000 C CNN
+F 3 "" H 3100 3300 60  0000 C CNN
+	1    3100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U4
+U 1 1 69D0B197
+P 3150 4150
+F 0 "U4" H 3150 4650 60  0000 C CNN
+F 1 "plot_v1" H 3350 4500 60  0000 C CNN
+F 2 "" H 3150 4150 60  0000 C CNN
+F 3 "" H 3150 4150 60  0000 C CNN
+	1    3150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U5
+U 1 1 69D0B2F2
+P 3200 4900
+F 0 "U5" H 3200 5400 60  0000 C CNN
+F 1 "plot_v1" H 3400 5250 60  0000 C CNN
+F 2 "" H 3200 4900 60  0000 C CNN
+F 3 "" H 3200 4900 60  0000 C CNN
+	1    3200 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U6
+U 1 1 69D0B424
+P 3200 5700
+F 0 "U6" H 3200 6200 60  0000 C CNN
+F 1 "plot_v1" H 3400 6050 60  0000 C CNN
+F 2 "" H 3200 5700 60  0000 C CNN
+F 3 "" H 3200 5700 60  0000 C CNN
+	1    3200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U7
+U 1 1 69D0B491
+P 3200 6500
+F 0 "U7" H 3200 7000 60  0000 C CNN
+F 1 "plot_v1" H 3400 6850 60  0000 C CNN
+F 2 "" H 3200 6500 60  0000 C CNN
+F 3 "" H 3200 6500 60  0000 C CNN
+	1    3200 6500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 1750 1    60   Input ~ 0
+clk
+Text GLabel 3650 2400 1    60   Input ~ 0
+rst
+Text GLabel 3650 3100 1    60   Input ~ 0
+load
+Text GLabel 3650 3900 1    60   Input ~ 0
+data_in3
+Text GLabel 3700 4700 1    60   Input ~ 0
+data_in2
+Text GLabel 3700 5500 1    60   Input ~ 0
+data_in1
+Text GLabel 3700 6300 1    60   Input ~ 0
+data_in0
+$Comp
+L plot_v1 U10
+U 1 1 69D0C772
+P 9000 3100
+F 0 "U10" H 9000 3600 60  0000 C CNN
+F 1 "plot_v1" H 9200 3450 60  0000 C CNN
+F 2 "" H 9000 3100 60  0000 C CNN
+F 3 "" H 9000 3100 60  0000 C CNN
+	1    9000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U11
+U 1 1 69D0C9A5
+P 9200 3100
+F 0 "U11" H 9200 3600 60  0000 C CNN
+F 1 "plot_v1" H 9400 3450 60  0000 C CNN
+F 2 "" H 9200 3100 60  0000 C CNN
+F 3 "" H 9200 3100 60  0000 C CNN
+	1    9200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U12
+U 1 1 69D0C9E8
+P 9400 3100
+F 0 "U12" H 9400 3600 60  0000 C CNN
+F 1 "plot_v1" H 9600 3450 60  0000 C CNN
+F 2 "" H 9400 3100 60  0000 C CNN
+F 3 "" H 9400 3100 60  0000 C CNN
+	1    9400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U13
+U 1 1 69D0CA31
+P 9600 3100
+F 0 "U13" H 9600 3600 60  0000 C CNN
+F 1 "plot_v1" H 9800 3450 60  0000 C CNN
+F 2 "" H 9600 3100 60  0000 C CNN
+F 3 "" H 9600 3100 60  0000 C CNN
+	1    9600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U14
+U 1 1 69D0CA80
+P 9800 3100
+F 0 "U14" H 9800 3600 60  0000 C CNN
+F 1 "plot_v1" H 10000 3450 60  0000 C CNN
+F 2 "" H 9800 3100 60  0000 C CNN
+F 3 "" H 9800 3100 60  0000 C CNN
+	1    9800 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 9000 3100 3    60   Output ~ 0
+data_out3
+Text GLabel 9200 3200 3    60   Output ~ 0
+data_out2
+Text GLabel 9400 3300 3    60   Output ~ 0
+data_out1
+Text GLabel 9600 3400 3    60   Output ~ 0
+data_out0
+Text GLabel 9800 3500 3    60   Output ~ 0
+done_des
+Text GLabel 7100 2900 1    60   Input ~ 0
+clk
+Text GLabel 6950 2900 1    60   Input ~ 0
+rst
+$Comp
+L pulse v9
+U 1 1 69D0D7D5
+P 6700 2550
+F 0 "v9" H 6500 2650 60  0000 C CNN
+F 1 "pulse" H 6500 2500 60  0000 C CNN
+F 2 "R1" H 6400 2550 60  0000 C CNN
+F 3 "" H 6700 2550 60  0000 C CNN
+	1    6700 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L eSim_GND #PWR010
+U 1 1 69D0DD18
+P 6700 2100
+F 0 "#PWR010" H 6700 1850 50  0001 C CNN
+F 1 "eSim_GND" H 6700 1950 50  0000 C CNN
+F 2 "" H 6700 2100 50  0001 C CNN
+F 3 "" H 6700 2100 50  0001 C CNN
+	1    6700 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L plot_v1 U8
+U 1 1 69D0DF02
+P 6200 3300
+F 0 "U8" H 6200 3800 60  0000 C CNN
+F 1 "plot_v1" H 6400 3650 60  0000 C CNN
+F 2 "" H 6200 3300 60  0000 C CNN
+F 3 "" H 6200 3300 60  0000 C CNN
+	1    6200 3300
+	-1   0    0    1   
+$EndComp
+Text GLabel 6400 3500 2    60   Output ~ 0
+done_ser
+Text GLabel 6550 3000 0    60   Input ~ 0
+start
+Wire Wire Line
+	2800 1850 4250 1850
+Wire Wire Line
+	4250 1850 4250 3050
+Wire Wire Line
+	2800 2500 4200 2500
+Wire Wire Line
+	4200 2500 4200 3150
+Wire Wire Line
+	4200 3150 4250 3150
+Wire Wire Line
+	2800 3200 4250 3200
+Wire Wire Line
+	4250 3200 4250 3250
+Wire Wire Line
+	2950 6400 4250 6400
+Wire Wire Line
+	4250 6400 4250 3650
+Wire Wire Line
+	2900 5600 4200 5600
+Wire Wire Line
+	4200 5600 4200 3550
+Wire Wire Line
+	4200 3550 4250 3550
+Wire Wire Line
+	2900 4800 4150 4800
+Wire Wire Line
+	4150 4800 4150 3450
+Wire Wire Line
+	4150 3450 4250 3450
+Wire Wire Line
+	2850 4000 4100 4000
+Wire Wire Line
+	4100 4000 4100 3350
+Wire Wire Line
+	4100 3350 4250 3350
+Wire Wire Line
+	3650 1750 3650 1850
+Connection ~ 3650 1850
+Wire Wire Line
+	3650 2400 3650 2500
+Connection ~ 3650 2500
+Wire Wire Line
+	3650 3100 3650 3200
+Connection ~ 3650 3200
+Wire Wire Line
+	3650 3900 3650 4000
+Connection ~ 3650 4000
+Wire Wire Line
+	3700 4700 3700 4800
+Connection ~ 3700 4800
+Wire Wire Line
+	3700 5500 3700 5600
+Connection ~ 3700 5600
+Wire Wire Line
+	3700 6300 3700 6400
+Connection ~ 3700 6400
+Wire Wire Line
+	8750 3050 9000 3050
+Wire Wire Line
+	9000 2900 9000 3100
+Wire Wire Line
+	8750 3150 9200 3150
+Wire Wire Line
+	9200 2900 9200 3200
+Wire Wire Line
+	8750 3250 9400 3250
+Wire Wire Line
+	9400 2900 9400 3300
+Wire Wire Line
+	8750 3350 9600 3350
+Wire Wire Line
+	9600 2900 9600 3400
+Wire Wire Line
+	8750 3450 9800 3450
+Wire Wire Line
+	9800 2900 9800 3500
+Connection ~ 9800 3450
+Connection ~ 9600 3350
+Connection ~ 9400 3250
+Connection ~ 9200 3150
+Connection ~ 9000 3050
+Wire Wire Line
+	7100 2900 7100 3100
+Wire Wire Line
+	7100 3100 7150 3100
+Wire Wire Line
+	6950 2900 6950 3200
+Wire Wire Line
+	6950 3200 7150 3200
+Wire Wire Line
+	6700 3000 6700 3300
+Wire Wire Line
+	6700 3300 7150 3300
+Wire Wire Line
+	6000 3100 6600 3100
+Wire Wire Line
+	6600 3100 6600 3400
+Wire Wire Line
+	6600 3400 7150 3400
+Wire Wire Line
+	6000 3200 6200 3200
+Wire Wire Line
+	6200 3200 6200 3500
+Wire Wire Line
+	6400 3500 6250 3500
+Wire Wire Line
+	6250 3500 6250 3450
+Wire Wire Line
+	6250 3450 6200 3450
+Connection ~ 6200 3450
+Wire Wire Line
+	6550 3000 6650 3000
+Wire Wire Line
+	6650 2900 6650 3050
+Wire Wire Line
+	6650 3050 6700 3050
+Connection ~ 6700 3050
+Wire Wire Line
+	3100 1750 3100 1850
+Connection ~ 3100 1850
+Wire Wire Line
+	3100 2450 3100 2500
+Connection ~ 3100 2500
+Wire Wire Line
+	3100 3100 3100 3200
+Connection ~ 3100 3200
+Wire Wire Line
+	3150 3950 3150 4000
+Connection ~ 3150 4000
+Wire Wire Line
+	3200 4700 3200 4800
+Connection ~ 3200 4800
+Wire Wire Line
+	3200 5500 3200 5600
+Connection ~ 3200 5600
+Wire Wire Line
+	3200 6300 3200 6400
+Connection ~ 3200 6400
+$Comp
+L plot_v1 U9
+U 1 1 69D0CA50
+P 6350 2850
+F 0 "U9" H 6350 3350 60  0000 C CNN
+F 1 "plot_v1" H 6550 3200 60  0000 C CNN
+F 2 "" H 6350 2850 60  0000 C CNN
+F 3 "" H 6350 2850 60  0000 C CNN
+	1    6350 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2650 6350 2900
+Wire Wire Line
+	6350 2900 6650 2900
+Connection ~ 6650 3000
+$Comp
+L serializer_ip_ser X1
+U 1 1 69D0D08A
+P 4850 3250
+F 0 "X1" H 5050 3350 60  0000 C CNN
+F 1 "serializer_ip_ser" H 5050 3250 60  0000 C CNN
+F 2 "" H 5050 3350 60  0001 C CNN
+F 3 "" H 5050 3350 60  0001 C CNN
+	1    4850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L deserializer_ip X2
+U 1 1 69D0D117
+P 7700 3250
+F 0 "X2" H 7850 3350 60  0000 C CNN
+F 1 "deserializer_ip" H 7850 3250 60  0000 C CNN
+F 2 "" H 8200 3200 60  0001 C CNN
+F 3 "" H 8200 3200 60  0001 C CNN
+	1    7700 3250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

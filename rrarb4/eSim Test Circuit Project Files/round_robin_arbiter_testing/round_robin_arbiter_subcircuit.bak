@@ -1,0 +1,199 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:eSim_Ngveri
+LIBS:eSim_SKY130
+LIBS:eSim_SKY130_Subckts
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L round_robin_arbiter_verilog U?
+U 1 1 69C8A4C3
+P 2800 5200
+F 0 "U?" H 5650 7000 60  0000 C CNN
+F 1 "round_robin_arbiter_verilog" H 5650 7200 60  0000 C CNN
+F 2 "" H 5650 7150 60  0000 C CNN
+F 3 "" H 5650 7150 60  0000 C CNN
+	1    2800 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L adc_bridge_6 U?
+U 1 1 69C8A55C
+P 4400 3350
+F 0 "U?" H 4400 3350 60  0000 C CNN
+F 1 "adc_bridge_6" H 4400 3500 60  0000 C CNN
+F 2 "" H 4400 3350 60  0000 C CNN
+F 3 "" H 4400 3350 60  0000 C CNN
+	1    4400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L dac_bridge_4 U?
+U 1 1 69C8A593
+P 6900 3500
+F 0 "U?" H 6900 3500 60  0000 C CNN
+F 1 "dac_bridge_4" H 6900 3800 60  0000 C CNN
+F 2 "" H 6900 3500 60  0000 C CNN
+F 3 "" H 6900 3500 60  0000 C CNN
+	1    6900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8A5EC
+P 3550 3300
+F 0 "U?" H 3600 3400 30  0000 C CNN
+F 1 "PORT" H 3550 3300 30  0000 C CNN
+F 2 "" H 3550 3300 60  0000 C CNN
+F 3 "" H 3550 3300 60  0000 C CNN
+	1    3550 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8A6ED
+P 3550 3400
+F 0 "U?" H 3600 3500 30  0000 C CNN
+F 1 "PORT" H 3550 3400 30  0000 C CNN
+F 2 "" H 3550 3400 60  0000 C CNN
+F 3 "" H 3550 3400 60  0000 C CNN
+	1    3550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8A730
+P 3550 3500
+F 0 "U?" H 3600 3600 30  0000 C CNN
+F 1 "PORT" H 3550 3500 30  0000 C CNN
+F 2 "" H 3550 3500 60  0000 C CNN
+F 3 "" H 3550 3500 60  0000 C CNN
+	1    3550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8A76D
+P 3550 3600
+F 0 "U?" H 3600 3700 30  0000 C CNN
+F 1 "PORT" H 3550 3600 30  0000 C CNN
+F 2 "" H 3550 3600 60  0000 C CNN
+F 3 "" H 3550 3600 60  0000 C CNN
+	1    3550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8A79C
+P 3550 3700
+F 0 "U?" H 3600 3800 30  0000 C CNN
+F 1 "PORT" H 3550 3700 30  0000 C CNN
+F 2 "" H 3550 3700 60  0000 C CNN
+F 3 "" H 3550 3700 60  0000 C CNN
+	1    3550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8A7C9
+P 3550 3800
+F 0 "U?" H 3600 3900 30  0000 C CNN
+F 1 "PORT" H 3550 3800 30  0000 C CNN
+F 2 "" H 3550 3800 60  0000 C CNN
+F 3 "" H 3550 3800 60  0000 C CNN
+	1    3550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8A804
+P 7700 3300
+F 0 "U?" H 7750 3400 30  0000 C CNN
+F 1 "PORT" H 7700 3300 30  0000 C CNN
+F 2 "" H 7700 3300 60  0000 C CNN
+F 3 "" H 7700 3300 60  0000 C CNN
+	1    7700 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8A975
+P 7700 3400
+F 0 "U?" H 7750 3500 30  0000 C CNN
+F 1 "PORT" H 7700 3400 30  0000 C CNN
+F 2 "" H 7700 3400 60  0000 C CNN
+F 3 "" H 7700 3400 60  0000 C CNN
+	1    7700 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8A9CC
+P 7700 3500
+F 0 "U?" H 7750 3600 30  0000 C CNN
+F 1 "PORT" H 7700 3500 30  0000 C CNN
+F 2 "" H 7700 3500 60  0000 C CNN
+F 3 "" H 7700 3500 60  0000 C CNN
+	1    7700 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 69C8AA0D
+P 7700 3600
+F 0 "U?" H 7750 3700 30  0000 C CNN
+F 1 "PORT" H 7700 3600 30  0000 C CNN
+F 2 "" H 7700 3600 60  0000 C CNN
+F 3 "" H 7700 3600 60  0000 C CNN
+	1    7700 3600
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

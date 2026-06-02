@@ -1,0 +1,126 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# DC
+#
+DEF DC v 0 40 Y Y 1 F N
+F0 "v" -200 100 60 H V C CNN
+F1 "DC" -200 -50 60 H V C CNN
+F2 "R1" -300 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ 1_pin
+$ENDFPLIST
+DRAW
+C 0 0 150 0 1 0 N
+X + 1 0 450 300 D 50 50 1 1 w
+X - 2 0 -450 300 U 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# deserializer_ip
+#
+DEF deserializer_ip X 0 40 Y Y 1 F N
+F0 "X" 150 100 60 H V C CNN
+F1 "deserializer_ip" 150 0 60 H V C CNN
+F2 "" 500 -50 60 H I C CNN
+F3 "" 500 -50 60 H I C CNN
+DRAW
+S -350 300 850 -300 0 1 0 N
+X clk 1 -550 150 200 R 50 50 1 1 I
+X rst 2 -550 50 200 R 50 50 1 1 I
+X start 3 -550 -50 200 R 50 50 1 1 I
+X serial_in 4 -550 -150 200 R 50 50 1 1 I
+X data_out3 5 1050 200 200 L 50 50 1 1 O
+X data_out2 6 1050 100 200 L 50 50 1 1 O
+X data_out1 7 1050 0 200 L 50 50 1 1 O
+X data_out0 8 1050 -100 200 L 50 50 1 1 O
+X done 9 1050 -200 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# eSim_GND
+#
+DEF eSim_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "eSim_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# eSim_VCC
+#
+DEF eSim_VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "eSim_VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# plot_v1
+#
+DEF plot_v1 U 0 40 Y Y 1 F N
+F0 "U" 0 500 60 H V C CNN
+F1 "plot_v1" 200 350 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 0 500 100 0 1 0 N
+X ~ ~ 0 200 200 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# pulse
+#
+DEF pulse v 0 40 Y Y 1 F N
+F0 "v" -200 100 60 H V C CNN
+F1 "pulse" -200 -50 60 H V C CNN
+F2 "R1" -300 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ 1_pin
+$ENDFPLIST
+DRAW
+A -25 -450 501 928 871 0 1 0 N -50 50 0 50
+A 25 400 451 -931 -868 0 1 0 N 0 -50 50 -50
+A 75 600 551 -926 -873 0 1 0 N 50 50 100 50
+A 350 0 403 -1728 1728 0 1 0 N -50 -50 -50 50
+A 450 0 453 1736 -1736 0 1 0 N 0 50 0 -50
+A 600 0 552 -1748 1748 0 1 0 N 50 -50 50 50
+C 0 0 150 0 1 0 N
+X + 1 0 450 300 D 50 50 1 1 P
+X - 2 0 -450 300 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# serializer_ip_ser
+#
+DEF serializer_ip_ser X 0 40 Y Y 1 F N
+F0 "X" 200 100 60 H V C CNN
+F1 "serializer_ip_ser" 200 0 60 H V C CNN
+F2 "" 200 100 60 H I C CNN
+F3 "" 200 100 60 H I C CNN
+DRAW
+S -400 250 950 -500 0 1 0 N
+X clk 1 -600 200 200 R 50 50 1 1 I
+X rst 2 -600 100 200 R 50 50 1 1 I
+X load 3 -600 0 200 R 50 50 1 1 I
+X data_in3 4 -600 -100 200 R 50 50 1 1 I
+X data_in2 5 -600 -200 200 R 50 50 1 1 I
+X data_in1 6 -600 -300 200 R 50 50 1 1 I
+X data_in0 7 -600 -400 200 R 50 50 1 1 I
+X serial_out 8 1150 150 200 L 50 50 1 1 O
+X done 9 1150 50 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library
