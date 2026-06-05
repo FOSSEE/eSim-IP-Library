@@ -1,0 +1,60 @@
+* c:\users\vamsi\esim-workspace\bist_fault_free\bist_fault_free.cir
+
+v1  clk0 gnd pulse(0 5 0 0 0 0.005 0.01)
+v2  rst0 gnd pulse(0 5 0 0 0 0.1 0.4)
+v3  testmode0 gnd pulse(0 5 0 0 0 0.3 0.6)
+v4 in3 gnd  dc 0
+v5 in2 gnd  dc 5
+v6 in1 gnd  dc 5
+v7 in0 gnd  dc 0
+v8 vcc gnd  dc 5
+* u1  clk0 plot_v1
+* u2  rst0 plot_v1
+* u4  testmode0 plot_v1
+* u5  in3 plot_v1
+* u6  in2 plot_v1
+* u7  in1 plot_v1
+* u8  in0 plot_v1
+* u9  out3 plot_v1
+* u10  out2 plot_v1
+* u12  out1 plot_v1
+* u14  out0 plot_v1
+* u16  fault_detected0 plot_v1
+* u18  misr_out3 plot_v1
+* u19  misr_out2 plot_v1
+* u20  misr_out1 plot_v1
+* u21  misr_out0 plot_v1
+* u11  complete3 plot_v1
+* u13  complete2 plot_v1
+* u15  complete1 plot_v1
+* u17  complete0 plot_v1
+* u23  net-_u23-pad1_ net-_u23-pad2_ net-_u23-pad3_ net-_u23-pad4_ net-_u23-pad5_ net-_u23-pad6_ net-_u23-pad7_ net-_u23-pad8_ out3 out2 out1 out0 fault_detected0 misr_out3 misr_out2 misr_out1 dac_bridge_8
+* u24  net-_u24-pad1_ net-_u24-pad2_ net-_u24-pad3_ net-_u24-pad4_ net-_u24-pad5_ misr_out0 complete3 complete2 complete1 complete0 dac_bridge_5
+* u22  clk0 rst0 testmode0 in3 in2 in1 in0 net-_u22-pad8_ net-_u22-pad9_ net-_u22-pad10_ net-_u22-pad11_ net-_u22-pad12_ net-_u22-pad13_ net-_u22-pad14_ adc_bridge_7
+* u3  net-_u22-pad8_ net-_u22-pad9_ net-_u22-pad10_ net-_u22-pad11_ net-_u22-pad12_ net-_u22-pad13_ net-_u22-pad14_ net-_u23-pad1_ net-_u23-pad2_ net-_u23-pad3_ net-_u23-pad4_ net-_u23-pad5_ net-_u23-pad6_ net-_u23-pad7_ net-_u23-pad8_ net-_u24-pad1_ net-_u24-pad2_ net-_u24-pad3_ net-_u24-pad4_ net-_u24-pad5_ bist_fault_free
+a1 [net-_u23-pad1_ net-_u23-pad2_ net-_u23-pad3_ net-_u23-pad4_ net-_u23-pad5_ net-_u23-pad6_ net-_u23-pad7_ net-_u23-pad8_ ] [out3 out2 out1 out0 fault_detected0 misr_out3 misr_out2 misr_out1 ] u23
+a2 [net-_u24-pad1_ net-_u24-pad2_ net-_u24-pad3_ net-_u24-pad4_ net-_u24-pad5_ ] [misr_out0 complete3 complete2 complete1 complete0 ] u24
+a3 [clk0 rst0 testmode0 in3 in2 in1 in0 ] [net-_u22-pad8_ net-_u22-pad9_ net-_u22-pad10_ net-_u22-pad11_ net-_u22-pad12_ net-_u22-pad13_ net-_u22-pad14_ ] u22
+a4 [net-_u22-pad8_ ] [net-_u22-pad9_ ] [net-_u22-pad10_ ] [net-_u22-pad11_ net-_u22-pad12_ net-_u22-pad13_ net-_u22-pad14_ ] [net-_u23-pad1_ net-_u23-pad2_ net-_u23-pad3_ net-_u23-pad4_ ] [net-_u23-pad5_ ] [net-_u23-pad6_ net-_u23-pad7_ net-_u23-pad8_ net-_u24-pad1_ ] [net-_u24-pad2_ net-_u24-pad3_ net-_u24-pad4_ net-_u24-pad5_ ] u3
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u23 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_5, NgSpice Name: dac_bridge
+.model u24 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_7, NgSpice Name: adc_bridge
+.model u22 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             bist_fault_free, NgSpice Name: bist_fault_free
+.model u3 bist_fault_free(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+.tran 0.0001e-00 0.4e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+set xbrushwidth = 3
+
+plot v(clk0) + 6 v(in0) +12 v(in1) +18 v(in2) + 24 v(in3)+ 30 v(testmode0)+ 36 v(rst0)
+
+plot v(out3) + 8 v(out2) + 16 v(out1) + 24 v(out0) + 32 v(fault_detected0)+ 40 v(misr_out3) + 48 v(misr_out2)+ 56 v(misr_out1) + 64 v(misr_out1)+ 72 v(misr_out0) + 80 v(complete0)
+.endc
+.end

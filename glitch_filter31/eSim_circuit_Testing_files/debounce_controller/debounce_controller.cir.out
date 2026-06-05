@@ -1,0 +1,31 @@
+* c:\users\yamin\esim-workspace\debounce_controller\debounce_controller.cir
+
+.include debounce_controller_subcircuit.sub
+x1 clk reset noisy_in mode1 mode0 clean_out debounce_controller_subcircuit
+v1 clk gnd pulse(0 5 0.5 0 0 0.5 1)
+
+v2 reset gnd pulse(5 0 0.3 0 0 30 40)
+
+v3 noisy_in gnd pulse(0 5 10 0 0 20 60)
+
+v4 mode1 gnd dc 5
+v5 mode0 gnd dc 5
+
+v6 vcc gnd dc 5
+* u6  clean_out plot_v1
+* u5  clk plot_v1
+* u1  reset plot_v1
+* u2  noisy_in plot_v1
+* u3  mode1 plot_v1
+* u4  mode0 plot_v1
+.tran 0.001e+00 30e+00 0e+00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+set xbrushwidth = 3
+plot v(clean_out) +10 v(clk)+60v(reset)+50 v(noisy_in) +40v(mode1) +30v(mode0)+20
+.endc
+.end

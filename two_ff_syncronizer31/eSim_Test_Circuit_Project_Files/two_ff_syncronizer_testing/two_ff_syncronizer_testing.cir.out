@@ -1,0 +1,25 @@
+* c:\esim\two_ff_syncronizer_testing\two_ff_syncronizer_testing.cir
+
+.include two_ff_syncronizer_subcircuit.sub
+x1 clk0 rst_n0 async_in0 sync_out0 two_ff_syncronizer_subcircuit
+v1  clk0 gnd pulse(0 5 0 0 0 0.05 0.1)
+v2  rst_n0 gnd pulse(5 0 0 0 0 0.1 0.9)
+v3  async_in0 gnd pulse(0 5 0 0 0 0.2 0.4)
+* u1  clk0 plot_v1
+* u2  rst_n0 plot_v1
+* u3  async_in0 plot_v1
+* u4  sync_out0 plot_v1
+.tran 0.001e-00 1e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+
+set xbrushwidth = 3
+
+plot v(clk0) + 6 v(rst_n0) + 12  v(async_in0) + 18 v(sync_out0)
+
+.endc
+.end

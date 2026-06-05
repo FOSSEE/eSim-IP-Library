@@ -1,0 +1,80 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# GND
+#
+DEF GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# plot_v1
+#
+DEF plot_v1 U 0 40 Y Y 1 F N
+F0 "U" 0 500 60 H V C CNN
+F1 "plot_v1" 200 350 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 0 500 100 0 1 0 N
+X ~ ~ 0 200 200 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# pulse
+#
+DEF pulse v 0 40 Y Y 1 F N
+F0 "v" -200 100 60 H V C CNN
+F1 "pulse" -200 -50 60 H V C CNN
+F2 "R1" -300 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ 1_pin
+$ENDFPLIST
+DRAW
+A -25 -450 501 928 871 0 1 0 N -50 50 0 50
+A 25 400 451 -931 -868 0 1 0 N 0 -50 50 -50
+A 75 600 551 -926 -873 0 1 0 N 50 50 100 50
+A 350 0 403 -1728 1728 0 1 0 N -50 -50 -50 50
+A 450 0 453 1736 -1736 0 1 0 N 0 50 0 -50
+A 600 0 552 -1748 1748 0 1 0 N 50 -50 50 50
+C 0 0 150 0 1 0 N
+X + 1 0 450 300 D 50 50 1 1 P
+X - 2 0 -450 300 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# rle_compressor_ip
+#
+DEF rle_compressor_ip X 0 40 Y Y 1 F N
+F0 "X" 0 0 60 H V C CNN
+F1 "rle_compressor_ip" 0 150 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 650 -450 -500 750 0 1 0 N
+X clk0 1 -500 600 200 L 50 50 1 1 I
+X rst0 2 -500 450 200 L 50 50 1 1 I
+X data_in0 3 -500 300 200 L 50 50 1 1 I
+X valid_in0 4 -500 150 200 L 50 50 1 1 I
+X last_in0 5 -500 -50 200 L 50 50 1 1 I
+X count_out7 6 650 600 200 R 50 50 1 1 O
+X count_out6 7 650 500 200 R 50 50 1 1 O
+X count_out5 8 650 400 200 R 50 50 1 1 O
+X count_out4 9 650 300 200 R 50 50 1 1 O
+X count_out3 10 650 200 200 R 50 50 1 1 O
+X count_out2 11 650 100 200 R 50 50 1 1 O
+X count_out1 12 650 0 200 R 50 50 1 1 O
+X count_out0 13 650 -100 200 R 50 50 1 1 O
+X value_out0 14 650 -200 200 R 50 50 1 1 O
+X valid_out0 15 650 -300 200 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

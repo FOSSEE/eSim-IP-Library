@@ -1,0 +1,55 @@
+.title kicad schematic
+
+* u2 in0 plot_v1
+* u3 in1 net-_u3-pad2_ adc_bridge_1
+* u4 in0 net-_u4-pad2_ adc_bridge_1
+* u7 parity plot_v1
+v1 in1 gnd pulse(0 5 0 0 0 0.2 0.4)
+* u1 in1 plot_v1
+* u5 parity net-_u5-pad2_ adc_bridge_1
+v2 in0 gnd pulse(0 5 0 0 0 0.2 0.4)
+v3 parity gnd pulse(0 5 0 0 0 0.3 0.6)
+* u6 net-_u3-pad2_ net-_u4-pad2_ net-_u5-pad2_ net-_u6-pad4_ parity_generator
+v4 vcc gnd  dc 5
+* u8 net-_u6-pad4_ parity_out0 dac_bridge_1
+* u12 error_flag0 plot_v1
+* u9 parity_out0 plot_v1
+* u11 net-_u10-pad5_ error_flag0 dac_bridge_1
+* u10 net-_u3-pad2_ net-_u4-pad2_ net-_u6-pad4_ net-_u5-pad2_ net-_u10-pad5_ parity_checker
+a1 [in1 ] [net-_u3-pad2_ ] u3
+a2 [in0 ] [net-_u4-pad2_ ] u4
+a3 [parity ] [net-_u5-pad2_ ] u5
+a4 [net-_u3-pad2_ net-_u4-pad2_ ] [net-_u5-pad2_ ] [net-_u6-pad4_ ] u6
+a5 [net-_u6-pad4_ ] [parity_out0 ] u8
+a6 [net-_u10-pad5_ ] [error_flag0 ] u11
+a7 [net-_u3-pad2_ net-_u4-pad2_ ] [net-_u6-pad4_ ] [net-_u5-pad2_ ] [net-_u10-pad5_ ] u10
+* Schematic Name:                             adc_bridge_1, Ngspice Name: adc_bridge
+.model u3 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, Ngspice Name: adc_bridge
+.model u4 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, Ngspice Name: adc_bridge
+.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             parity_generator, Ngspice Name: parity_generator
+.model u6 parity_generator(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             dac_bridge_1, Ngspice Name: dac_bridge
+.model u8 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, Ngspice Name: dac_bridge
+.model u11 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             parity_checker, Ngspice Name: parity_checker
+.model u10 parity_checker(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+.tran 0.001e-00 1e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+set xbrushwidth = 3
+plot v(in1)+ 15 v(in0)+ 30  v(parity)+ 45 v(parity_out0)+ 60 v(error_flag0)
+
+
+
+let pwr = -v(vcc)*i(v4)
+print pwr > power_parity.txt
+.endc
+.end

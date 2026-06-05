@@ -1,0 +1,37 @@
+* c:\users\chaitanya\esim-workspace\rle_compressor_testing\rle_compressor_testing.cir
+
+.include rle_compressor_subscircuit.sub
+x1 clk0 rst0 data_in0 valid_in0 last_in0 count_out7 count_out6 count_out5 count_out4 count_out3 count_out2 count_out1 count_out0 value_out0 valid_out0 rle_compressor_subscircuit
+* u6  count_out7 plot_v1
+* u7  count_out6 plot_v1
+* u8  count_out5 plot_v1
+* u9  count_out4 plot_v1
+* u10  count_out3 plot_v1
+* u11  count_out2 plot_v1
+* u12  count_out1 plot_v1
+* u13  count_out0 plot_v1
+* u14  value_out0 plot_v1
+* u15  valid_out0 plot_v1
+v1  clk0 gnd pulse(0 5 0 0 0 0.04 0.08)
+v2  rst0 gnd pulse(0 5 0 0 0 0.2 1)
+v3  data_in0 gnd pulse(0 5 0 0 0 0.5 0.8)
+v4  valid_in0 gnd pulse(5 0 0 0 0 0.2 0.8)
+v5  last_in0 gnd pulse(5 0 0 0 0 0.7 1)
+* u2  rst0 plot_v1
+* u3  data_in0 plot_v1
+* u4  valid_in0 plot_v1
+* u5  last_in0 plot_v1
+* u1  clk0 plot_v1
+.tran 0.0001e-00 2e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+set xbrushwidth = 4
+plot v(count_out7)+ 6 v(count_out6) + 12 v(count_out5)+ 18 v(count_out4) + 24 v(count_out3) + 30 v(count_out2) + 36 v(count_out1) + 42 v(count_out0) + 48 v(value_out0) + 56 v(valid_out0)
+
+plot v(rst0) + 6 v(data_in0) + 12 v(valid_in0) + 18 v(last_in0) + 24 v(clk0)
+.endc
+.end

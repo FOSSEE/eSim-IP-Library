@@ -1,0 +1,18 @@
+.title KiCad schematic
+U2 in0 plot_v1
+U3 in1 Net-_U3-Pad2_ adc_bridge_1
+U4 in0 Net-_U4-Pad2_ adc_bridge_1
+U7 parity plot_v1
+v1 in1 GND pulse
+U1 in1 plot_v1
+U5 parity Net-_U5-Pad2_ adc_bridge_1
+v2 in0 GND pulse
+v3 parity GND pulse
+U6 Net-_U3-Pad2_ Net-_U4-Pad2_ Net-_U5-Pad2_ Net-_U6-Pad4_ parity_generator
+v4 VCC GND DC
+U8 Net-_U6-Pad4_ parity_out0 dac_bridge_1
+U12 error_flag0 plot_v1
+U9 parity_out0 plot_v1
+U11 Net-_U10-Pad5_ error_flag0 dac_bridge_1
+U10 Net-_U3-Pad2_ Net-_U4-Pad2_ Net-_U6-Pad4_ Net-_U5-Pad2_ Net-_U10-Pad5_ parity_checker
+.end
