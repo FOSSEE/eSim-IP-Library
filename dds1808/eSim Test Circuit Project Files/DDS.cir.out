@@ -1,0 +1,57 @@
+* c:\users\theje\esim-workspace\dds\dds.cir
+
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ net-_u1-pad23_ net-_u1-pad24_ net-_u1-pad25_ net-_u1-pad26_ dds_sine
+v1  clk gnd pulse(0 5 0 1n 1n 50n 100n)
+v2  rst gnd pulse(0 5 200n 1n 1n 10m 20m)
+v3 net-_u2-pad8_ gnd  dc 5
+v4 net-_u3-pad1_ gnd  dc 5
+v5 net-_u3-pad2_ gnd  dc 5
+v6 net-_u3-pad4_ gnd  dc 5
+v7 net-_u3-pad6_ gnd  dc 5
+* u2  clk rst gnd gnd gnd gnd gnd net-_u2-pad8_ net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ adc_bridge_8
+* u3  net-_u3-pad1_ net-_u3-pad2_ gnd net-_u3-pad4_ gnd net-_u3-pad6_ gnd gnd net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ adc_bridge_8
+* u4  gnd gnd net-_u1-pad17_ net-_u1-pad18_ adc_bridge_2
+* u5  net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ net-_u1-pad23_ net-_u1-pad24_ net-_u1-pad25_ net-_u1-pad26_ sine7 sine6 sine5 sine4 sine3 sine2 sine1 sine0 dac_bridge_8
+* u6  sine7 plot_v1
+* u7  sine6 plot_v1
+* u8  sine5 plot_v1
+* u9  sine4 plot_v1
+* u10  sine3 plot_v1
+* u11  sine2 plot_v1
+* u12  sine1 plot_v1
+* u13  sine0 plot_v1
+a1 [net-_u1-pad1_ ] [net-_u1-pad2_ ] [net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ ] [net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ net-_u1-pad23_ net-_u1-pad24_ net-_u1-pad25_ net-_u1-pad26_ ] u1
+a2 [clk rst gnd gnd gnd gnd gnd net-_u2-pad8_ ] [net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ ] u2
+a3 [net-_u3-pad1_ net-_u3-pad2_ gnd net-_u3-pad4_ gnd net-_u3-pad6_ gnd gnd ] [net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ ] u3
+a4 [gnd gnd ] [net-_u1-pad17_ net-_u1-pad18_ ] u4
+a5 [net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ net-_u1-pad23_ net-_u1-pad24_ net-_u1-pad25_ net-_u1-pad26_ ] [sine7 sine6 sine5 sine4 sine3 sine2 sine1 sine0 ] u5
+* Schematic Name:                             dds_sine, NgSpice Name: dds_sine
+.model u1 dds_sine(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_8, NgSpice Name: adc_bridge
+.model u2 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, NgSpice Name: adc_bridge
+.model u3 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_2, NgSpice Name: adc_bridge
+.model u4 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u5 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+.tran 100e-09 100e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+
+set xbrushwidth=3      
+set color0=black       
+set color1=green       
+
+* Mathematically reconstruct the 8-bit digital output into a single analog curve (0 to 255)
+let analog_sine = (v(sine7)/5)*128 + (v(sine6)/5)*64 + (v(sine5)/5)*32 + (v(sine4)/5)*16 + (v(sine3)/5)*8 + (v(sine2)/5)*4 + (v(sine1)/5)*2 + (v(sine0)/5)*1
+
+* Plot the reconstructed Sine Wave!
+plot analog_sine
+
+.endc
+.end
