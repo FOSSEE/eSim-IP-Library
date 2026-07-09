@@ -1,0 +1,16 @@
+.title KiCad schematic
+U2 awvalid_wvalid bready_rready araddr arvalid bready_rready Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ adc_bridge_5
+U1 clk reset awaddr awvalid_wvalid wdata_3_1 wdata_2_0 wdata_3_1 wdata_2_0 Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ adc_bridge_8
+v4 awvalid_wvalid GND pwl
+v3 reset GND pwl
+v2 bready_rready GND DC
+v1 clk GND pulse
+v5 arvalid GND pwl
+v8 wdata_3_1 GND pwl
+v9 wdata_2_0 GND pwl
+v7 araddr GND pwl
+v6 awaddr GND pwl
+U3 Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U3-Pad14_ Net-_U3-Pad15_ Net-_U3-Pad16_ Net-_U3-Pad17_ Net-_U3-Pad18_ Net-_U3-Pad19_ Net-_U3-Pad20_ Net-_U3-Pad21_ Net-_U3-Pad22_ Net-_U3-Pad23_ Net-_U3-Pad24_ Net-_U3-Pad25_ Net-_U3-Pad26_ memory_interface
+U4 Net-_U3-Pad14_ Net-_U3-Pad15_ Net-_U3-Pad16_ Net-_U3-Pad17_ Net-_U3-Pad18_ Net-_U3-Pad19_ Net-_U3-Pad20_ Net-_U3-Pad21_ awready wready bresp1 bresp0 bvalid arready rdata3 rdata2 dac_bridge_8
+U5 Net-_U3-Pad22_ Net-_U3-Pad23_ Net-_U3-Pad24_ Net-_U3-Pad25_ Net-_U3-Pad26_ rdata1 rdata0 rresp1 rresp0 rvalid dac_bridge_5
+.end
