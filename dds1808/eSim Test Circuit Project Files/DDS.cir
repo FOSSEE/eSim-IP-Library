@@ -1,0 +1,30 @@
+* C:\Users\Theje\eSim-Workspace\DDS\DDS.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 06/11/26 18:50:02
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U1-Pad17_ Net-_U1-Pad18_ Net-_U1-Pad19_ Net-_U1-Pad20_ Net-_U1-Pad21_ Net-_U1-Pad22_ Net-_U1-Pad23_ Net-_U1-Pad24_ Net-_U1-Pad25_ Net-_U1-Pad26_ dds_sine		
+v1  clk GND pulse		
+v2  rst GND pulse		
+v3  Net-_U2-Pad8_ GND DC		
+v4  Net-_U3-Pad1_ GND DC		
+v5  Net-_U3-Pad2_ GND DC		
+v6  Net-_U3-Pad4_ GND DC		
+v7  Net-_U3-Pad6_ GND DC		
+U2  clk rst GND GND GND GND GND Net-_U2-Pad8_ Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ adc_bridge_8		
+U3  Net-_U3-Pad1_ Net-_U3-Pad2_ GND Net-_U3-Pad4_ GND Net-_U3-Pad6_ GND GND Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ adc_bridge_8		
+U4  GND GND Net-_U1-Pad17_ Net-_U1-Pad18_ adc_bridge_2		
+U5  Net-_U1-Pad19_ Net-_U1-Pad20_ Net-_U1-Pad21_ Net-_U1-Pad22_ Net-_U1-Pad23_ Net-_U1-Pad24_ Net-_U1-Pad25_ Net-_U1-Pad26_ sine7 sine6 sine5 sine4 sine3 sine2 sine1 sine0 dac_bridge_8		
+U6  sine7 plot_v1		
+U7  sine6 plot_v1		
+U8  sine5 plot_v1		
+U9  sine4 plot_v1		
+U10  sine3 plot_v1		
+U11  sine2 plot_v1		
+U12  sine1 plot_v1		
+U13  sine0 plot_v1		
+
+.end

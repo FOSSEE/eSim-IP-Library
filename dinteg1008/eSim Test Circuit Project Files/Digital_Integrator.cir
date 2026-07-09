@@ -1,0 +1,33 @@
+* C:\Users\Theje\eSim-Workspace\Digital_Integrator\Digital_Integrator.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 06/28/26 21:31:55
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  Net-_U2-Pad1_ GND pulse		
+v2  Net-_U2-Pad2_ GND pulse		
+U2  Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_U1-Pad1_ Net-_U1-Pad2_ adc_bridge_2		
+U14  out7 plot_v1		
+U15  out6 plot_v1		
+U16  out5 plot_v1		
+U17  out4 plot_v1		
+U18  out3 plot_v1		
+U19  out2 plot_v1		
+U20  out1 plot_v1		
+U21  out0 plot_v1		
+U13  Net-_U13-Pad1_ Net-_U13-Pad2_ Net-_U13-Pad3_ Net-_U13-Pad4_ Net-_U13-Pad5_ Net-_U13-Pad6_ Net-_U13-Pad7_ Net-_U13-Pad8_ out7 out6 out5 out4 out3 out2 out1 out0 dac_bridge_8		
+U9  Net-_U1-Pad10_ Net-_U1-Pad9_ Net-_U1-Pad8_ Net-_U1-Pad7_ Net-_U1-Pad6_ Net-_U1-Pad5_ Net-_U1-Pad4_ Net-_U1-Pad3_ in0 in1 in2 in3 in4 in5 in6 in7 dac_bridge_8		
+U3  in7 plot_v1		
+U5  in6 plot_v1		
+U6  in5 plot_v1		
+U7  in4 plot_v1		
+U8  in3 plot_v1		
+U10  in2 plot_v1		
+U11  in1 plot_v1		
+U12  in0 plot_v1		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ square_gen		
+U4  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U13-Pad1_ Net-_U13-Pad2_ Net-_U13-Pad3_ Net-_U13-Pad4_ Net-_U13-Pad5_ Net-_U13-Pad6_ Net-_U13-Pad7_ Net-_U13-Pad8_ integrator		
+
+.end

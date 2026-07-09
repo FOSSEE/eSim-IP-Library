@@ -1,0 +1,29 @@
+* C:\Users\Theje\eSim-Workspace\LI\LI.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 06/06/26 22:22:33
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U1-Pad17_ Net-_U1-Pad18_ Net-_U1-Pad19_ Net-_U1-Pad20_ linear_interpolator		
+U2  clk rst valid_in Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ adc_bridge_3		
+U3  GND data_in_6 data_in_5 GND GND GND GND GND Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ adc_bridge_8		
+U4  Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U1-Pad17_ Net-_U1-Pad18_ Net-_U1-Pad19_ out_msb out_6 out_5 out_4 out_3 out_2 out_1 out_lsb dac_bridge_8		
+U5  Net-_U1-Pad20_ valid_out dac_bridge_1		
+v1  clk GND pulse		
+v2  rst GND pulse		
+v3  valid_in GND pulse		
+v4  data_in_5 GND pulse		
+v5  data_in_6 GND pulse		
+U6  out_msb plot_v1		
+U7  out_6 plot_v1		
+U8  out_5 plot_v1		
+U9  out_4 plot_v1		
+U10  out_3 plot_v1		
+U11  out_2 plot_v1		
+U12  out_1 plot_v1		
+U13  out_lsb plot_v1		
+U14  valid_out plot_v1		
+
+.end

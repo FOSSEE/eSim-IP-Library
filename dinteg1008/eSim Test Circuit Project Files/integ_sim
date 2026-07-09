@@ -1,0 +1,175 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000025ba3886d60 .scope module, "tb_integrator" "tb_integrator" 2 3;
+ .timescale -9 -12;
+v0000025ba3893d80_0 .var "clk", 0 0;
+v0000025ba3894140_0 .var "rst_n", 0 0;
+v0000025ba38941e0_0 .net "square_wave", 7 0, v0000025ba3888330_0;  1 drivers
+v0000025ba3894000_0 .net "triangle_wave", 7 0, v0000025ba3893ce0_0;  1 drivers
+S_0000025ba38881a0 .scope module, "gen" "square_gen" 2 12, 3 3 0, S_0000025ba3886d60;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst_n";
+    .port_info 2 /OUTPUT 8 "wave_out";
+v0000025ba39dbd20_0 .net "clk", 0 0, v0000025ba3893d80_0;  1 drivers
+v0000025ba3863380_0 .var "counter", 6 0;
+v0000025ba38635a0_0 .net "rst_n", 0 0, v0000025ba3894140_0;  1 drivers
+v0000025ba3888330_0 .var "wave_out", 7 0;
+E_0000025ba39d9da0/0 .event negedge, v0000025ba38635a0_0;
+E_0000025ba39d9da0/1 .event posedge, v0000025ba39dbd20_0;
+E_0000025ba39d9da0 .event/or E_0000025ba39d9da0/0, E_0000025ba39d9da0/1;
+S_0000025ba38883d0 .scope module, "uut" "integrator" 2 19, 4 3 0, S_0000025ba3886d60;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst_n";
+    .port_info 2 /INPUT 8 "data_in";
+    .port_info 3 /OUTPUT 8 "data_out";
+L_0000025ba38e8028 .functor BUFT 1, C4<10000000>, C4<0>, C4<0>, C4<0>;
+v0000025ba3888560_0 .net/2u *"_ivl_0", 7 0, L_0000025ba38e8028;  1 drivers
+v0000025ba39ddc80_0 .net *"_ivl_10", 2 0, L_0000025ba3893f60;  1 drivers
+L_0000025ba38e80b8 .functor BUFT 1, C4<00000>, C4<0>, C4<0>, C4<0>;
+v0000025ba39ddd20_0 .net *"_ivl_12", 4 0, L_0000025ba38e80b8;  1 drivers
+L_0000025ba38e8100 .functor BUFT 1, C4<10000000>, C4<0>, C4<0>, C4<0>;
+v0000025ba3893380_0 .net/2u *"_ivl_14", 7 0, L_0000025ba38e8100;  1 drivers
+v0000025ba3893ba0_0 .net *"_ivl_16", 7 0, L_0000025ba3893420;  1 drivers
+v0000025ba3893560_0 .net *"_ivl_18", 7 0, L_0000025ba38939c0;  1 drivers
+v0000025ba3893a60_0 .net *"_ivl_2", 0 0, L_0000025ba3893880;  1 drivers
+v0000025ba38940a0_0 .net *"_ivl_20", 2 0, L_0000025ba3893920;  1 drivers
+L_0000025ba38e8148 .functor BUFT 1, C4<00000>, C4<0>, C4<0>, C4<0>;
+v0000025ba3893ec0_0 .net *"_ivl_22", 4 0, L_0000025ba38e8148;  1 drivers
+L_0000025ba38e8070 .functor BUFT 1, C4<10000000>, C4<0>, C4<0>, C4<0>;
+v0000025ba3893740_0 .net/2u *"_ivl_4", 7 0, L_0000025ba38e8070;  1 drivers
+v0000025ba38934c0_0 .net *"_ivl_6", 7 0, L_0000025ba3893e20;  1 drivers
+v0000025ba38936a0_0 .net *"_ivl_8", 7 0, L_0000025ba3894280;  1 drivers
+v0000025ba38937e0_0 .net "clk", 0 0, v0000025ba3893d80_0;  alias, 1 drivers
+v0000025ba3893600_0 .net "data_in", 7 0, v0000025ba3888330_0;  alias, 1 drivers
+v0000025ba3893ce0_0 .var "data_out", 7 0;
+v0000025ba3893b00_0 .net "rst_n", 0 0, v0000025ba3894140_0;  alias, 1 drivers
+v0000025ba3893c40_0 .net "step", 7 0, L_0000025ba39301c0;  1 drivers
+L_0000025ba3893880 .cmp/ge 8, v0000025ba3888330_0, L_0000025ba38e8028;
+L_0000025ba3893e20 .arith/sub 8, v0000025ba3888330_0, L_0000025ba38e8070;
+L_0000025ba3893f60 .part L_0000025ba3893e20, 5, 3;
+L_0000025ba3894280 .concat [ 3 5 0 0], L_0000025ba3893f60, L_0000025ba38e80b8;
+L_0000025ba3893420 .arith/sub 8, L_0000025ba38e8100, v0000025ba3888330_0;
+L_0000025ba3893920 .part L_0000025ba3893420, 5, 3;
+L_0000025ba38939c0 .concat [ 3 5 0 0], L_0000025ba3893920, L_0000025ba38e8148;
+L_0000025ba39301c0 .functor MUXZ 8, L_0000025ba38939c0, L_0000025ba3894280, L_0000025ba3893880, C4<>;
+    .scope S_0000025ba38881a0;
+T_0 ;
+    %wait E_0000025ba39d9da0;
+    %load/vec4 v0000025ba38635a0_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 7;
+    %assign/vec4 v0000025ba3863380_0, 0;
+    %pushi/vec4 128, 0, 8;
+    %assign/vec4 v0000025ba3888330_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0000025ba3863380_0;
+    %addi 1, 0, 7;
+    %assign/vec4 v0000025ba3863380_0, 0;
+    %load/vec4 v0000025ba3863380_0;
+    %cmpi/u 64, 0, 7;
+    %jmp/0xz  T_0.2, 5;
+    %pushi/vec4 192, 0, 8;
+    %assign/vec4 v0000025ba3888330_0, 0;
+    %jmp T_0.3;
+T_0.2 ;
+    %pushi/vec4 64, 0, 8;
+    %assign/vec4 v0000025ba3888330_0, 0;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0000025ba38883d0;
+T_1 ;
+    %wait E_0000025ba39d9da0;
+    %load/vec4 v0000025ba3893b00_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 128, 0, 8;
+    %assign/vec4 v0000025ba3893ce0_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v0000025ba3893600_0;
+    %cmpi/u 128, 0, 8;
+    %flag_inv 5; GE is !LT
+    %jmp/0xz  T_1.2, 5;
+    %load/vec4 v0000025ba3893ce0_0;
+    %load/vec4 v0000025ba3893c40_0;
+    %add;
+    %cmpi/u 255, 0, 8;
+    %flag_or 5, 4; GT is !LE
+    %flag_inv 5;
+    %jmp/0xz  T_1.4, 5;
+    %pushi/vec4 255, 0, 8;
+    %assign/vec4 v0000025ba3893ce0_0, 0;
+    %jmp T_1.5;
+T_1.4 ;
+    %load/vec4 v0000025ba3893ce0_0;
+    %load/vec4 v0000025ba3893c40_0;
+    %add;
+    %assign/vec4 v0000025ba3893ce0_0, 0;
+T_1.5 ;
+    %jmp T_1.3;
+T_1.2 ;
+    %load/vec4 v0000025ba3893ce0_0;
+    %load/vec4 v0000025ba3893c40_0;
+    %cmp/u;
+    %jmp/0xz  T_1.6, 5;
+    %pushi/vec4 0, 0, 8;
+    %assign/vec4 v0000025ba3893ce0_0, 0;
+    %jmp T_1.7;
+T_1.6 ;
+    %load/vec4 v0000025ba3893ce0_0;
+    %load/vec4 v0000025ba3893c40_0;
+    %sub;
+    %assign/vec4 v0000025ba3893ce0_0, 0;
+T_1.7 ;
+T_1.3 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0000025ba3886d60;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000025ba3893d80_0, 0, 1;
+T_2.0 ;
+    %delay 50000, 0;
+    %load/vec4 v0000025ba3893d80_0;
+    %inv;
+    %store/vec4 v0000025ba3893d80_0, 0, 1;
+    %jmp T_2.0;
+    %end;
+    .thread T_2;
+    .scope S_0000025ba3886d60;
+T_3 ;
+    %vpi_call 2 34 "$dumpfile", "integrator_sim.vcd" {0 0 0};
+    %vpi_call 2 35 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000025ba3886d60 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000025ba3894140_0, 0, 1;
+    %delay 200000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000025ba3894140_0, 0, 1;
+    %delay 50000000, 0;
+    %vpi_call 2 48 "$display", "--- Digital Simulation Complete ---" {0 0 0};
+    %vpi_call 2 49 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "tb_integrator.v";
+    "square_gen.v";
+    "integrator.v";

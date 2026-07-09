@@ -1,0 +1,40 @@
+* c:\users\theje\esim-workspace\dcps\dcps.cir
+
+v1  clkin gnd pulse(0 5 0 1n 1n 125n 250n)
+v2  rst gnd pulse(0 5 300n 1n 1n 10u 20u)
+v3 net-_u2-pad3_ gnd  dc 5
+* u2  clkin rst net-_u2-pad3_ net-_u2-pad4_ gnd net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ adc_bridge_5
+* u3  net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ clk00 clk90 clk180 clk270 clkout dac_bridge_5
+v4 net-_u2-pad4_ gnd  dc 5
+* u4  clk00 plot_v1
+* u5  clk90 plot_v1
+* u6  clk180 plot_v1
+* u7  clk270 plot_v1
+* u8  clkout plot_v1
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ clock_phase_shifter
+* u9  clkin plot_v1
+* u10  rst plot_v1
+a1 [clkin rst net-_u2-pad3_ net-_u2-pad4_ gnd ] [net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ ] u2
+a2 [net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ ] [clk00 clk90 clk180 clk270 clkout ] u3
+a3 [net-_u1-pad1_ ] [net-_u1-pad2_ ] [net-_u1-pad3_ ] [net-_u1-pad4_ net-_u1-pad5_ ] [net-_u1-pad6_ ] [net-_u1-pad7_ ] [net-_u1-pad8_ ] [net-_u1-pad9_ ] [net-_u1-pad10_ ] u1
+* Schematic Name:                             adc_bridge_5, NgSpice Name: adc_bridge
+.model u2 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_5, NgSpice Name: dac_bridge
+.model u3 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             clock_phase_shifter, NgSpice Name: clock_phase_shifter
+.model u1 clock_phase_shifter(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+.tran 10e-09 5e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+
+set xbrushwidth=2 
+set color0=black  
+set color1=white 
+
+plot v(clkout) (v(clk270)+6) (v(clk180)+12) (v(clk90)+18) (v(clk00)+24) (v(rst)+30) (v(clkin)+36) 
+.endc
+.end

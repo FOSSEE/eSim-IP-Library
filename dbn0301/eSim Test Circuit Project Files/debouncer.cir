@@ -1,0 +1,17 @@
+* C:\Users\Theje\eSim-Workspace\debouncer\debouncer.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 06/21/26 10:22:42
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  Net-_U2-Pad1_ GND pulse		
+v2  Net-_U2-Pad2_ GND pulse		
+v3  b_in GND PWL(0 0 500u 0 500.1u 5 510u 0 530u 5 540u 0 580u 5 585u 0 600u 5)		
+U2  Net-_U2-Pad1_ Net-_U2-Pad2_ b_in Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ adc_bridge_3		
+U3  Net-_U1-Pad4_ b_out dac_bridge_1		
+U4  b_out plot_v1		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ debouncer		
+
+.end
