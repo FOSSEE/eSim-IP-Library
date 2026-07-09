@@ -1,0 +1,171 @@
+$date
+	Sat Jun 06 20:23:45 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module linear_interpolator_tb $end
+$var wire 1 ! valid_out $end
+$var wire 8 " data_out [7:0] $end
+$var parameter 32 # WIDTH $end
+$var reg 1 $ clk_fast $end
+$var reg 8 % data_in [7:0] $end
+$var reg 1 & rst_n $end
+$var reg 1 ' valid_in $end
+$scope module uut $end
+$var wire 1 $ clk_fast $end
+$var wire 8 ( data_in [7:0] $end
+$var wire 1 & rst_n $end
+$var wire 1 ' valid_in $end
+$var parameter 32 ) WIDTH $end
+$var reg 8 * data_out [7:0] $end
+$var reg 8 + step_val [7:0] $end
+$var reg 1 ! valid_out $end
+$var reg 8 , y1 [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 )
+b1000 #
+$end
+#0
+$dumpvars
+b0 ,
+b0 +
+b0 *
+b0 (
+0'
+0&
+b0 %
+0$
+b0 "
+0!
+$end
+#5000
+1$
+#10000
+0$
+#15000
+1!
+1$
+1&
+#20000
+0$
+b1100100 %
+b1100100 (
+1'
+#25000
+b11001 +
+b1100100 ,
+1$
+#30000
+0$
+0'
+#35000
+b11001 "
+b11001 *
+1$
+#40000
+0$
+#45000
+b110010 "
+b110010 *
+1$
+#50000
+0$
+#55000
+b1001011 "
+b1001011 *
+1$
+#60000
+0$
+b1111000 %
+b1111000 (
+1'
+#65000
+b101 +
+b1111000 ,
+b1100100 "
+b1100100 *
+1$
+#70000
+0$
+0'
+#75000
+b1101001 "
+b1101001 *
+1$
+#80000
+0$
+#85000
+b1101110 "
+b1101110 *
+1$
+#90000
+0$
+#95000
+b1110011 "
+b1110011 *
+1$
+#100000
+0$
+b11011000 %
+b11011000 (
+1'
+#105000
+b11000 +
+b11011000 ,
+b1111000 "
+b1111000 *
+1$
+#110000
+0$
+0'
+#115000
+b10010000 "
+b10010000 *
+1$
+#120000
+0$
+#125000
+b10101000 "
+b10101000 *
+1$
+#130000
+0$
+#135000
+b11000000 "
+b11000000 *
+1$
+#140000
+0$
+1'
+#145000
+b0 +
+b11011000 "
+b11011000 *
+1$
+#150000
+0$
+0'
+#155000
+1$
+#160000
+0$
+#165000
+1$
+#170000
+0$
+#175000
+1$
+#180000
+0$
+#185000
+1$
+#190000
+0$
