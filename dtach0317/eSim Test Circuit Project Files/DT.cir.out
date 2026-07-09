@@ -1,0 +1,68 @@
+* c:\users\theje\esim-workspace\dt\dt.cir
+
+* u1  clk net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ digital_tachometer
+v1  net-_u2-pad1_ gnd pulse(0 5 0 1n 1n 50n 100n)
+v2  net-_u2-pad2_ gnd pulse(0 5 200n 1n 1n 10m 20m)
+v3  net-_u2-pad3_ gnd pulse(0 5 500u 1n 1n 2u 500u)
+* u2  net-_u2-pad1_ net-_u2-pad2_ net-_u2-pad3_ clk net-_u1-pad2_ net-_u1-pad3_ adc_bridge_3
+* u6  net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ count_15 count_14 count_13 count_12 count_11 count_10 count_9 count_8 dac_bridge_8
+* u7  net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ count_7 count_6 count_5 count_4 count_3 count_2 count_1 count_0 dac_bridge_8
+* u8  net-_u1-pad20_ valid_out dac_bridge_1
+* u3  clk plot_v1
+* u4  rst plot_v1
+* u5  sensor_in plot_v1
+* u9  count_15 plot_v1
+* u10  count_14 plot_v1
+* u11  count_13 plot_v1
+* u12  count_12 plot_v1
+* u13  count_11 plot_v1
+* u14  count_10 plot_v1
+* u15  count_9 plot_v1
+* u16  count_8 plot_v1
+* u17  count_7 plot_v1
+* u18  count_6 plot_v1
+* u19  count_5 plot_v1
+* u20  count_4 plot_v1
+* u21  count_3 plot_v1
+* u22  count_2 plot_v1
+* u23  count_1 plot_v1
+* u24  count_0 plot_v1
+* u25  valid_out plot_v1
+a1 [clk ] [net-_u1-pad2_ ] [net-_u1-pad3_ ] [net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ ] [net-_u1-pad20_ ] u1
+a2 [net-_u2-pad1_ net-_u2-pad2_ net-_u2-pad3_ ] [clk net-_u1-pad2_ net-_u1-pad3_ ] u2
+a3 [net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ ] [count_15 count_14 count_13 count_12 count_11 count_10 count_9 count_8 ] u6
+a4 [net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ ] [count_7 count_6 count_5 count_4 count_3 count_2 count_1 count_0 ] u7
+a5 [net-_u1-pad20_ ] [valid_out ] u8
+* Schematic Name:                             digital_tachometer, NgSpice Name: digital_tachometer
+.model u1 digital_tachometer(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_3, NgSpice Name: adc_bridge
+.model u2 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u6 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, NgSpice Name: dac_bridge
+.model u7 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u8 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+.tran 100e-09 600e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+
+set xbrushwidth=3      
+set color0=black       
+set color1=white       
+
+* 1. Mathematically reconstruct the 16 individual 5V bits into a single integer value
+let count_val = (v(count_15)/5)*32768 + (v(count_14)/5)*16384 + (v(count_13)/5)*8192 + (v(count_12)/5)*4096 + (v(count_11)/5)*2048 + (v(count_10)/5)*1024 + (v(count_9)/5)*512 + (v(count_8)/5)*256 + (v(count_7)/5)*128 + (v(count_6)/5)*64 + (v(count_5)/5)*32 + (v(count_4)/5)*16 + (v(count_3)/5)*8 + (v(count_2)/5)*4 + (v(count_1)/5)*2 + (v(count_0)/5)*1
+
+* 2. Plot the reconstructed number! (The Y-axis will show exactly 5000 when the lap finishes)
+plot count_val
+
+* 3. Plot the critical control signals stacked so they are easy to read
+plot v(valid_out) (v(sensor_in)+6) (v(rst)+12)
+
+.endc
+.end

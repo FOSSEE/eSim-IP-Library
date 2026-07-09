@@ -1,0 +1,38 @@
+* C:\Users\Theje\eSim-Workspace\DT\DT.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 06/11/26 17:44:15
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U1  clk Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U1-Pad17_ Net-_U1-Pad18_ Net-_U1-Pad19_ Net-_U1-Pad20_ digital_tachometer		
+v1  Net-_U2-Pad1_ GND pulse		
+v2  Net-_U2-Pad2_ GND pulse		
+v3  Net-_U2-Pad3_ GND pulse		
+U2  Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_U2-Pad3_ clk Net-_U1-Pad2_ Net-_U1-Pad3_ adc_bridge_3		
+U6  Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ count_15 count_14 count_13 count_12 count_11 count_10 count_9 count_8 dac_bridge_8		
+U7  Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U1-Pad17_ Net-_U1-Pad18_ Net-_U1-Pad19_ count_7 count_6 count_5 count_4 count_3 count_2 count_1 count_0 dac_bridge_8		
+U8  Net-_U1-Pad20_ valid_out dac_bridge_1		
+U3  clk plot_v1		
+U4  rst plot_v1		
+U5  sensor_in plot_v1		
+U9  count_15 plot_v1		
+U10  count_14 plot_v1		
+U11  count_13 plot_v1		
+U12  count_12 plot_v1		
+U13  count_11 plot_v1		
+U14  count_10 plot_v1		
+U15  count_9 plot_v1		
+U16  count_8 plot_v1		
+U17  count_7 plot_v1		
+U18  count_6 plot_v1		
+U19  count_5 plot_v1		
+U20  count_4 plot_v1		
+U21  count_3 plot_v1		
+U22  count_2 plot_v1		
+U23  count_1 plot_v1		
+U24  count_0 plot_v1		
+U25  valid_out plot_v1		
+
+.end
