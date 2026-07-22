@@ -1,0 +1,20 @@
+.title KiCad schematic
+U2 clk rst write_en d7 d6 d5 d4 d3 Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ adc_bridge_8
+v11 clk GND pulse
+U4 Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U4-Pad3_ active_buf full_a full_b dac_bridge_3
+U3 Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U4-Pad3_ ping_pong_buffer
+v8 d0 GND pulse
+U5 active_buf plot_v1
+U6 full_a plot_v1
+U7 full_b plot_v1
+U1 d2 d1 d0 Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ adc_bridge_3
+v3 d4 GND pulse
+v7 d1 GND pulse
+v1 d6 GND pulse
+v2 d5 GND pulse
+v5 d2 GND pulse
+v4 d3 GND pulse
+v10 rst GND pulse
+v9 write_en GND pulse
+v6 d7 GND pulse
+.end
