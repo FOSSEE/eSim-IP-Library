@@ -1,0 +1,13 @@
+.title KiCad schematic
+U6 o3 plot_v1
+U7 o4 plot_v1
+U5 o2 plot_v1
+U4 o1 plot_v1
+U3 Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ o1 o2 o3 o4 dac_bridge_4
+U8 Net-_U8-Pad1_ Net-_U8-Pad2_ Net-_U8-Pad3_ Net-_U8-Pad4_ Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ gray_converter
+U1 b3 b2 b1 b0 Net-_U8-Pad1_ Net-_U8-Pad2_ Net-_U8-Pad3_ Net-_U8-Pad4_ adc_bridge_4
+v1 b0 GND pulse
+v3 b2 GND pulse
+v4 b3 GND pulse
+v2 b1 GND pulse
+.end
