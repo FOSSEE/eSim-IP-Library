@@ -1,0 +1,96 @@
+.title KiCad schematic
+U23 wo2 plot_v1
+U26 wo1 plot_v1
+U41 west_out_valid plot_v1
+U8 Net-_U8-Pad1_ Net-_U8-Pad2_ Net-_U8-Pad3_ Net-_U8-Pad4_ north_out_valid south_out_valid east_out_valid west_out_valid dac_bridge_4
+U19 wo4 plot_v1
+U22 wo3 plot_v1
+U24 no4 plot_v1
+U20 no5 plot_v1
+U40 so7 plot_v1
+U38 no0 plot_v1
+U17 no6 plot_v1
+U30 no2 plot_v1
+U27 no3 plot_v1
+U33 no1 plot_v1
+U32 north_out_valid plot_v1
+U34 south_out_valid plot_v1
+U29 wo0 plot_v1
+U37 east_out_valid plot_v1
+U1 clk rst nd7 nd6 nd5 nd4 nd3 nd2 Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ adc_bridge_8
+U6 west_dest1 west_dest0 north_valid south_valid east_valid west_valid Net-_U6-Pad7_ Net-_U6-Pad8_ Net-_U6-Pad9_ Net-_U6-Pad10_ Net-_U6-Pad11_ Net-_U6-Pad12_ adc_bridge_6
+U5 wd1 wd0 north_dest1 north_dest0 south_dest1 south_dest0 east_dest1 east_dest0 Net-_U5-Pad9_ Net-_U5-Pad10_ Net-_U5-Pad11_ Net-_U5-Pad12_ Net-_U5-Pad13_ Net-_U5-Pad14_ Net-_U5-Pad15_ Net-_U5-Pad16_ adc_bridge_8
+U4 ed1 ed0 wd7 wd6 wd5 wd4 wd3 wd2 Net-_U4-Pad9_ Net-_U4-Pad10_ Net-_U4-Pad11_ Net-_U4-Pad12_ Net-_U4-Pad13_ Net-_U4-Pad14_ Net-_U4-Pad15_ Net-_U4-Pad16_ adc_bridge_8
+U25 eo7 plot_v1
+U28 eo6 plot_v1
+U31 eo5 plot_v1
+U21 so0 plot_v1
+U18 so1 plot_v1
+U15 so2 plot_v1
+U46 so4 plot_v1
+U44 so5 plot_v1
+U42 so6 plot_v1
+U48 so3 plot_v1
+U11 Net-_U11-Pad1_ Net-_U11-Pad2_ Net-_U11-Pad3_ Net-_U11-Pad4_ Net-_U11-Pad5_ Net-_U11-Pad6_ Net-_U11-Pad7_ Net-_U11-Pad8_ eo7 eo6 eo5 eo4 eo3 eo2 eo1 eo0 dac_bridge_8
+U10 Net-_U10-Pad1_ Net-_U10-Pad2_ Net-_U10-Pad3_ Net-_U10-Pad4_ Net-_U10-Pad5_ Net-_U10-Pad6_ Net-_U10-Pad7_ Net-_U10-Pad8_ so7 so6 so5 so4 so3 so2 so1 so0 dac_bridge_8
+U12 Net-_U12-Pad1_ Net-_U12-Pad2_ Net-_U12-Pad3_ Net-_U12-Pad4_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U12-Pad7_ Net-_U12-Pad8_ wo7 wo6 wo5 wo4 wo3 wo2 wo1 wo0 dac_bridge_8
+U14 no7 plot_v1
+U9 Net-_U9-Pad1_ Net-_U9-Pad2_ Net-_U9-Pad3_ Net-_U9-Pad4_ Net-_U9-Pad5_ Net-_U9-Pad6_ Net-_U9-Pad7_ Net-_U9-Pad8_ no7 no6 no5 no4 no3 no2 no1 no0 dac_bridge_8
+U7 Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ Net-_U3-Pad13_ Net-_U3-Pad14_ Net-_U3-Pad15_ Net-_U3-Pad16_ Net-_U4-Pad9_ Net-_U4-Pad10_ Net-_U4-Pad11_ Net-_U4-Pad12_ Net-_U4-Pad13_ Net-_U4-Pad14_ Net-_U4-Pad15_ Net-_U4-Pad16_ Net-_U5-Pad9_ Net-_U5-Pad10_ Net-_U5-Pad11_ Net-_U5-Pad12_ Net-_U5-Pad13_ Net-_U5-Pad14_ Net-_U5-Pad15_ Net-_U5-Pad16_ Net-_U6-Pad7_ Net-_U6-Pad8_ Net-_U6-Pad9_ Net-_U6-Pad10_ Net-_U6-Pad11_ Net-_U6-Pad12_ Net-_U9-Pad1_ Net-_U9-Pad2_ Net-_U9-Pad3_ Net-_U9-Pad4_ Net-_U9-Pad5_ Net-_U9-Pad6_ Net-_U9-Pad7_ Net-_U9-Pad8_ Net-_U10-Pad1_ Net-_U10-Pad2_ Net-_U10-Pad3_ Net-_U10-Pad4_ Net-_U10-Pad5_ Net-_U10-Pad6_ Net-_U10-Pad7_ Net-_U10-Pad8_ Net-_U11-Pad1_ Net-_U11-Pad2_ Net-_U11-Pad3_ Net-_U11-Pad4_ Net-_U11-Pad5_ Net-_U11-Pad6_ Net-_U11-Pad7_ Net-_U11-Pad8_ Net-_U12-Pad1_ Net-_U12-Pad2_ Net-_U12-Pad3_ Net-_U12-Pad4_ Net-_U12-Pad5_ Net-_U12-Pad6_ Net-_U12-Pad7_ Net-_U12-Pad8_ Net-_U8-Pad1_ Net-_U8-Pad2_ Net-_U8-Pad3_ Net-_U8-Pad4_ noc_router_4x4
+U13 wo6 plot_v1
+U16 wo5 plot_v1
+U36 eo3 plot_v1
+U39 eo2 plot_v1
+U35 eo4 plot_v1
+U43 eo1 plot_v1
+U45 eo0 plot_v1
+U47 wo7 plot_v1
+v4 nd1 GND DC
+v5 nd2 GND DC
+v3 nd0 GND DC
+v6 nd3 GND DC
+v10 nd7 GND DC
+v8 nd5 GND DC
+v7 nd4 GND DC
+v9 nd6 GND DC
+v34 sd7 GND DC
+v33 sd6 GND DC
+v2 rst GND pulse
+v1 clk GND pulse
+U3 sd1 sd0 ed7 ed6 ed5 ed4 ed3 ed2 Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ Net-_U3-Pad13_ Net-_U3-Pad14_ Net-_U3-Pad15_ Net-_U3-Pad16_ adc_bridge_8
+U2 nd1 nd0 sd7 sd6 sd5 sd4 sd3 sd2 Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ adc_bridge_8
+v22 ed7 GND DC
+v17 ed4 GND DC
+v19 ed6 GND DC
+v18 ed5 GND DC
+v27 sd0 GND DC
+v32 sd5 GND DC
+v31 sd4 GND DC
+v29 sd2 GND DC
+v30 sd3 GND DC
+v28 sd1 GND DC
+v46 north_dest1 GND DC
+v45 north_dest0 GND DC
+v20 wd2 GND DC
+v21 wd3 GND DC
+v16 ed3 GND DC
+v15 ed2 GND DC
+v14 ed1 GND DC
+v12 ed0 GND DC
+v23 wd4 GND DC
+v25 wd6 GND DC
+v26 wd7 GND DC
+v24 wd5 GND DC
+v11 wd0 GND DC
+v13 wd1 GND DC
+v43 south_dest0 GND DC
+v44 south_dest1 GND DC
+v37 east_valid GND DC
+v38 south_valid GND DC
+v36 west_valid GND DC
+v35 north_valid GND pulse
+v42 east_dest1 GND DC
+v41 east_dest0 GND DC
+v40 west_dest1 GND DC
+v39 west_dest0 GND DC
+.end
