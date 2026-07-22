@@ -1,0 +1,37 @@
+.title kicad schematic
+
+* u6 lt plot_v1
+* u4 gt plot_v1
+* u3 net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ gt eq lt dac_bridge_3
+* u2 net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ comparator4
+* u5 eq plot_v1
+v4 b3 gnd pulse(0 3.3 30n 1n 1n 20n 40n)
+* u1 a3 a2 a1 a0 b3 b2 b1 b0 net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ adc_bridge_8
+v1 b0 gnd pulse(0 3.3 30n 1n 1n 40n 80n)
+v2 b1 gnd pulse(0 3.3 30n 1n 1n 80n 100n)
+v3 b2 gnd pulse(0 3.3 30n 1n 1n 100n 200n)
+v7 a1 gnd pulse(0 3.3 30n 1n 1n 60n 80n)
+v8 a0 gnd pulse(0 3.3 30n 1n 1n 60n 80n)
+v6 a2 gnd pulse(0 3.3 30n 1n 1n 80n 100n)
+v5 a3 gnd pulse(0 3.3 30n 1n 1n 40n 80n)
+a1 [net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ ] [gt eq lt ] u3
+a2 [net-_u1-pad9_ ] [net-_u1-pad10_ ] [net-_u1-pad11_ ] [net-_u1-pad12_ ] [net-_u1-pad13_ ] [net-_u1-pad14_ ] [net-_u1-pad15_ ] [net-_u1-pad16_ ] [net-_u3-pad1_ ] [net-_u3-pad2_ ] [net-_u3-pad3_ ] u2
+a3 [a3 a2 a1 a0 b3 b2 b1 b0 ] [net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ ] u1
+* Schematic Name:                             dac_bridge_3, Ngspice Name: dac_bridge
+.model u3 dac_bridge(out_low=0 out_high=3.3 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             comparator4, Ngspice Name: comparator4
+.model u2 comparator4(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u1 adc_bridge(in_low=0.5 in_high=3.3 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.tran 1e-09 300e-09 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(lt)
+plot v(gt)
+plot v(eq)
+.endc
+.end

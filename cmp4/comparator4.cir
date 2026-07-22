@@ -1,0 +1,16 @@
+.title KiCad schematic
+U6 lt plot_v1
+U4 gt plot_v1
+U3 Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ gt eq lt dac_bridge_3
+U2 Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ comparator4
+U5 eq plot_v1
+v4 b3 GND pulse
+U1 a3 a2 a1 a0 b3 b2 b1 b0 Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ adc_bridge_8
+v1 b0 GND pulse
+v2 b1 GND pulse
+v3 b2 GND pulse
+v7 a1 GND pulse
+v8 a0 GND pulse
+v6 a2 GND pulse
+v5 a3 GND pulse
+.end
