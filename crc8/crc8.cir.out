@@ -1,0 +1,49 @@
+.title kicad schematic
+
+* u6 net-_u6-pad1_ net-_u6-pad2_ net-_u6-pad3_ net-_u6-pad4_ crc_out3 crc_out2 crc_out1 crc_out0 dac_bridge_4
+* u5 net-_u3-pad7_ net-_u3-pad8_ net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ net-_u6-pad1_ net-_u6-pad2_ net-_u6-pad3_ net-_u6-pad4_ crc4
+* u7 crc_out2 plot_v1
+* u4 crc_out3 plot_v1
+* u8 crc_out1 plot_v1
+* u9 crc_out0 plot_v1
+* u2 clk plot_v1
+* u1 rst plot_v1
+* u10 data_in1 plot_v1
+* u12 data_in3 plot_v1
+* u13 data_in0 plot_v1
+* u11 data_in2 plot_v1
+* u3 clk rst data_in3 data_in2 data_in1 data_in0 net-_u3-pad7_ net-_u3-pad8_ net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ adc_bridge_6
+v1 clk gnd pulse(0 5 0 1n 1n 20n 40n)
+v3 data_in3 gnd pwl(0n 5 20n 5 20.1n 0 60n 0 60.1n 5 100n 5 100.1n 0)
+v6 data_in0 gnd pwl(0n 0 20n 0 20.1n 0 60n 0 60.1n 5 100n 5 100.1n 0)
+v5 data_in1 gnd pwl(0n 0 20n 0 20.1n 5 60n 5 60.1n 5 100n 5 100.1n 0)
+v2 rst gnd pwl(0n 5 10n 5 10.1n 0 100n 0)
+v4 data_in2 gnd pwl(0n 0 20n 0 20.1n 5 60n 5 60.1n 5 100n 5 100.1n 0)
+a1 [net-_u6-pad1_ net-_u6-pad2_ net-_u6-pad3_ net-_u6-pad4_ ] [crc_out3 crc_out2 crc_out1 crc_out0 ] u6
+a2 [net-_u3-pad7_ ] [net-_u3-pad8_ ] [net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ ] [net-_u6-pad1_ net-_u6-pad2_ net-_u6-pad3_ net-_u6-pad4_ ] u5
+a3 [clk rst data_in3 data_in2 data_in1 data_in0 ] [net-_u3-pad7_ net-_u3-pad8_ net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ ] u3
+* Schematic Name:                             dac_bridge_4, Ngspice Name: dac_bridge
+.model u6 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             crc4, Ngspice Name: crc4
+.model u5 crc4(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_6, Ngspice Name: adc_bridge
+.model u3 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.tran 1e-09 100e-09 0e-09
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(crc_out2)
+plot v(crc_out3)
+plot v(crc_out1)
+plot v(crc_out0)
+plot v(clk)
+plot v(rst)
+plot v(data_in1)
+plot v(data_in3)
+plot v(data_in0)
+plot v(data_in2)
+.endc
+.end
