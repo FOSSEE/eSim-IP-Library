@@ -1,0 +1,24 @@
+.title KiCad schematic
+v5 rst GND pwl
+v6 clk_delayed GND pulse
+v7 clk GND pulse
+U4 data_in3 plot_v1
+U3 data_in2 plot_v1
+U2 data_in1 plot_v1
+U10 Net-_U10-Pad1_ Net-_U10-Pad2_ Net-_U10-Pad3_ Net-_U10-Pad4_ Net-_U10-Pad5_ corrected_data3 corrected_data2 corrected_data1 corrected_data0 error dac_bridge_5
+U9 Net-_U8-Pad8_ Net-_U8-Pad9_ Net-_U8-Pad10_ Net-_U8-Pad11_ Net-_U8-Pad12_ Net-_U8-Pad13_ Net-_U8-Pad14_ Net-_U10-Pad1_ Net-_U10-Pad2_ Net-_U10-Pad3_ Net-_U10-Pad4_ Net-_U10-Pad5_ razor_ff
+U12 corrected_data2 plot_v1
+U11 corrected_data3 plot_v1
+U13 corrected_data1 plot_v1
+U14 corrected_data0 plot_v1
+U15 error plot_v1
+v3 data_in2 GND pwl
+v4 data_in3 GND pwl
+v2 data_in1 GND pwl
+v1 data_in0 GND pwl
+U1 data_in0 plot_v1
+U8 clk clk_delayed rst data_in3 data_in2 data_in1 data_in0 Net-_U8-Pad8_ Net-_U8-Pad9_ Net-_U8-Pad10_ Net-_U8-Pad11_ Net-_U8-Pad12_ Net-_U8-Pad13_ Net-_U8-Pad14_ adc_bridge_7
+U6 clk_delayed plot_v1
+U7 clk plot_v1
+U5 rst plot_v1
+.end

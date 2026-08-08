@@ -1,0 +1,54 @@
+.title kicad schematic
+
+v5 rst gnd pwl(0 5 20n 5 20.1n 0)
+v6 clk_delayed gnd pulse(0 5 3n 100p 100p 10n 20n)
+v7 clk gnd pulse(0 5 0 100p 100p 10n 20n)
+* u4 data_in3 plot_v1
+* u3 data_in2 plot_v1
+* u2 data_in1 plot_v1
+* u10 net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ corrected_data3 corrected_data2 corrected_data1 corrected_data0 error dac_bridge_5
+* u9 net-_u8-pad8_ net-_u8-pad9_ net-_u8-pad10_ net-_u8-pad11_ net-_u8-pad12_ net-_u8-pad13_ net-_u8-pad14_ net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ razor_ff
+* u12 corrected_data2 plot_v1
+* u11 corrected_data3 plot_v1
+* u13 corrected_data1 plot_v1
+* u14 corrected_data0 plot_v1
+* u15 error plot_v1
+v3 data_in2 gnd pwl(0 5 20n 5 20.1n 0)
+v4 data_in3 gnd pwl(0 5 60n 5 60.1n 0 100n 0 100.1n 5 140n 5 140.1n 0)
+v2 data_in1 gnd pwl(0 5 60n 5 60.1n 5 101.5n 5 101.6n 0 140n 0 140.1n 5)
+v1 data_in0 gnd pwl(0 0 60n 0 60.1n 5 100n 5 100.1n 5 140n 5 140.1n 0)
+* u1 data_in0 plot_v1
+* u8 clk clk_delayed rst data_in3 data_in2 data_in1 data_in0 net-_u8-pad8_ net-_u8-pad9_ net-_u8-pad10_ net-_u8-pad11_ net-_u8-pad12_ net-_u8-pad13_ net-_u8-pad14_ adc_bridge_7
+* u6 clk_delayed plot_v1
+* u7 clk plot_v1
+* u5 rst plot_v1
+a1 [net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ ] [corrected_data3 corrected_data2 corrected_data1 corrected_data0 error ] u10
+a2 [net-_u8-pad8_ ] [net-_u8-pad9_ ] [net-_u8-pad10_ ] [net-_u8-pad11_ net-_u8-pad12_ net-_u8-pad13_ net-_u8-pad14_ ] [net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ ] [net-_u10-pad5_ ] u9
+a3 [clk clk_delayed rst data_in3 data_in2 data_in1 data_in0 ] [net-_u8-pad8_ net-_u8-pad9_ net-_u8-pad10_ net-_u8-pad11_ net-_u8-pad12_ net-_u8-pad13_ net-_u8-pad14_ ] u8
+* Schematic Name:                             dac_bridge_5, Ngspice Name: dac_bridge
+.model u10 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             razor_ff, Ngspice Name: razor_ff
+.model u9 razor_ff(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_7, Ngspice Name: adc_bridge
+.model u8 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.tran 10e-09 500e-09 0e-09
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(data_in3)
+plot v(data_in2)
+plot v(data_in1)
+plot v(corrected_data2)
+plot v(corrected_data3)
+plot v(corrected_data1)
+plot v(corrected_data0)
+plot v(error)
+plot v(data_in0)
+plot v(clk_delayed)
+plot v(clk)
+plot v(rst)
+.endc
+.end
