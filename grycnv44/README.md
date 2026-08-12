@@ -1,8 +1,12 @@
-# Gray Code Converter (grycnv4)
+# Gray Code Converter (grycnv44)
 
 ## Description
 
 The Gray Code Converter is a combinational digital IP that converts a 4-bit binary number into its equivalent Gray code. Gray code is widely used in digital systems because only one bit changes between successive values, reducing transition errors in high-speed and noisy environments.
+
+## Block Diagram
+
+![Gray Code Converter Block Diagram](gr_blck.png)
 
 ## Working Principle
 
@@ -22,7 +26,7 @@ The design was implemented in Verilog HDL and verified using eSim with NgVeri/ng
 
 ## Author
 
-**Farhana N S**
+**N S Farhana**
 
 B.Tech Electronics and Communication Engineering
 

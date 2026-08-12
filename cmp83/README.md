@@ -1,8 +1,12 @@
-# 4-Bit Comparator (cmp4)
+# 4-Bit Comparator (cmp83)
 
 ## Description
 
 The 4-Bit Comparator is a combinational digital IP that compares two 4-bit binary numbers and determines their relationship. It generates outputs indicating whether the first input is greater than, equal to, or less than the second input. This IP is commonly used in arithmetic logic units (ALUs), processors, and digital decision-making circuits.
+
+## Block Diagram
+
+![Comparator Block Diagram](cmp4_blck.png)
 
 ## Working Principle
 
@@ -22,7 +26,7 @@ The design was implemented in Verilog HDL and verified using eSim with NgVeri/ng
 
 ## Author
 
-**Farhana N S**
+**N S Farhana**
 
 B.Tech Electronics and Communication Engineering
 

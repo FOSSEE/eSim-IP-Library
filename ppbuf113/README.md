@@ -1,8 +1,12 @@
-# Ping Pong Buffer (ppbuf)
+# Ping Pong Buffer (ppbuf113)
 
 ## Description
 
 The Ping Pong Buffer is a digital memory buffering IP that uses two alternating buffers to enable continuous data transfer between a producer and a consumer. While one buffer is being written with new data, the other buffer is simultaneously read, thereby improving throughput and preventing data loss in streaming applications.
+
+## Block Diagram
+
+![Ping Pong Buffer Diagram](ppbuf_blck.png)
 
 ## Working Principle
 
@@ -22,7 +26,7 @@ The design was implemented in Verilog HDL and verified using eSim with NgVeri/ng
 
 ## Author
 
-**Farhana N S**
+**N S Farhana**
 
 B.Tech Electronics and Communication Engineering
 

@@ -1,4 +1,4 @@
-# NoC Router 4×4 (nocrtr44)
+# NoC Router 4×4 (nocrtr4636)
 
 ## Description
 
@@ -6,13 +6,7 @@ The NoC (Network-on-Chip) Router 4×4 is a digital IP that routes data packets b
 
 ## Block Diagram
 
-```text
-                 +------------------------+
-Input Ports ---->|                        |-----> Output Ports
-Routing Control->|      NoC Router 4×4    |
-Clock/Reset ---->|                        |
-                 +------------------------+
-```
+![NoC Router Block Diagram](nocrtr44_blck.png)
 
 ## Working Principle
 
@@ -32,7 +26,7 @@ The design was implemented in Verilog HDL and verified using eSim with NgVeri/ng
 
 ## Author
 
-**Farhana N S**
+**N S Farhana**
 
 B.Tech Electronics and Communication Engineering
 

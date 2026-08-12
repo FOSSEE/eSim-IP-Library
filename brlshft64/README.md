@@ -1,4 +1,4 @@
-# Barrel Shifter (brlshft4)
+# Barrel Shifter (brlshft64)
 
 ## Description
 
@@ -6,13 +6,7 @@ The Barrel Shifter is a combinational digital IP that shifts a 4-bit binary inpu
 
 ## Block Diagram
 
-```text
-                 +----------------------+
-Data In[3:0] --->|                      |
-Shift Amount --->|    Barrel Shifter    |-----> Data Out[3:0]
-                 |                      |
-                 +----------------------+
-```
+![Barrel Shifter Block Diagram](brl4_blck.png)
 
 ## Working Principle
 
