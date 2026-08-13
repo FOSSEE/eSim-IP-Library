@@ -1,0 +1,177 @@
+.title kicad schematic
+
+* u23 wo2 plot_v1
+* u26 wo1 plot_v1
+* u41 west_out_valid plot_v1
+* u8 net-_u8-pad1_ net-_u8-pad2_ net-_u8-pad3_ net-_u8-pad4_ north_out_valid south_out_valid east_out_valid west_out_valid dac_bridge_4
+* u19 wo4 plot_v1
+* u22 wo3 plot_v1
+* u24 no4 plot_v1
+* u20 no5 plot_v1
+* u40 so7 plot_v1
+* u38 no0 plot_v1
+* u17 no6 plot_v1
+* u30 no2 plot_v1
+* u27 no3 plot_v1
+* u33 no1 plot_v1
+* u32 north_out_valid plot_v1
+* u34 south_out_valid plot_v1
+* u29 wo0 plot_v1
+* u37 east_out_valid plot_v1
+* u1 clk rst nd7 nd6 nd5 nd4 nd3 nd2 net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ adc_bridge_8
+* u6 west_dest1 west_dest0 north_valid south_valid east_valid west_valid net-_u6-pad7_ net-_u6-pad8_ net-_u6-pad9_ net-_u6-pad10_ net-_u6-pad11_ net-_u6-pad12_ adc_bridge_6
+* u5 wd1 wd0 north_dest1 north_dest0 south_dest1 south_dest0 east_dest1 east_dest0 net-_u5-pad9_ net-_u5-pad10_ net-_u5-pad11_ net-_u5-pad12_ net-_u5-pad13_ net-_u5-pad14_ net-_u5-pad15_ net-_u5-pad16_ adc_bridge_8
+* u4 ed1 ed0 wd7 wd6 wd5 wd4 wd3 wd2 net-_u4-pad9_ net-_u4-pad10_ net-_u4-pad11_ net-_u4-pad12_ net-_u4-pad13_ net-_u4-pad14_ net-_u4-pad15_ net-_u4-pad16_ adc_bridge_8
+* u25 eo7 plot_v1
+* u28 eo6 plot_v1
+* u31 eo5 plot_v1
+* u21 so0 plot_v1
+* u18 so1 plot_v1
+* u15 so2 plot_v1
+* u46 so4 plot_v1
+* u44 so5 plot_v1
+* u42 so6 plot_v1
+* u48 so3 plot_v1
+* u11 net-_u11-pad1_ net-_u11-pad2_ net-_u11-pad3_ net-_u11-pad4_ net-_u11-pad5_ net-_u11-pad6_ net-_u11-pad7_ net-_u11-pad8_ eo7 eo6 eo5 eo4 eo3 eo2 eo1 eo0 dac_bridge_8
+* u10 net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ net-_u10-pad6_ net-_u10-pad7_ net-_u10-pad8_ so7 so6 so5 so4 so3 so2 so1 so0 dac_bridge_8
+* u12 net-_u12-pad1_ net-_u12-pad2_ net-_u12-pad3_ net-_u12-pad4_ net-_u12-pad5_ net-_u12-pad6_ net-_u12-pad7_ net-_u12-pad8_ wo7 wo6 wo5 wo4 wo3 wo2 wo1 wo0 dac_bridge_8
+* u14 no7 plot_v1
+* u9 net-_u9-pad1_ net-_u9-pad2_ net-_u9-pad3_ net-_u9-pad4_ net-_u9-pad5_ net-_u9-pad6_ net-_u9-pad7_ net-_u9-pad8_ no7 no6 no5 no4 no3 no2 no1 no0 dac_bridge_8
+* u7 net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ net-_u3-pad13_ net-_u3-pad14_ net-_u3-pad15_ net-_u3-pad16_ net-_u4-pad9_ net-_u4-pad10_ net-_u4-pad11_ net-_u4-pad12_ net-_u4-pad13_ net-_u4-pad14_ net-_u4-pad15_ net-_u4-pad16_ net-_u5-pad9_ net-_u5-pad10_ net-_u5-pad11_ net-_u5-pad12_ net-_u5-pad13_ net-_u5-pad14_ net-_u5-pad15_ net-_u5-pad16_ net-_u6-pad7_ net-_u6-pad8_ net-_u6-pad9_ net-_u6-pad10_ net-_u6-pad11_ net-_u6-pad12_ net-_u9-pad1_ net-_u9-pad2_ net-_u9-pad3_ net-_u9-pad4_ net-_u9-pad5_ net-_u9-pad6_ net-_u9-pad7_ net-_u9-pad8_ net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ net-_u10-pad6_ net-_u10-pad7_ net-_u10-pad8_ net-_u11-pad1_ net-_u11-pad2_ net-_u11-pad3_ net-_u11-pad4_ net-_u11-pad5_ net-_u11-pad6_ net-_u11-pad7_ net-_u11-pad8_ net-_u12-pad1_ net-_u12-pad2_ net-_u12-pad3_ net-_u12-pad4_ net-_u12-pad5_ net-_u12-pad6_ net-_u12-pad7_ net-_u12-pad8_ net-_u8-pad1_ net-_u8-pad2_ net-_u8-pad3_ net-_u8-pad4_ noc_router_4x4
+* u13 wo6 plot_v1
+* u16 wo5 plot_v1
+* u36 eo3 plot_v1
+* u39 eo2 plot_v1
+* u35 eo4 plot_v1
+* u43 eo1 plot_v1
+* u45 eo0 plot_v1
+* u47 wo7 plot_v1
+v4 nd1 gnd  dc 0
+v5 nd2 gnd  dc 3.3
+v3 nd0 gnd  dc 3.3
+v6 nd3 gnd  dc 0
+v10 nd7 gnd  dc 0
+v8 nd5 gnd  dc 0
+v7 nd4 gnd  dc 3.3
+v9 nd6 gnd  dc 3.3
+v34 sd7 gnd  dc 0
+v33 sd6 gnd  dc 0
+v2 rst gnd pulse(3.3 0 20n 1n 1n 1000n 2000n)
+v1 clk gnd pulse(0 3.3 0 1n 1n 5n 10n)
+* u3 sd1 sd0 ed7 ed6 ed5 ed4 ed3 ed2 net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ net-_u3-pad13_ net-_u3-pad14_ net-_u3-pad15_ net-_u3-pad16_ adc_bridge_8
+* u2 nd1 nd0 sd7 sd6 sd5 sd4 sd3 sd2 net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ adc_bridge_8
+v22 ed7 gnd  dc 0
+v17 ed4 gnd  dc 0
+v19 ed6 gnd  dc 0
+v18 ed5 gnd  dc 0
+v27 sd0 gnd  dc 0
+v32 sd5 gnd  dc 0
+v31 sd4 gnd  dc 0
+v29 sd2 gnd  dc 0
+v30 sd3 gnd  dc 0
+v28 sd1 gnd  dc 0
+v46 north_dest1 gnd  dc 3.3
+v45 north_dest0 gnd  dc 0
+v20 wd2 gnd  dc 0
+v21 wd3 gnd  dc 0
+v16 ed3 gnd  dc 0
+v15 ed2 gnd  dc 0
+v14 ed1 gnd  dc 0
+v12 ed0 gnd  dc 0
+v23 wd4 gnd  dc 0
+v25 wd6 gnd  dc 0
+v26 wd7 gnd  dc 0
+v24 wd5 gnd  dc 0
+v11 wd0 gnd  dc 0
+v13 wd1 gnd  dc 0
+v43 south_dest0 gnd  dc 0
+v44 south_dest1 gnd  dc 0
+v37 east_valid gnd  dc 0
+v38 south_valid gnd  dc 0
+v36 west_valid gnd  dc 0
+v35 north_valid gnd pulse(0 3.3 40n 1n 1n 20n 200n)
+v42 east_dest1 gnd  dc 0
+v41 east_dest0 gnd  dc 0
+v40 west_dest1 gnd  dc 0
+v39 west_dest0 gnd  dc 0
+a1 [net-_u8-pad1_ net-_u8-pad2_ net-_u8-pad3_ net-_u8-pad4_ ] [north_out_valid south_out_valid east_out_valid west_out_valid ] u8
+a2 [clk rst nd7 nd6 nd5 nd4 nd3 nd2 ] [net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ ] u1
+a3 [west_dest1 west_dest0 north_valid south_valid east_valid west_valid ] [net-_u6-pad7_ net-_u6-pad8_ net-_u6-pad9_ net-_u6-pad10_ net-_u6-pad11_ net-_u6-pad12_ ] u6
+a4 [wd1 wd0 north_dest1 north_dest0 south_dest1 south_dest0 east_dest1 east_dest0 ] [net-_u5-pad9_ net-_u5-pad10_ net-_u5-pad11_ net-_u5-pad12_ net-_u5-pad13_ net-_u5-pad14_ net-_u5-pad15_ net-_u5-pad16_ ] u5
+a5 [ed1 ed0 wd7 wd6 wd5 wd4 wd3 wd2 ] [net-_u4-pad9_ net-_u4-pad10_ net-_u4-pad11_ net-_u4-pad12_ net-_u4-pad13_ net-_u4-pad14_ net-_u4-pad15_ net-_u4-pad16_ ] u4
+a6 [net-_u11-pad1_ net-_u11-pad2_ net-_u11-pad3_ net-_u11-pad4_ net-_u11-pad5_ net-_u11-pad6_ net-_u11-pad7_ net-_u11-pad8_ ] [eo7 eo6 eo5 eo4 eo3 eo2 eo1 eo0 ] u11
+a7 [net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ net-_u10-pad6_ net-_u10-pad7_ net-_u10-pad8_ ] [so7 so6 so5 so4 so3 so2 so1 so0 ] u10
+a8 [net-_u12-pad1_ net-_u12-pad2_ net-_u12-pad3_ net-_u12-pad4_ net-_u12-pad5_ net-_u12-pad6_ net-_u12-pad7_ net-_u12-pad8_ ] [wo7 wo6 wo5 wo4 wo3 wo2 wo1 wo0 ] u12
+a9 [net-_u9-pad1_ net-_u9-pad2_ net-_u9-pad3_ net-_u9-pad4_ net-_u9-pad5_ net-_u9-pad6_ net-_u9-pad7_ net-_u9-pad8_ ] [no7 no6 no5 no4 no3 no2 no1 no0 ] u9
+a10 [net-_u1-pad9_ ] [net-_u1-pad10_ ] [net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u2-pad9_ net-_u2-pad10_ ] [net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ net-_u3-pad9_ net-_u3-pad10_ ] [net-_u3-pad11_ net-_u3-pad12_ net-_u3-pad13_ net-_u3-pad14_ net-_u3-pad15_ net-_u3-pad16_ net-_u4-pad9_ net-_u4-pad10_ ] [net-_u4-pad11_ net-_u4-pad12_ net-_u4-pad13_ net-_u4-pad14_ net-_u4-pad15_ net-_u4-pad16_ net-_u5-pad9_ net-_u5-pad10_ ] [net-_u5-pad11_ net-_u5-pad12_ ] [net-_u5-pad13_ net-_u5-pad14_ ] [net-_u5-pad15_ net-_u5-pad16_ ] [net-_u6-pad7_ net-_u6-pad8_ ] [net-_u6-pad9_ ] [net-_u6-pad10_ ] [net-_u6-pad11_ ] [net-_u6-pad12_ ] [net-_u9-pad1_ net-_u9-pad2_ net-_u9-pad3_ net-_u9-pad4_ net-_u9-pad5_ net-_u9-pad6_ net-_u9-pad7_ net-_u9-pad8_ ] [net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ net-_u10-pad6_ net-_u10-pad7_ net-_u10-pad8_ ] [net-_u11-pad1_ net-_u11-pad2_ net-_u11-pad3_ net-_u11-pad4_ net-_u11-pad5_ net-_u11-pad6_ net-_u11-pad7_ net-_u11-pad8_ ] [net-_u12-pad1_ net-_u12-pad2_ net-_u12-pad3_ net-_u12-pad4_ net-_u12-pad5_ net-_u12-pad6_ net-_u12-pad7_ net-_u12-pad8_ ] [net-_u8-pad1_ ] [net-_u8-pad2_ ] [net-_u8-pad3_ ] [net-_u8-pad4_ ] u7
+a11 [sd1 sd0 ed7 ed6 ed5 ed4 ed3 ed2 ] [net-_u3-pad9_ net-_u3-pad10_ net-_u3-pad11_ net-_u3-pad12_ net-_u3-pad13_ net-_u3-pad14_ net-_u3-pad15_ net-_u3-pad16_ ] u3
+a12 [nd1 nd0 sd7 sd6 sd5 sd4 sd3 sd2 ] [net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ ] u2
+* Schematic Name:                             dac_bridge_4, Ngspice Name: dac_bridge
+.model u8 dac_bridge(out_low=0 out_high=3.3 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u1 adc_bridge(in_low=0.5 in_high=3.3 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_6, Ngspice Name: adc_bridge
+.model u6 adc_bridge(in_low=0.5 in_high=3.3 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u5 adc_bridge(in_low=0.5 in_high=3.3 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u4 adc_bridge(in_low=0.5 in_high=3.3 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, Ngspice Name: dac_bridge
+.model u11 dac_bridge(out_low=0 out_high=3.3 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, Ngspice Name: dac_bridge
+.model u10 dac_bridge(out_low=0 out_high=3.3 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, Ngspice Name: dac_bridge
+.model u12 dac_bridge(out_low=0 out_high=3.3 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_8, Ngspice Name: dac_bridge
+.model u9 dac_bridge(out_low=0 out_high=3.3 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             noc_router_4x4, Ngspice Name: noc_router_4x4
+.model u7 noc_router_4x4(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u3 adc_bridge(in_low=0.5 in_high=3.3 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u2 adc_bridge(in_low=0.5 in_high=3.3 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.tran 1e-09 200e-09 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(wo2)
+plot v(wo1)
+plot v(west_out_valid)
+plot v(wo4)
+plot v(wo3)
+plot v(no4)
+plot v(no5)
+plot v(so7)
+plot v(no0)
+plot v(no6)
+plot v(no2)
+plot v(no3)
+plot v(no1)
+plot v(north_out_valid)
+plot v(south_out_valid)
+plot v(wo0)
+plot v(east_out_valid)
+plot v(eo7)
+plot v(eo6)
+plot v(eo5)
+plot v(so0)
+plot v(so1)
+plot v(so2)
+plot v(so4)
+plot v(so5)
+plot v(so6)
+plot v(so3)
+plot v(no7)
+plot v(wo6)
+plot v(wo5)
+plot v(eo3)
+plot v(eo2)
+plot v(eo4)
+plot v(eo1)
+plot v(eo0)
+plot v(wo7)
+.endc
+.end

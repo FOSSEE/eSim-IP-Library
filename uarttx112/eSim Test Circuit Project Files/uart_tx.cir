@@ -1,0 +1,19 @@
+.title KiCad schematic
+U3 Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U3-Pad12_ Net-_U3-Pad13_ uart_tx
+U4 Net-_U3-Pad12_ Net-_U3-Pad13_ tx tx_done dac_bridge_2
+U5 tx plot_v1
+U6 tx_done plot_v1
+v6 d5 GND DC
+v5 d4 GND DC
+v7 d6 GND DC
+v8 d7 GND DC
+v11 clk GND pulse
+U1 d2 d1 d0 Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ adc_bridge_3
+v10 rst GND pulse
+U2 clk rst tx_start d7 d6 d5 d4 d3 Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ adc_bridge_8
+v9 tx_start GND pulse
+v2 d1 GND DC
+v1 d0 GND DC
+v3 d2 GND DC
+v4 d3 GND DC
+.end

@@ -1,0 +1,35 @@
+.title kicad schematic
+
+* u6 o3 plot_v1
+* u7 o4 plot_v1
+* u5 o2 plot_v1
+* u4 o1 plot_v1
+* u3 net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ net-_u3-pad4_ o1 o2 o3 o4 dac_bridge_4
+* u8 net-_u8-pad1_ net-_u8-pad2_ net-_u8-pad3_ net-_u8-pad4_ net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ net-_u3-pad4_ gray_converter
+* u1 b3 b2 b1 b0 net-_u8-pad1_ net-_u8-pad2_ net-_u8-pad3_ net-_u8-pad4_ adc_bridge_4
+v1 b0 gnd pulse(0 3.3 20n 1n 1n 20n 40n)
+v3 b2 gnd pulse(0 3.3 20n 1n 1n 40n 80n)
+v4 b3 gnd pulse(0 3.3 20n 1n 1n 80n 100n)
+v2 b1 gnd pulse(0 3.3 20n 1n 1n 100n 200n)
+a1 [net-_u3-pad1_ net-_u3-pad2_ net-_u3-pad3_ net-_u3-pad4_ ] [o1 o2 o3 o4 ] u3
+a2 [net-_u8-pad1_ ] [net-_u8-pad2_ ] [net-_u8-pad3_ ] [net-_u8-pad4_ ] [net-_u3-pad1_ ] [net-_u3-pad2_ ] [net-_u3-pad3_ ] [net-_u3-pad4_ ] u8
+a3 [b3 b2 b1 b0 ] [net-_u8-pad1_ net-_u8-pad2_ net-_u8-pad3_ net-_u8-pad4_ ] u1
+* Schematic Name:                             dac_bridge_4, Ngspice Name: dac_bridge
+.model u3 dac_bridge(out_low=0 out_high=3.3 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             gray_converter, Ngspice Name: gray_converter
+.model u8 gray_converter(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_4, Ngspice Name: adc_bridge
+.model u1 adc_bridge(in_low=0.5 in_high=3.3 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.tran 1e-09 200e-09 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(o3)
+plot v(o4)
+plot v(o2)
+plot v(o1)
+.endc
+.end

@@ -1,0 +1,15 @@
+.title KiCad schematic
+U1 a3 a2 a1 a0 s1 s0 Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ adc_bridge_6
+v6 a3 GND pulse
+v5 a2 GND pulse
+U5 y2 plot_v1
+U6 y1 plot_v1
+U4 y3 plot_v1
+U2 Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ barrel_shifter
+U3 Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ y3 y2 y1 y0 dac_bridge_4
+U7 y0 plot_v1
+v3 a0 GND pulse
+v2 s1 GND pulse
+v1 s0 GND pulse
+v4 a1 GND pulse
+.end
