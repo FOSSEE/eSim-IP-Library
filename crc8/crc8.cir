@@ -1,0 +1,21 @@
+.title KiCad schematic
+U6 Net-_U6-Pad1_ Net-_U6-Pad2_ Net-_U6-Pad3_ Net-_U6-Pad4_ crc_out3 crc_out2 crc_out1 crc_out0 dac_bridge_4
+U5 Net-_U3-Pad7_ Net-_U3-Pad8_ Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ Net-_U6-Pad1_ Net-_U6-Pad2_ Net-_U6-Pad3_ Net-_U6-Pad4_ crc4
+U7 crc_out2 plot_v1
+U4 crc_out3 plot_v1
+U8 crc_out1 plot_v1
+U9 crc_out0 plot_v1
+U2 clk plot_v1
+U1 rst plot_v1
+U10 data_in1 plot_v1
+U12 data_in3 plot_v1
+U13 data_in0 plot_v1
+U11 data_in2 plot_v1
+U3 clk rst data_in3 data_in2 data_in1 data_in0 Net-_U3-Pad7_ Net-_U3-Pad8_ Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ adc_bridge_6
+v1 clk GND pulse
+v3 data_in3 GND pwl
+v6 data_in0 GND pwl
+v5 data_in1 GND pwl
+v2 rst GND pwl
+v4 data_in2 GND pwl
+.end

@@ -1,0 +1,26 @@
+.title KiCad schematic
+U1 Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ adc_bridge_4
+U2 clk rst scan_start scan_in Net-_U2-Pad5_ Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ adc_bridge_8
+U10 clk plot_v1
+U9 scan_in plot_v1
+U11 rst plot_v1
+U12 scan_start plot_v1
+U4 Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U4-Pad3_ Net-_U4-Pad4_ scan_en scan_out test_done pass_fail dac_bridge_4
+U3 Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U4-Pad3_ Net-_U4-Pad4_ scan_chain_controller
+U7 test_done plot_v1
+U5 scan_en plot_v1
+U6 scan_out plot_v1
+U8 pass_fail plot_v1
+v3 scan_start GND pwl
+v5 Net-_U2-Pad5_ GND DC
+v4 scan_in GND pwl
+v1 clk GND pulse
+v2 rst GND pwl
+v7 Net-_U2-Pad7_ GND DC
+v6 Net-_U2-Pad6_ GND DC
+v8 Net-_U2-Pad8_ GND DC
+v11 Net-_U1-Pad3_ GND DC
+v12 Net-_U1-Pad4_ GND DC
+v10 Net-_U1-Pad2_ GND DC
+v9 Net-_U1-Pad1_ GND DC
+.end

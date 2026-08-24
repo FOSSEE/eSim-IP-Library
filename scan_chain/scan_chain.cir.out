@@ -1,0 +1,55 @@
+.title kicad schematic
+
+* u1 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ adc_bridge_4
+* u2 clk rst scan_start scan_in net-_u2-pad5_ net-_u2-pad6_ net-_u2-pad7_ net-_u2-pad8_ net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ adc_bridge_8
+* u10 clk plot_v1
+* u9 scan_in plot_v1
+* u11 rst plot_v1
+* u12 scan_start plot_v1
+* u4 net-_u4-pad1_ net-_u4-pad2_ net-_u4-pad3_ net-_u4-pad4_ scan_en scan_out test_done pass_fail dac_bridge_4
+* u3 net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u4-pad1_ net-_u4-pad2_ net-_u4-pad3_ net-_u4-pad4_ scan_chain_controller
+* u7 test_done plot_v1
+* u5 scan_en plot_v1
+* u6 scan_out plot_v1
+* u8 pass_fail plot_v1
+v3 scan_start gnd pwl(0n 0 29n 0 30n 5 49n 5 50n 0 300n 0)
+v5 net-_u2-pad5_ gnd  dc 0
+v4 scan_in gnd pwl(0n 0 49n 0 50n 5 69n 5 70n 0 89n 0 90n 5 109n 5 110n 5 129n 5)
+v1 clk gnd pulse(0 5 0 1n 1n 10n 20n)
+v2 rst gnd pwl(0n 5 10n 5 10.1n 0 300n 0)
+v7 net-_u2-pad7_ gnd  dc 0
+v6 net-_u2-pad6_ gnd  dc 0
+v8 net-_u2-pad8_ gnd  dc 0
+v11 net-_u1-pad3_ gnd  dc 5
+v12 net-_u1-pad4_ gnd  dc 5
+v10 net-_u1-pad2_ gnd  dc 0
+v9 net-_u1-pad1_ gnd  dc 5
+a1 [net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ ] [net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ ] u1
+a2 [clk rst scan_start scan_in net-_u2-pad5_ net-_u2-pad6_ net-_u2-pad7_ net-_u2-pad8_ ] [net-_u2-pad9_ net-_u2-pad10_ net-_u2-pad11_ net-_u2-pad12_ net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ ] u2
+a3 [net-_u4-pad1_ net-_u4-pad2_ net-_u4-pad3_ net-_u4-pad4_ ] [scan_en scan_out test_done pass_fail ] u4
+a4 [net-_u2-pad9_ ] [net-_u2-pad10_ ] [net-_u2-pad11_ ] [net-_u2-pad12_ ] [net-_u2-pad13_ net-_u2-pad14_ net-_u2-pad15_ net-_u2-pad16_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ ] [net-_u4-pad1_ ] [net-_u4-pad2_ ] [net-_u4-pad3_ ] [net-_u4-pad4_ ] u3
+* Schematic Name:                             adc_bridge_4, Ngspice Name: adc_bridge
+.model u1 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_8, Ngspice Name: adc_bridge
+.model u2 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_4, Ngspice Name: dac_bridge
+.model u4 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             scan_chain_controller, Ngspice Name: scan_chain_controller
+.model u3 scan_chain_controller(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+.tran 1e-09 200e-09 0e-09
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(clk)
+plot v(scan_in)
+plot v(rst)
+plot v(scan_start)
+plot v(test_done)
+plot v(scan_en)
+plot v(scan_out)
+plot v(pass_fail)
+.endc
+.end

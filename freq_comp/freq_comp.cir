@@ -1,0 +1,15 @@
+.title KiCad schematic
+U3 Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ a_gt_b a_lt_b a_eq_b valid dac_bridge_4
+U2 Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ frequency_comparator
+U7 valid plot_v1
+U4 a_gt_b plot_v1
+U5 a_lt_b plot_v1
+U6 a_eq_b plot_v1
+U1 clk_a clk_b rst Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ adc_bridge_3
+U10 clk_b plot_v1
+U9 rst plot_v1
+U8 clk_a plot_v1
+v2 clk_b GND pulse
+v1 clk_a GND pulse
+v3 rst GND pwl
+.end
