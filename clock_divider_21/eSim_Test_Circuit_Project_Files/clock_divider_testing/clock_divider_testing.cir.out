@@ -1,0 +1,20 @@
+* c:\users\vamsi\esim-workspace\clock_divider_testing\clock_divider_testing.cir
+
+.include clock_freq_divider_ip.sub
+x1 clk0 reset0 vcc gnd clk_10 clock_freq_divider_ip
+v1  clk0 gnd pulse(0 5 0 0 0 0.01 0.02)
+v2  reset0 gnd pulse(5 0 0 0 0 0.3 1)
+* u3  clk_10 plot_v1
+* u2  reset0 plot_v1
+* u1  clk0 plot_v1
+.tran 0.0001e-00 1e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+set xbrushwidth =3
+plot v(clk0) + 6 v(reset0) + 12 v(clk_10)
+.endc
+.end

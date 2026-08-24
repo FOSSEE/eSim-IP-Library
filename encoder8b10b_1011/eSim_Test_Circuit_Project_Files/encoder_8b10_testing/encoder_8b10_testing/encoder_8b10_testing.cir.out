@@ -1,0 +1,52 @@
+* c:\users\chaitanya\esim-workspace\encoder_8b10_testing\encoder_8b10_testing.cir
+
+.include encoder_8b10b_subcircuit.sub
+x1 clk0 rst_n0 din7 din6 din5 din4 din3 din2 din1 din0 kin0 dout9 dout8 dout7 dout6 dout5 dout4 dout3 dout2 dout1 dout0 rd0 encoder_8b10b_subcircuit
+v1  clk0 gnd pulse(0 5 0 0 0 0.005 0.01)
+v2  rst_n0 gnd pulse(5 0 0 0 0 0.2 1)
+v3  din7 gnd pulse(0 5 0 0 0 0.5 1)
+v4  din6 gnd pulse(0 5 0 0 0 0.5 1)
+v5  din5 gnd pulse(0 5 0 0 0 0.5 1)
+v6  din4 gnd pulse(0 5 0 0 0 0.5 1)
+v8  din2 gnd pulse(0 5 0 0 0 0.5 1)
+v9  din1 gnd pulse(0 5 0 0 0 0.5 1)
+v10  din0 gnd pulse(0 5 0 0 0 0.5 1)
+v11  kin0 gnd pulse(0 5 0 0 0 0.5 1)
+v7  din3 gnd pulse(0 5 0 0 0 0.5 1)
+* u12  dout9 plot_v1
+* u13  dout8 plot_v1
+* u14  dout7 plot_v1
+* u15  dout6 plot_v1
+* u16  dout5 plot_v1
+* u17  dout4 plot_v1
+* u18  dout3 plot_v1
+* u20  dout1 plot_v1
+* u21  dout0 plot_v1
+* u19  dout2 plot_v1
+* u22  rd0 plot_v1
+* u2  rst_n0 plot_v1
+* u5  din5 plot_v1
+* u6  din4 plot_v1
+* u7  din3 plot_v1
+* u8  din2 plot_v1
+* u9  din1 plot_v1
+* u10  din0 plot_v1
+* u11  kin0 plot_v1
+* u4  din6 plot_v1
+* u3  din7 plot_v1
+* u1  clk0 plot_v1
+.tran 0.0001e-00 1e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+set xbrushwidth = 3
+
+plot v(dout9) + 6 v(dout8) +12 v(dout7)+ 18 v(dout6) + 24 v(dout5)+ 30 v(dout4) +36 v(dout3)+ 42 v(dout2) +48 v(dout1) + 54 v(dout0) + 60 v(rd0)
+
+
+plot   v(rst_n0) + 12 v(din7) + 18 v(din6) + 24 v(din5) + 30  v(din4) +36 v(din3) + 42 v(din2) + 48 v(din1) + 54 v(din0) + 60 (kin0) + 66 v(clk0)
+.endc
+.end

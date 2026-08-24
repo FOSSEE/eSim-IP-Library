@@ -1,0 +1,41 @@
+* C:\Users\Vamsi\eSim-Workspace\power_gating_testing\power_gating_testing.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/28/26 01:18:33
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  clk0 rst0 sleep0 d7 d6 d5 d4 d3 d2 d1 d0 y7 y6 y5 y4 y3 y2 y1 y0 power_gating_ic_ip		
+v1  clk0 GND pulse		
+v2  rst0 GND pulse		
+U10  d1 plot_v1		
+U9  d2 plot_v1		
+U8  d3 plot_v1		
+U7  d4 plot_v1		
+U6  d5 plot_v1		
+U5  d6 plot_v1		
+U4  d7 plot_v1		
+U3  sleep0 plot_v1		
+U11  d0 plot_v1		
+U1  clk0 plot_v1		
+U2  rst0 plot_v1		
+U12  y7 plot_v1		
+U13  y6 plot_v1		
+U14  y5 plot_v1		
+U15  y4 plot_v1		
+U16  y3 plot_v1		
+U17  y2 plot_v1		
+U18  y1 plot_v1		
+U19  y0 plot_v1		
+v3  sleep0 GND pulse		
+v4  d7 GND pulse		
+v5  d6 GND pulse		
+v6  d5 GND pulse		
+v7  d4 GND pulse		
+v8  d3 GND pulse		
+v9  d2 GND pulse		
+v10  d1 GND pulse		
+v11  d0 GND pulse		
+
+.end

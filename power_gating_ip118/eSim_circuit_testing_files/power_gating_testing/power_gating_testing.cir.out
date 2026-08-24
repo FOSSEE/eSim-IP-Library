@@ -1,0 +1,49 @@
+* c:\users\vamsi\esim-workspace\power_gating_testing\power_gating_testing.cir
+
+.include power_gating_subcircuit.sub
+x1 clk0 rst0 sleep0 d7 d6 d5 d4 d3 d2 d1 d0 y7 y6 y5 y4 y3 y2 y1 y0 power_gating_subcircuit
+v1  clk0 gnd pulse(0 5 0 0 0 0.005 0.01)
+v2  rst0 gnd pulse(0 5 0 0 0 0.8 5)
+* u10  d1 plot_v1
+* u9  d2 plot_v1
+* u8  d3 plot_v1
+* u7  d4 plot_v1
+* u6  d5 plot_v1
+* u5  d6 plot_v1
+* u4  d7 plot_v1
+* u3  sleep0 plot_v1
+* u11  d0 plot_v1
+* u1  clk0 plot_v1
+* u2  rst0 plot_v1
+* u12  y7 plot_v1
+* u13  y6 plot_v1
+* u14  y5 plot_v1
+* u15  y4 plot_v1
+* u16  y3 plot_v1
+* u17  y2 plot_v1
+* u18  y1 plot_v1
+* u19  y0 plot_v1
+v3  sleep0 gnd pulse(0 5 0 0 0 1.5 2)
+v4  d7 gnd pulse(0 5 0 0 0 0.5 2)
+v5  d6 gnd pulse(5 0 0 0 0 0.8 3.5)
+v6  d5 gnd pulse(0 5 0 0 0 2.333 3.33)
+v7  d4 gnd pulse(0 5 0 0 0 1.666 4.888)
+v8  d3 gnd pulse(0 5 0 0 0 2.666 5.666)
+v9  d2 gnd pulse(0 5 0 0 0 1.5666 23777)
+v10  d1 gnd pulse(0 5 0 0 0 2.55 3)
+v11  d0 gnd pulse(5 0 0 0 0 1 4)
+.tran 0.0001e-00 5e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+set xbrushwidth = 3
+plot v(d1) +6 v(rst0) + 12 v(clk0) + 18 v(d0) + 24 v(sleep0) + 30 v(d7) 36 v(d6)+ 42 v(d5) + 48 v(d4) +54 v(d3) + 60 v(d2)
+
+
+
+plot v(y7) + 6 v(y6) + 12 v(y5) + 18 v(y4) + 24 v(y3) + 30 v(y2) + 36 v(y1) + 42 v(y0)
+.endc
+.end

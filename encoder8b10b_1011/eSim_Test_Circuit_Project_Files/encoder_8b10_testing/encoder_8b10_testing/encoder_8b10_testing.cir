@@ -1,0 +1,44 @@
+* C:\Users\chaitanya\eSim-Workspace\encoder_8b10_testing\encoder_8b10_testing.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 04/04/26 09:15:35
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  clk0 rst_n0 din7 din6 din5 din4 din3 din2 din1 din0 kin0 dout9 dout8 dout7 dout6 dout5 dout4 dout3 dout2 dout1 dout0 rd0 encoder_8b10b_ip		
+v1  clk0 GND pulse		
+v2  rst_n0 GND pulse		
+v3  din7 GND pulse		
+v4  din6 GND pulse		
+v5  din5 GND pulse		
+v6  din4 GND pulse		
+v8  din2 GND pulse		
+v9  din1 GND pulse		
+v10  din0 GND pulse		
+v11  kin0 GND pulse		
+v7  din3 GND pulse		
+U12  dout9 plot_v1		
+U13  dout8 plot_v1		
+U14  dout7 plot_v1		
+U15  dout6 plot_v1		
+U16  dout5 plot_v1		
+U17  dout4 plot_v1		
+U18  dout3 plot_v1		
+U20  dout1 plot_v1		
+U21  dout0 plot_v1		
+U19  dout2 plot_v1		
+U22  rd0 plot_v1		
+U2  rst_n0 plot_v1		
+U5  din5 plot_v1		
+U6  din4 plot_v1		
+U7  din3 plot_v1		
+U8  din2 plot_v1		
+U9  din1 plot_v1		
+U10  din0 plot_v1		
+U11  kin0 plot_v1		
+U4  din6 plot_v1		
+U3  din7 plot_v1		
+U1  clk0 plot_v1		
+
+.end

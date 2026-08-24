@@ -1,0 +1,42 @@
+* C:\Users\Vamsi\eSim-Workspace\BIST_FAULT_FREE\BIST_FAULT_FREE.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/21/26 12:56:37
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  clk0 GND pulse		
+v2  rst0 GND pulse		
+v3  testmode0 GND pulse		
+v4  in3 GND DC		
+v5  in2 GND DC		
+v6  in1 GND DC		
+v7  in0 GND DC		
+v8  VCC GND DC		
+U1  clk0 plot_v1		
+U2  rst0 plot_v1		
+U4  testmode0 plot_v1		
+U5  in3 plot_v1		
+U6  in2 plot_v1		
+U7  in1 plot_v1		
+U8  in0 plot_v1		
+U9  out3 plot_v1		
+U10  out2 plot_v1		
+U12  out1 plot_v1		
+U14  out0 plot_v1		
+U16  fault_detected0 plot_v1		
+U18  misr_out3 plot_v1		
+U19  misr_out2 plot_v1		
+U20  misr_out1 plot_v1		
+U21  misr_out0 plot_v1		
+U11  complete3 plot_v1		
+U13  complete2 plot_v1		
+U15  complete1 plot_v1		
+U17  complete0 plot_v1		
+U23  Net-_U23-Pad1_ Net-_U23-Pad2_ Net-_U23-Pad3_ Net-_U23-Pad4_ Net-_U23-Pad5_ Net-_U23-Pad6_ Net-_U23-Pad7_ Net-_U23-Pad8_ out3 out2 out1 out0 fault_detected0 misr_out3 misr_out2 misr_out1 dac_bridge_8		
+U24  Net-_U24-Pad1_ Net-_U24-Pad2_ Net-_U24-Pad3_ Net-_U24-Pad4_ Net-_U24-Pad5_ misr_out0 complete3 complete2 complete1 complete0 dac_bridge_5		
+U22  clk0 rst0 testmode0 in3 in2 in1 in0 Net-_U22-Pad8_ Net-_U22-Pad9_ Net-_U22-Pad10_ Net-_U22-Pad11_ Net-_U22-Pad12_ Net-_U22-Pad13_ Net-_U22-Pad14_ adc_bridge_7		
+U3  Net-_U22-Pad8_ Net-_U22-Pad9_ Net-_U22-Pad10_ Net-_U22-Pad11_ Net-_U22-Pad12_ Net-_U22-Pad13_ Net-_U22-Pad14_ Net-_U23-Pad1_ Net-_U23-Pad2_ Net-_U23-Pad3_ Net-_U23-Pad4_ Net-_U23-Pad5_ Net-_U23-Pad6_ Net-_U23-Pad7_ Net-_U23-Pad8_ Net-_U24-Pad1_ Net-_U24-Pad2_ Net-_U24-Pad3_ Net-_U24-Pad4_ Net-_U24-Pad5_ bist_fault_free		
+
+.end

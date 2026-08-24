@@ -1,0 +1,16 @@
+* C:\Users\Vamsi\eSim-Workspace\clock_divider_testing\clock_divider_testing.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/27/26 10:26:32
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  clk0 reset0 VCC GND clk_10 clock_freq_divider_ip		
+v1  clk0 GND pulse		
+v2  reset0 GND pulse		
+U3  clk_10 plot_v1		
+U2  reset0 plot_v1		
+U1  clk0 plot_v1		
+
+.end

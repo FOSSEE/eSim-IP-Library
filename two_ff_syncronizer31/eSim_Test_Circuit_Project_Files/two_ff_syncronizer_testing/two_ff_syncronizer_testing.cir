@@ -1,0 +1,18 @@
+* C:\esim\two_ff_syncronizer_testing\two_ff_syncronizer_testing.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 05/18/26 23:12:31
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  clk0 rst_n0 async_in0 sync_out0 two_ff_syncronizer_ip		
+v1  clk0 GND pulse		
+v2  rst_n0 GND pulse		
+v3  async_in0 GND pulse		
+U1  clk0 plot_v1		
+U2  rst_n0 plot_v1		
+U3  async_in0 plot_v1		
+U4  sync_out0 plot_v1		
+
+.end
